@@ -29,7 +29,7 @@ keywords: KEYWORDS
 author: AUTHOR NAME
 description: DESCRIPTION
 language: en
-baseurl: 
+baseurl: /Living_Styleguide
 destination: _site
 sass:
   load_paths:
