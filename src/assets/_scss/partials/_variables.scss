@@ -1,0 +1,58 @@
+//Devices
+$medium-screen: 1080px;
+$tablet-screen: 768px;
+$mobile-screen: 480px;
+
+//Breakpoints
+//Neat needs to be included
+
+//Type Systems
+$roboto: "Roboto", sans-serif;
+$fa: 'FontAwesome';
+
+//Base Fonts
+$base-font-size: 14px;
+$base-line-height: 1.5;
+
+//Modular Scale
+$modular-scale-ratio: $golden; //1.618
+$modular-scale-base: 1rem;
+
+//Heading Fonts
+$heading-line-height: 1;
+$h1-font-size: modular-scale(3); 
+$h2-font-size: modular-scale(2);
+$h3-font-size: modular-scale(1); 
+$h4-font-size: modular-scale(0); 
+$h5-font-size: modular-scale(-1);
+$h6-font-size: modular-scale(-1);
+
+//Brand Colors
+$white: #efefef;
+$black: #000000;
+$blue: dodgerblue;
+$light-grey: #cccccc;
+
+//Animations
+$base-duration: .2s;
+$base-timing: ease;
+
+//Base Colors
+$base-font-color: #242424;
+$heading-font-color: #313131;
+$subheading-font-color: lighten($base-font-color, 12%);
+$highlight-font-color: lighten($base-font-color, 36%);
+
+//Action-color
+$action-color: $blue;
+$action-color-hover: darken($action-color, 12%);
+
+//Spacing
+$large-pad: modular-scale(-1);
+$base-pad: modular-scale(0);
+$small-pad: $large-pad / 2; //0.75rem
+
+//Borders
+$base-rad: 4px;
+$base-border-color: #e5e5e5;
+$base-border: 1px solid $base-border-color;

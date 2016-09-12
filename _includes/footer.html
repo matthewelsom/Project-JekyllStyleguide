@@ -1,0 +1,10 @@
+<script type="text/javascript">
+function iframeLoaded() {
+ var iFrameID = document.getElementById('sg-viewport');
+   // here you can make the height
+   iFrameID.height = "";
+   iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+}
+</script>
+<script src="{{ site.baseurl }}/styleguide/js/jquery/jquery-2.1.4.min.js"></script>
+<script src="{{ site.baseurl }}/styleguide/js/main.js"></script>

@@ -1,0 +1,5 @@
+///// Font Imports /////
+@include font-face("Open Sans", "../fonts/open-sans/OpenSans-Light", 300, $file-formats: ttf);
+@include font-face("Open Sans", "../fonts/open-sans/OpenSans-Regular", normal, $file-formats: ttf);
+@include font-face("Open Sans", "../fonts/open-sans/OpenSans-Semibold", 600, $file-formats: ttf);
+@include font-face("Open Sans", "../fonts/open-sans/OpenSans-Bold", bold, $file-formats: ttf);

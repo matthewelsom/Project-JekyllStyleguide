@@ -1,0 +1,24 @@
+.sg-masthead {
+  padding: $base-padding;
+  
+  .sg-masthead_title {
+    @include display(flex);
+    @include align-items(center);
+    margin-bottom: $base-spacing;
+    
+    h1 {      
+      margin: 0;
+      text-transform: capitalize;
+      font-size: 2rem;
+    }
+    .sg-label {
+      margin-left: $base-padding;
+    }
+  }
+  .sg-masthead_style {  
+    margin-bottom: 0;
+    code {
+      color: $action-color;
+    }
+  }
+}

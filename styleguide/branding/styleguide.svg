@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#375EB4;}
+	.st1{opacity:0.1;}
+	.st2{opacity:0.9;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:20;stroke-miterlimit:10;}
+</style>
+<g>
+	<rect x="0" class="st0" width="1024" height="1024"/>
+</g>
+<g class="st1">
+	<rect class="st0" width="1024" height="1024"/>
+</g>
+<g class="st2">
+	<g>
+		<polyline class="st3" points="900.9,1024 900.9,164.7 558.9,164.7 558.9,1024 		"/>
+		<line class="st3" x1="559" y1="339" x2="687" y2="339"/>
+		<line class="st3" x1="559" y1="759" x2="687" y2="759"/>
+		<line class="st3" x1="559" y1="969" x2="687" y2="969"/>
+		<line class="st3" x1="559" y1="549" x2="687" y2="549"/>
+	</g>
+	<g>
+		<path class="st3" d="M397.4,1024V621.7c0-0.6-0.5-1.1-1.1-1.1H124.9c-0.6,0-1.1,0.5-1.1,1.1V1024"/>
+		<polyline class="st3" points="123.8,620.5 260.6,360.3 397.4,620.5 		"/>
+		<line class="st3" x1="261" y1="620" x2="261" y2="1024"/>
+		<line class="st3" x1="215" y1="447" x2="306" y2="447"/>
+	</g>
+</g>
+</svg>

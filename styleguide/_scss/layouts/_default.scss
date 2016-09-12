@@ -1,0 +1,104 @@
+html#sg,
+body#sg {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: lighten($black, 4%);
+}
+body#sg {
+  font-family: $sans-serif;
+  font-size: $base-font-size;
+}
+.sg-pusher {
+  position: relative;
+//  -webkit-backface-visibility: hidden;
+//  backface-visibility: hidden;
+//  overflow: hidden;
+  min-height: 100%;
+}
+
+$toc-width: 320px;
+
+.sg-pusher.hide-toc {
+  .sg-toc {
+  }
+  .sg-main {
+    width: 100%;
+    left: 0;
+  }
+  a.sg-maximize-btn.fixed {
+    display: inline-block;
+  }
+}
+a.sg-maximize-btn.fixed {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: auto;
+  z-index: 9;
+  background: transparentize($white, 0.5);
+}
+a.sg-maximize-btn {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: $action-color;
+  padding: $base-padding/3 $base-padding;
+  font-weight: normal;
+  font-size: $base-font-size;
+  @include transition(all $base-duration $base-timing);
+  
+  .icon {
+    font-size: $h3-font-size;
+  }
+  span {
+    position: absolute;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    text-transform: uppercase;
+    line-height: 1.3rem;
+    float: right;
+    margin: 0 $small-spacing/2;
+  }
+  &:hover,
+  &:focus {
+    background: $action-color;
+    color: $white;
+  }
+}
+a.sg-maximize-btn:hover span,
+a.sg-maximize-btn:focus span {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  opacity: 1;
+  visibility: visible;
+}
+.sg-toc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $toc-width;
+  height: 100%;
+  min-height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  @include transition(all $base-duration $base-timing);
+}
+.sg-main {
+  position: absolute;
+  top: 0;
+  left: $toc-width;
+  width: calc(100% - #{$toc-width});
+  height: auto;
+  min-height: 100%;
+  background: $white;
+  @include transition(all $base-duration $base-timing);
+}
+.sg-container {
+  background: $white;
+}

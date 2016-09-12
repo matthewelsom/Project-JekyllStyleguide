@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<section id="mastheadArea" class="sg-masthead">
+  {% if page.title %}<div class="sg-masthead_title"><h1>{{ page.title }}</h1>{% if page.maturity %}<p class="sg-label {{ page.maturity }}">{{ page.maturity }}</p>{% endif %}{% endif %}</div>
+  {% if page.info %}<h3>{{ page.info }}</h3>{% endif %}
+  {% if page.scss %}<p class="sg-masthead_style">Style Location: <code>{{ page.scss }}</code></p>{% endif %}
+</section>
+
+<div id="patternArea" class="sg-pattern">  
+{% assign pattern_url = page.url | replace_first: 'docs', 'src/html' %} 
+  <iframe id="sg-viewport" name="sg-viewport" frameborder="0" src="{{ pattern_url }}" onload="iframeLoaded()"></iframe>
+</div>
+
+<section id="codeArea" class="sg-code">
+<h2>Code</h2>
+{% for pattern in site.pages %}
+{% if pattern.url contains pattern_url %}
+{% highlight html %}
+{{ pattern.content }}
+{% endhighlight %}
+{% endif %}
+{% endfor %}
+</section>
+
+<section id="documentationArea" class="sg-doc">
+  <h2>Documentation</h2> 
+  {{ page.content }}
+</section>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#A7A7A7;}
+	.st1{opacity:0.3;}
+	.st2{opacity:0.5;fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;enable-background:new    ;}
+	.st3{opacity:0.2;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;enable-background:new    ;}
+	.st4{opacity:0.5;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;enable-background:new    ;}
+	.st5{opacity:0.7;}
+	.st6{fill:#FFFFFF;}
+</style>
+<rect class="st0" width="1024" height="1024"/>
+<g class="st1">
+	<path class="st0" d="M784,0H240C107.5,0,0,107.5,0,240v544c0,132.5,107.5,240,240,240h544c132.5,0,240-107.5,240-240V240
+		C1024,107.5,916.5,0,784,0L784,0z"/>
+</g>
+<circle class="st2" cx="512" cy="512" r="441.8"/>
+<circle class="st3" cx="512" cy="512" r="325.3"/>
+<circle class="st3" cx="512" cy="512" r="230"/>
+<line class="st3" x1="0" y1="0" x2="1024" y2="1024"/>
+<line class="st3" x1="1024" y1="0" x2="0" y2="1024"/>
+<rect x="70.3" y="70.3" class="st3" width="883.5" height="883.5"/>
+<line class="st3" x1="282" y1="0" x2="282" y2="1024"/>
+<line class="st3" x1="742" y1="1024" x2="742" y2="0"/>
+<line class="st4" x1="512" y1="1024" x2="512" y2="0"/>
+<line class="st3" x1="1024" y1="282" x2="0" y2="282"/>
+<line class="st3" x1="0" y1="742" x2="1024" y2="742"/>
+<line class="st4" x1="0" y1="512" x2="1024" y2="512"/>
+<g class="st5">
+	<path class="st6" d="M784,10c31.1,0,61.2,6.1,89.5,18.1c27.4,11.6,52,28.2,73.1,49.3s37.7,45.7,49.3,73.1
+		c12,28.3,18.1,58.5,18.1,89.5v544c0,31.1-6.1,61.2-18.1,89.5c-11.6,27.4-28.2,52-49.3,73.1s-45.7,37.7-73.1,49.3
+		c-28.3,12-58.5,18.1-89.5,18.1H240c-31.1,0-61.2-6.1-89.5-18.1c-27.4-11.6-52-28.2-73.1-49.3s-37.7-45.7-49.3-73.1
+		C16.1,845.2,10,815.1,10,784V240c0-31.1,6.1-61.2,18.1-89.5c11.6-27.4,28.2-52,49.3-73.1s45.7-37.7,73.1-49.3
+		C178.8,16.1,208.9,10,240,10H784 M784,0H240C107.5,0,0,107.5,0,240v544c0,132.5,107.5,240,240,240h544c132.5,0,240-107.5,240-240
+		V240C1024,107.5,916.5,0,784,0L784,0z"/>
+</g>
+</svg>

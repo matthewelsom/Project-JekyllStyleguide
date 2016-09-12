@@ -1,0 +1,71 @@
+# Styleguide settings
+sg_title: Living Styleguide
+sg_version: 1.0
+sg_keywords: styleguide, playbook, design, code 
+sg_author: Matthew Elsom
+sg_description: This Living Styleguide maintains design and code standards for digital tools and services.
+sg_language: en
+sg_styles: /styleguide/css/styleguide.css
+sg_favicon: /styleguide/branding/favicon.ico
+# Enable sass to edit Styleguide Template Styles
+#sass:
+#  load_paths:
+#    - styleguide/_scss #[generate Styleguide styles]
+#  style: :compressed
+
+# Preprocessor settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Jekyll Serve
+port: 4000
+
+# Output settings
+prodtitle: STYLEGUIDE NAME
+version: VERSION
+keywords: KEYWORDS
+author: AUTHOR NAME
+description: DESCRIPTION
+language: en
+baseurl: 
+destination: _site
+sass:
+  load_paths:
+    - src/assets/_scss #[generate Product styles]
+  style: :compressed
+
+# Permalink
+#permalink: /:categories/:title/
+
+# Collections
+collections:
+  docs: 
+    output: true
+    
+defaults:
+  - 
+    scope:
+      path: "_docs"
+    values:
+      layout: doc
+      type: doc
+      maturity: 'Not Assigned'
+      scss: 'Not Assigned'
+  - 
+    scope:
+      path: "_docs/00-get-started"
+    values:
+      layout: index
+  - 
+    scope:
+      path: "_docs/03-examples"
+    values:
+      layout: example    
+  - 
+    scope:
+      path: "src/html"
+    values:
+      layout: pattern
+      type: pattern

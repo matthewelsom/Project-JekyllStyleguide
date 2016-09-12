@@ -1,0 +1,16 @@
+.sg-label {
+  font-size: $micro-font-size;
+  margin: 0;
+  font-weight: bold;
+  border-radius: $base-border-radius;
+  padding: $small-spacing/3 $small-spacing;
+  color: $subheading-font-color;
+  text-transform: uppercase;
+  background: $light-background;
+
+  &.proposed {background: $grey; color: $white;}
+  &.alpha {background: $sky; color: $white;}
+  &.beta {background: $blue; color: $white;}
+  &.recommended {background: $emerald; color: $white;}
+  &.depreciated {}
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+ <html {% if site.language %} lang="{{ site.language }}"{% endif %}>
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/src/assets/branding/favicon.ico">
+    <link rel="stylesheet" href="{{ site.baseurl }}/src/assets/css/style.css" media="screen">
+  </head>
+  <body id="content">
+    {{ content }}
+  </body>
+</html>

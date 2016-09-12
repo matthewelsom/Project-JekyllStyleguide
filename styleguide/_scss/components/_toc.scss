@@ -1,0 +1,80 @@
+.sg-toc {
+  color: $white;
+  background: lighten($black, 4%);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  
+  &::-webkit-scrollbar { 
+    display: none; 
+  }
+  
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    border-top: $base-border;
+    border-color: transparentize($white, 0.8);
+  }
+  a {
+    text-transform: capitalize;
+    display: block;
+    color: $white;
+    font-size: $h6-font-size;
+    font-weight: bold;
+    text-decoration:none;
+    padding: $small-spacing/3 0;
+    padding: $base-padding;
+    @include transition(all, $base-timing, $base-duration);
+    
+    &:hover,
+    &.active {
+      color: transparentize($white, 0.5);
+    }
+  }
+  
+  .toc-head {
+    @include display(flex);
+    @include align-items(center);
+    padding: $base-spacing $base-padding; 
+    
+    .toc-head_icon {
+      @include size(48px);
+      @include flex(0 0 auto);
+      margin-right: $base-padding;
+      border-radius: $base-border-radius;
+      overflow: hidden;
+      
+      img {
+        @include size(48px);
+      }
+    }
+    .toc-head_title {
+      font-size: $h3-font-size;
+      margin-bottom: 0;
+    }
+  }
+  .toc-group {
+    border-top: $base-border;
+    border-color: transparentize($white, 0.8);
+    padding-bottom: $base-padding;
+  
+    .toc-group_title {
+      font-weight: bold;
+      padding: $base-padding;
+      padding-bottom: $small-spacing;
+      margin-bottom: 0;
+    }
+    ul {}
+    li {
+      border-top: none;
+      a {
+        padding: $small-spacing/2 $base-padding;
+        font-weight: normal;
+        font-size: $base-font-size;
+      }
+    }
+  }
+}

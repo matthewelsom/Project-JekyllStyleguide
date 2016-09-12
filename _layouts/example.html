@@ -1,0 +1,7 @@
+---
+layout: default
+---
+<div id="patternArea" class="sg-pattern_full">  
+{% assign pattern_url = page.url | replace_first: 'docs', 'src/html' %} 
+  <iframe id="sg-viewport" name="sg-viewport" frameborder="0" src="{{ pattern_url }}" onload="iframeLoaded()"></iframe>
+</div>

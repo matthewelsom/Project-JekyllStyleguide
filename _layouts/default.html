@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+ <html id="sg" {% if site.sg_language %} lang="{{ site.sg_language }}"{% endif %}>
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.sg_title %}{{ page.sg_title }} | {% endif %}{{ site.sg_title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.sg_description }}{% endif %}">
+    <meta name="keywords" content="{{ site.sg_keywords }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}{{ site.sg_favicon }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ site.sg_styles }}" media="screen">
+  </head>
+  <body id="sg">
+    <div class="sg-pusher">
+      <a href="javascript(0);" class="sg-maximize-btn fixed"><span>Menu</span> <i class="icon ion-ios-arrow-forward"></i></a> 
+      {% include sidebar.html %}
+      <div class="sg-main">
+        <div class="sg_container"> 
+          {{ content }}
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
