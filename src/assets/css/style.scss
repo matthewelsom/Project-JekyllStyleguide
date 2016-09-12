@@ -1,22 +1,13 @@
-//---
-//---
+---
+---
 
 //Vendor
-@import 'vendor/normalize/normalize';
-@import "vendor/bourbon/bourbon";
-@import "vendor/fontawesome/font-awesome";
-
-//Partials
-@import "partials/fonts";
-@import "partials/variables";
-
-//Base
-@import "base/typography";
-
-//Components [Molecules,Organisms]
-@import "components/icon";
-@import "components/buttons";
-@import "components/input";
-
-
-//Templates
+@import "vendor/__vendor-dir";
+//Abstracts
+@import "abstracts/__abstracts-dir";
+//Base Styles
+@import "base/__base-dir";
+//Components
+@import "components/__components-dir";
+//Layout
+@import "layouts/__layouts-dir";
