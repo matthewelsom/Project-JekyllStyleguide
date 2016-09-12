@@ -8,9 +8,9 @@ sg_language: en
 sg_styles: /styleguide/css/styleguide.css
 sg_favicon: /styleguide/branding/favicon.ico
 # Enable sass to edit Styleguide Template Styles
-#sass:
-#  sass_dir: styleguide/_scss #[generate Styleguide styles]
-#  style: :compressed
+sass:
+  sass_dir: styleguide/_scss #[generate Styleguide styles]
+  style: :compressed
 
 # Preprocessor settings
 highlighter: rouge
@@ -22,7 +22,7 @@ kramdown:
 port: 4000
 
 # Output settings
-prodtitle: STYLEGUIDE NAME
+title: STYLEGUIDE NAME
 version: VERSION
 keywords: KEYWORDS
 author: AUTHOR NAME
@@ -30,9 +30,9 @@ description: DESCRIPTION
 language: en
 baseurl: /Living_Styleguide
 destination: _site
-sass:
-  sass_dir: src/assets/_scss #[generate Product styles]
-  style: :compressed
+#sass:
+#  sass_dir: src/assets/_scss #[generate Product styles]
+#  style: :compressed
 
 # Permalink
 #permalink: /:categories/:title/
@@ -58,7 +58,7 @@ defaults:
       layout: index
   - 
     scope:
-      path: "_docs/03-examples"
+      path: "_docs/02-examples"
     values:
       layout: example    
   - 

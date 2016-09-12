@@ -1,4 +1,5 @@
-body#sg {
+body {
+  font-size: $base-font-size;
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -7,7 +8,6 @@ p,figure,
 table,fieldset,hr
 {
   font-family: $sans-serif;
-  font-size: $base-font-size;
   margin:0;
   margin-bottom:1rem;
 }
@@ -44,4 +44,14 @@ h6 {
   margin-bottom: $small-spacing;
   font-size: $h6-font-size;
   font-weight: normal;
+}
+section {
+  h2, h3, h4, h5, h6 {
+    margin: 1em 0;
+    max-width: 40rem;
+  }
+  ul,ol,dd,p,figure,table,fieldset,hr {
+    max-width: 40rem;
+    margin-bottom: 1em;
+  }
 }

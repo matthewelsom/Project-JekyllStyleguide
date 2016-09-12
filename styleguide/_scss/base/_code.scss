@@ -1,7 +1,18 @@
-/**
-* Syntax highlighting styles
-*/
+code, .code {
+  color: $action-color;
+  background: $light-background;
+}
 .highlight {
+  padding: $base-padding;
+  display: block;
+  background: $light-background;
+  border: $base-border;
+  border-style: dashed;
+  margin-bottom: $base-spacing;
+  pre {
+    white-space: pre-wrap;
+    margin: 0;
+  }
   .c     { color: #998; font-style: italic } // Comment
   .err   { color: #a61717; background-color: #e3d2d2 } // Error
   .k     { font-weight: bold } // Keyword

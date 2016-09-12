@@ -1,7 +1,10 @@
 .sg-code {
   padding: $base-padding;
   overflow: hidden;
-  margin-bottom: $base-padding;
+  
+  h2:first-of-type {
+    margin-top: 0;
+  }
   
   .highlight {
     padding: $base-padding;
