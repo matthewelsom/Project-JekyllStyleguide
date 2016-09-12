@@ -33,7 +33,7 @@ baseurl: /Living_Styleguide
 destination: _site
 sass:
   load_paths:
-    - ./src/assets/_scss #[generate Product styles]
+    - assets/_scss #[generate Product styles]
   style: :compressed
 
 # Permalink
