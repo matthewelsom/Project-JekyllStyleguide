@@ -1,0 +1,43 @@
+.sg-branding {
+  padding: $base-spacing $small-spacing; 
+  
+  .color-set {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    li {
+      margin-right: $small-spacing;
+    }
+    
+    div {
+      @include size(140px);
+      color: $white;
+      cursor: pointer;
+      border: $base-border;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: $small-font-size;
+    }
+  }
+  
+  .icon-set {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+    li {
+      padding: $small-spacing;
+      
+      img {
+        max-width: 100%;
+        border: $base-border;
+      }
+    }
+  }
+}

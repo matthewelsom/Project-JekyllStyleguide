@@ -24,16 +24,21 @@ Living_Styleguide/
 |   |   ├── css
 |   |   └── fonts
 │   └── html/
-│       ├── 01-components/
-│       |   ├── ...
-│       └── 02-examples/
-│           └── ...
+│   |   ├── 01-components/
+│   |   |   ├── ...
+│   |   └── 02-examples/
+│   |       └── ...
+|   └── design_source/
+│       └── ...
 ├── styleguide/
 |   ├── _scss
 |   ├── branding
 |   ├── css
 |   └── fonts
 ├── _docs/
+│   ├── 00-branding/
+│   |   ├── color.md
+│   |   ├── logo.md
 │   ├── 00-get-started/
 │   |   ├── ...
 │   ├── 01-components/

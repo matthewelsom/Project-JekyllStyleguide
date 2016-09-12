@@ -5,15 +5,26 @@
     <h1 class="toc-head_title">{{ site.sg_title }}</h1>
   </div>
   <ul>
-    <li><a href="{{ site.baseurl }}/index.html">Overview</a></li>
+    <li><a href="{{ site.baseurl }}/index.html"{% if page.url == '/' %} class="active"{% endif %}>Overview</a></li>
   </ul>
-  {% assign get-started = site.docs | where: 'layout', 'index' | sort: 'name' %}
+  {% assign get-started = site.docs | where: 'type', 'help' | sort: 'name' %}
   <div class="toc-group">
     <h6 class="toc-group_title">Get Started</h6>
     <ul>
     {% for doc in get-started %}
     <li>
-      <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+      <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  </div>
+  {% assign branding = site.docs | where: 'type', 'branding' | sort: 'name' %}
+  <div class="toc-group">
+    <h6 class="toc-group_title">Branding</h6>
+    <ul>
+    {% for doc in branding %}
+    <li>
+      <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
     </li>
     {% endfor %}
   </ul>
@@ -24,7 +35,7 @@
     <ul>
       {% for pattern in patterns %}
       <li> 
-        <a href="{{ site.baseurl }}{{ pattern.url }}">{{ pattern.title }}</a>
+        <a href="{{ site.baseurl }}{{ pattern.url }}"{% if pattern.url == page.url %} class="active"{% endif %}>{{ pattern.title }}</a>
       </li>
       {% endfor %}
     </ul>
@@ -35,7 +46,7 @@
     <ul>
       {% for example in examples %}
       <li> 
-        <a href="{{ site.baseurl }}{{ example.url }}">{{ example.title }}</a>
+        <a href="{{ site.baseurl }}{{ example.url }}"{% if example.url == page.url %} class="active"{% endif %}>{{ example.title }}</a>
       </li>
       {% endfor %}
     </ul>

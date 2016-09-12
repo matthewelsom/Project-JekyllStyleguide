@@ -49,13 +49,20 @@ defaults:
     values:
       layout: doc
       type: doc
-      maturity: 'Not Assigned'
-      scss: 'Not Assigned'
+      maturity: "Proposed"
+      scss: "Not Assigned"
+  - 
+    scope:
+      path: "_docs/00-branding"
+    values:
+      layout: index
+      type: "branding"
   - 
     scope:
       path: "_docs/00-get-started"
     values:
       layout: index
+      type: "help"
   - 
     scope:
       path: "_docs/02-examples"

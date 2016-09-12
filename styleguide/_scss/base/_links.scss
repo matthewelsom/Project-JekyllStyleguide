@@ -1,0 +1,8 @@
+a {
+  color: $action-color;
+  
+  &:hover,
+  &:focus {
+    color: $action-hover-color;
+  }
+}
