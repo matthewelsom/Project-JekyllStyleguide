@@ -9,8 +9,7 @@ sg_styles: /styleguide/css/styleguide.css
 sg_favicon: /styleguide/branding/favicon.ico
 # Enable sass to edit Styleguide Template Styles
 #sass:
-#  load_paths:
-#    - styleguide/_scss #[generate Styleguide styles]
+#  sass_dir: styleguide/_scss #[generate Styleguide styles]
 #  style: :compressed
 
 # Preprocessor settings
@@ -32,8 +31,7 @@ language: en
 baseurl: /Living_Styleguide
 destination: _site
 sass:
-  load_paths:
-    - assets/_scss #[generate Product styles]
+  sass_dir: src/assets/_scss #[generate Product styles]
   style: :compressed
 
 # Permalink
