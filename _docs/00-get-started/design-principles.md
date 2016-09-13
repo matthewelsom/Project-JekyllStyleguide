@@ -3,6 +3,8 @@ title: Design Principles
 info: This living styleguide has been designed to help you create better and informed experiences for all digital savvy users.
 ---
 
+![HTML First]({{ site.baseurl }}/styleguide/images/html.png)
+
 ### Simple Build.
 
 This styleguide has been created ready for expansion and customisation, it provides a simple interface to browse patterns, and only requires Jekyll.
@@ -10,6 +12,8 @@ This styleguide has been created ready for expansion and customisation, it provi
 ### HTML First.
 
 The components created in this styleguide are build 'HTML first' - this process encourages developers to build progressively, enhancing core design experience across the most versatile front-end development language.
+
+![Flexible]({{ site.baseurl }}/styleguide/images/flexible.png)
 
 ### Design for Flexibility.
 
