@@ -1,6 +1,6 @@
 # Living Styleguide
 
-![Styleguide]({{ site.baseurl }}/styleguide/images/cover.png)
+![Styleguide](http://livingstyleguide.cc/styleguide/images/cover.png)
 
 This styleguide can be freely customized, extended, published, and shared with designers, developers or clients. It is built using [Jekyll](http://jekyll.rb), and the design principles are based on the [Draft US Design Standards](https://standards.usa.gov/).
 
