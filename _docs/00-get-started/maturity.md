@@ -1,9 +1,9 @@
 ---
 title: Pattern Maturity Scale
-info: The pattern maturity scale is a way to indicate the level of robustness of any component or asset within the Styleguide.
+info: The pattern maturity scale is a way to indicate the level of robustness of any component or asset within the styleguide.
 ---
 
-New patterns should be released into the Styleguide following these principles, assess each pattern independently of every other component.
+New patterns should be released into the styleguide following these principles, assess each pattern independently of every other component.
 
 ### Proposed
 

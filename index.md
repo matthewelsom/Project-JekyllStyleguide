@@ -6,7 +6,7 @@ info: Organise design styles, create code standards, and maintain a consistent u
 
 ![Styleguide]({{ site.baseurl }}/styleguide/images/cover.png)
 
-This Styleguide can be freely customized, extended, published, and shared with designers, developers or clients. It is built using [Jekyll](http://jekyll.rb), and the design principles are based on the [Draft US Design Standards](https://standards.usa.gov/).
+This styleguide can be freely customized, extended, published, and shared with designers, developers or clients. It is built using [Jekyll](http://jekyll.rb), and the design principles are based on the [Draft US Design Standards](https://standards.usa.gov/).
 
 The [Getting Started]({{ site.baseurl }}/docs/00-get-started/design-principles.html) pages have all the information you need to start using this tool.
 

@@ -1,20 +1,20 @@
 ---
 title: Design Principles
-info: This Living Styleguide has been designed to help you create better and informed experiences for all digital savvy users.
+info: This living styleguide has been designed to help you create better and informed experiences for all digital savvy users.
 ---
 
-Make the best thing the easiest thing.
+### Simple Build.
 
-By offering open-source, quick-to-download code and assets, the Standards make it easy to deliver the highest-quality government websites to the public.
+This styleguide has been created ready for expansion and customisation, it provides a simple interface to browse patterns, and only requires Jekyll.
 
-Design for flexibility.
+### HTML First.
 
-Our patterns and designs are easy to adapt. The Standards encourage consistency over uniformity, which benefits your users and you: The American people feel a sense of familiarity with each site they visit, and you can customize your designs to your agency.
+The components created in this styleguide are build 'HTML first' - this process encourages developers to build progressively, enhancing core design experience across the most versatile front-end development language.
 
-Offer accessibility out of the box.
+### Design for Flexibility.
 
-Every asset we offer meets the high accessibility standards outlined in Section 508. Want to customize the Standards? Not a problem — we also make recommendations for tools you can use to assess your site’s accessibility.
+Using a living styleguide ensures patterns adapt correctly to meet user needs, offering variation, and yet, providing design consistency and familiarity. It also allows us to build components that work well in multiple digital channels. 
 
-Reuse, reuse, reuse.
+### Reuseable Best Practices
 
-No one likes reinventing the wheel. To create the Standards, we reviewed, tested, and repurposed patterns, code, and designs from dozens of government and private-sector style guides. The result? A comprehensive collection of tried-and-true assets that reflect industry best practices.
+This styleguide enables you to design, develop, test, review, and repurpose patterns, code, and design. That results in a comprehensive collection of tried-and-tested assets that reflect industry best practices.
