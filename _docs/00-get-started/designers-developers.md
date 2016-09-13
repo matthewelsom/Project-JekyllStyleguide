@@ -15,38 +15,41 @@ Download the Living Styleguide files from [Github](https://github.com/matthewels
 
 Living_Styleguide/
 
+├── .gitignore
 ├── _config.yml
 ├── index.md
+├── README.md
+├── LICENSE
 ├── src/
 │   └── assets/
-|   |   ├── _scss
-|   |   ├── branding
-|   |   ├── css
-|   |   └── fonts
+│   │   ├── _scss
+│   │   ├── branding
+│   │   ├── css
+│   │   └── fonts
 │   └── html/
-│   |   ├── 01-components/
-│   |   |   ├── ...
-│   |   └── 02-examples/
-│   |       └── ...
+│   │   ├── 01-components/
+│   │   │   ├── ...
+│   │   └── 02-examples/
+│   │       └── ...
 |   └── design_source/
 │       └── ...
 ├── styleguide/
-|   ├── _scss
-|   ├── branding
-|   ├── css
-|   └── fonts
+│   ├── _scss
+│   ├── branding
+│   ├── css
+│   └── fonts
 ├── _docs/
 │   ├── 00-branding/
-│   |   ├── color.md
-│   |   ├── logo.md
+│   │   ├── color.md
+│   │   ├── logo.md
 │   ├── 00-get-started/
-│   |   ├── ...
+│   │   ├── ...
 │   ├── 01-components/
-│   |   ├── ...
+│   │   ├── ...
 │   └── 02-examples/
 │       └── ...
 ├── _includes/
-    └── ...
+│   └── ...
 └── _layouts/
     ├── pattern.html
     └── ...
@@ -65,13 +68,19 @@ This tool is designed to generate a simple and lightweight styleguide for your d
 
 Patterns and Pages are always loaded in an iframe so Styleguide styles will not interfere with your added assets.
 
+___
+
 ## Design and Artwork
 
 Source artwork can be stored in the `src/design_source` folder in either Illustrator or Sketch format.
 
+___
+
 ## Development & Deployment
 
 As this styleguide is built with Jekyll, it can be served locally using `jekyll serve`, and it can be published via [Github Pages](https://pages.github.com/).
+
+___
 
 ## Where Things Live
 

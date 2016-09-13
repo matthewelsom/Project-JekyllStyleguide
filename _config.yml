@@ -28,7 +28,7 @@ keywords: KEYWORDS
 author: AUTHOR NAME
 description: DESCRIPTION
 language: en
-baseurl: /Living_Styleguide
+baseurl:
 destination: _site
 #sass:
 #  sass_dir: src/assets/_scss #[generate Product styles]

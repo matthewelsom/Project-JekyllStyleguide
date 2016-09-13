@@ -1,14 +1,12 @@
 ---
 title: Overview
 layout: index
-info: This Living Styleguide provides design and code standards to help you leverage the power of  Jekyll to build and maintain simple and consistant user interface design across digital tools.
+info: Organize design styles, create code standards, and maintain a consistant user interface design across your digital product with this boilerplate living styleguide. Made with the power of Jekyll.
 ---
 
 ![Styleguide]({{ site.baseurl }}/styleguide/images/cover.png)
 
-This Styleguide can be freely customized, extended, published, and shared with designers, developers or clients using [Jekyll](http://jekyll.rb).
-
-The principles of this guide are based on the [Draft US Design Standards](https://standards.usa.gov/).
+This Styleguide can be freely customized, extended, published, and shared with designers, developers or clients. It is built using [Jekyll](http://jekyll.rb), and the design principles are based on the [Draft US Design Standards](https://standards.usa.gov/).
 
 The [Getting Started]({{ site.baseurl }}/docs/00-get-started/design-principles.html) pages have all the information you need to start using this tool.
 
@@ -16,7 +14,7 @@ ___
 
 #### License 
 
-**This tool was published in the public domain by [Matthew Elsom](http://matthewelsom.com) ©2016. [License](https://github.com/matthewelsom/Living_Styleguide/blob/gh-pages/LICENSE)**
+**This tool was published in the public domain on 12 September 2016 by [Matthew Elsom](http://matthewelsom.com) © 2016 & Beyond. Last Update {{ site.time | date: "%b %-d, %Y"  }}. [License](https://github.com/matthewelsom/Living_Styleguide/blob/gh-pages/LICENSE)**
 
 A few parts of this project are not in the public domain:
 
