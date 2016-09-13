@@ -8,48 +8,44 @@ $mobile-screen: 480px;
 
 //Type Systems
 $roboto: "Roboto", sans-serif;
+$robotoslab: "Roboto Slab", serif;
 $fa: 'FontAwesome';
 
 //Base Fonts
 $base-font-size: 14px;
 $base-line-height: 1.5;
 
-//Modular Scale
-$modular-scale-ratio: $golden; //1.618
-$modular-scale-base: 1rem;
-
 //Heading Fonts
-$heading-line-height: 1;
-$h1-font-size: modular-scale(3); 
-$h2-font-size: modular-scale(2);
-$h3-font-size: modular-scale(1); 
-$h4-font-size: modular-scale(0); 
-$h5-font-size: modular-scale(-1);
-$h6-font-size: modular-scale(-1);
+$h1-font-size: 2.6rem; 
+$h2-font-size: 2rem;
+$h3-font-size: 1.5rem; 
+$h4-font-size: 1.1rem; 
+$h5-font-size: 1rem;
+$h6-font-size: 0.9rem;
 
-//Brand Colors
+//Primary Colors
 $white: #efefef;
 $black: #000000;
-$blue: dodgerblue;
 $light-grey: #cccccc;
+
+//Secondary Colors
+$blue: dodgerblue;
+$dark-blue: darken($blue, 12%);
+$darkest-blue: darken($blue, 20%);
+$red: tomato;
+$dark-red: darken($red, 12%);
+$darkest-red: darken($red, 20%);
 
 //Animations
 $base-duration: .2s;
 $base-timing: ease;
 
 //Base Colors
-$base-font-color: #242424;
-$heading-font-color: #313131;
-$subheading-font-color: lighten($base-font-color, 12%);
-$highlight-font-color: lighten($base-font-color, 36%);
-
-//Action-color
-$action-color: $blue;
-$action-color-hover: darken($action-color, 12%);
+$base-font-color: $black;
 
 //Spacing
-$large-pad: modular-scale(-1);
-$base-pad: modular-scale(0);
+$large-pad: 1.5rem;
+$base-pad: 1rem;
 $small-pad: $large-pad / 2; //0.75rem
 
 //Borders

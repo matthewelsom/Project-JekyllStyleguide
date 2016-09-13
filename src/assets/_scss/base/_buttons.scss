@@ -1,3 +1,21 @@
+a {
+  color: $blue;
+  text-decoration: underline;
+  cursor: pointer;
+  
+  &:hover,
+  &:focus {
+    color: $darkest-blue;
+  }
+}
+a.alt {
+  color: $red;
+  
+  &:hover,
+  &:focus {
+    color: $darkest-red;
+  }
+}
 .button {
   position: relative;
   display: inline-block;
@@ -7,7 +25,7 @@
   border: none;
   border-radius: $base-rad;
   cursor: pointer;
-  background-color: $action-color;
+  background-color: $blue;
   color: $white;
   text-shadow: 0 1px 0 transparentize($black, .8);
   line-height: 1;
@@ -15,8 +33,20 @@
   text-decoration: none;
   @include transition(all, $base-timing, $base-duration);
 
-  &:hover {
-    background: $action-color-hover;
+  &:hover,
+  &:focus {
+    background: $darkest-blue;
+    color: $white;
+  }
+}
+.button.alt {
+  background: $red;
+  color: $white;
+  
+  &:hover,
+  &:focus {
+    background: $darkest-red;
+    color: $white;
   }
 }
 .button-icon {
@@ -47,11 +77,6 @@
       border-top-right-radius: $base-rad;
       border-bottom-right-radius: $base-rad;
     }
-  }
-}
-.button-stack {
-  .button {
-    margin-bottom: $small-pad;
   }
 }
 .button_animated {

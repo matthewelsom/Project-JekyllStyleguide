@@ -1,0 +1,20 @@
+blockquote {
+  margin-bottom: $base-pad;
+  margin-left: $base-pad;
+  padding: $base-pad;
+  border-left: 2px solid transparentize($black, .8);
+  background: #f1f1f1;
+  color: $black;
+  font-size: $h4-font-size;
+  line-height: 1.4;
+  font-weight: 100;
+  
+  &.blue {
+    background: $blue;
+    color: white;
+  }
+  &.red {
+    background: $red;
+    color: white;
+  }
+}

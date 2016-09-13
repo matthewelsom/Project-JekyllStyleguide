@@ -5,3 +5,7 @@
 @include font-face("Roboto", "../fonts/roboto/Roboto-Italic", normal, italic, $file-formats: ttf);
 @include font-face("Roboto", "../fonts/roboto/Roboto-Bold", bold, $file-formats: ttf);
 @include font-face("Roboto", "../fonts/roboto/Roboto-BoldItalic", bold, italic, $file-formats: ttf);
+@include font-face("Roboto Slab", "../fonts/roboto-slab/RobotoSlab-Thin", 100, $file-formats: ttf);
+@include font-face("Roboto Slab", "../fonts/roboto-slab/RobotoSlab-Light", 300, $file-formats: ttf);
+@include font-face("Roboto Slab", "../fonts/roboto-slab/RobotoSlab-Regular", normal, normal, $file-formats: ttf);
+@include font-face("Roboto Slab", "../fonts/roboto-slab/RobotoSlab-Bold", bold, $file-formats: ttf);

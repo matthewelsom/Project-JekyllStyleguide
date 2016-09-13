@@ -88,7 +88,7 @@ ___
 
 ### Design Files
 
-- **src/html/** is used to store your HTML components and example pages.
+- **src/html/** is used to store your HTML components and example pages. Each `pattern.html` file must start with Front Matter, this applies the `_layouts/pattern.html` template to the file, and rederes it correctly.
 - **src/assets/** is used to store any JS, SCSS, CSS, Fonts, etc... that are needed to correctly render your patterns.
 - **_docs/** is used to store all pattern documentation is it is important to make sure that every pattern added to the `src/html/` folder has a corresponding file with the same name inside this documentation file.
 - **_layouts/pattern.html** is used to generated each pattern and page, ensure your assets are included in the usual HTML way.

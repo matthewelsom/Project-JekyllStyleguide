@@ -8,37 +8,69 @@ h1,h2,h3,h4,h5,h6,
 ul,ol,dd,
 p,figure,
 table,fieldset,hr {
-  margin:0;
-  margin-bottom:1rem;
+  margin-bottom: $base-pad;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: $heading-line-height;
-  color: $heading-font-color;
-  margin-bottom: $small-pad;
+  line-height: $base-line-height;
+  color: $base-font-color;
+  font-family: $robotoslab;
 }
 
 h1 {
   font-size: $h1-font-size;
+  margin-top: 0;
+  margin-bottom: $small-pad;
+  font-weight: normal;
 }
 
 h2 {
   font-size: $h2-font-size;
+  margin-top: 0;
+  margin-bottom: $small-pad;
+  font-weight: normal;
 }
 
 h3 {
   font-size: $h3-font-size;
+  margin-top: 0;
+  margin-bottom: $small-pad;
+  font-weight: normal;
 }
 
 h4 {
+  display: inline-block;
   font-size: $h4-font-size;
+  margin-top: 0;
+  margin-bottom: $base-pad;
+  padding-bottom: 2px;
+  border-bottom: 2px solid;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 h5 {
   font-size: $h5-font-size;
+  font-family: $roboto;
+  margin-top: $base-pad;
+  margin-bottom: $base-pad;
 }
 
 h6 {
   font-size: $h6-font-size;
-  font-weight: normal;
+  font-family: $roboto;
+  margin-top: $base-pad;
+  margin-bottom: $base-pad;
+}
+ul, ol {
+  margin-top: 0;
+  margin-bottom: $base-pad;
+  padding-left: 2rem;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+hr {
+  border-bottom: 0;
+  border-top: $base-border;
 }
