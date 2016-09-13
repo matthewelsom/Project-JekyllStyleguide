@@ -80,6 +80,8 @@ ___
 
 As this styleguide is built with Jekyll, it can be served locally using `jekyll serve`, and it can be published via [Github Pages](https://pages.github.com/).
 
+**Note:** CNAME Files can be removed.
+
 ___
 
 ## Where Things Live

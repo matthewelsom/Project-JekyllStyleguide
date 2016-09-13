@@ -28,7 +28,34 @@ $toc-width: 320px;
     left: 0;
   }
   a.sg-maximize-btn.fixed {
-    display: inline-block;
+    @include display(flex);
+  }
+}
+a.sg-maximize-btn {
+  @include display(flex);
+  @include align-items(center);
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: $action-color;
+  padding: $base-padding/3 $base-padding;
+  font-weight: normal;
+  font-size: $base-font-size;
+  text-decoration: none;
+  @include transition(all $base-duration $base-timing);
+  
+  .icon {
+    font-size: $h3-font-size;
+  }
+  span {
+    display: none;
+    text-transform: uppercase;
+    margin: 0 $small-spacing/2;
+  }
+  &:hover,
+  &:focus {
+    background: $action-color;
+    color: $white;
   }
 }
 a.sg-maximize-btn.fixed {
@@ -38,37 +65,8 @@ a.sg-maximize-btn.fixed {
   left: 0;
   right: auto;
   z-index: 9;
+  color: $action-color;
   background: transparentize($white, 0.5);
-}
-a.sg-maximize-btn {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: $action-color;
-  padding: $base-padding/3 $base-padding;
-  font-weight: normal;
-  font-size: $base-font-size;
-  @include transition(all $base-duration $base-timing);
-  
-  .icon {
-    font-size: $h3-font-size;
-  }
-  span {
-    position: absolute;
-    width: 0;
-    opacity: 0;
-    visibility: hidden;
-    text-transform: uppercase;
-    line-height: 1.3rem;
-    float: right;
-    margin: 0 $small-spacing/2;
-  }
-  &:hover,
-  &:focus {
-    background: $action-color;
-    color: $white;
-  }
 }
 a.sg-maximize-btn:hover span,
 a.sg-maximize-btn:focus span {

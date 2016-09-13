@@ -1,7 +1,7 @@
 ---
 title: Overview
 layout: index
-info: Organize design styles, create code standards, and maintain a consistant user interface design across your digital product with this boilerplate living styleguide. Made with the power of Jekyll.
+info: Organise design styles, create code standards, and maintain a consistent user interface design across your digital product with this boilerplate living styleguide. Made with the power of Jekyll.
 ---
 
 ![Styleguide]({{ site.baseurl }}/styleguide/images/cover.png)

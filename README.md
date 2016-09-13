@@ -1,52 +1,27 @@
-# Simple Jekyll based styleguide
+# Living Styleguide
 
-This is a simple styleguide generator in Jekyll. It is not particularily original but I tried to make it as flexible as possible to correspond to various use cases.
 
-- simple list-based styleguides ([Code for America styleguide](http://codeforamerica.clearleft.com/) by [Clearleft](http://clearleft.com/))
-- more complex styleguides using posts or pages ([Lonely Planet "Rizzo" styleguide](http://rizzo.lonelyplanet.com/styleguide/design-elements/colours) by [Lonely Planet](http://www.lonelyplanet.com/))
 
-I used a custom collection (with output set to false) rather than posts or pages so I can use those to create more complex styleguides if needed.
+![Styleguide]({{ site.baseurl }}/styleguide/images/cover.png)
 
-## Demo
+This Styleguide can be freely customized, extended, published, and shared with designers, developers or clients. It is built using [Jekyll](http://jekyll.rb), and the design principles are based on the [Draft US Design Standards](https://standards.usa.gov/).
 
-Here is what the [default output looks like](http://www.webstoemp.com/jekyllstyleguide).
+The [Getting Started]({{ site.baseurl }}/docs/00-get-started/design-principles.html) pages have all the information you need to start using this tool.
 
-## How it works
+___
 
-Define components in the `_components` folder. Each component is output twice (code and preview) using a single include file `_includes/component.html`.
+#### License 
 
-- The `type` variable in components is used to be able to group them (using the `group_by` parameter) or only display a certain type of components (using the `where` parameter) in more complex style guides.
-- The `sass` variable is used to reference the sass file for all the CSS rules applied to each component.
-- Easy to expand the list of component variables: maybe you need notes or js files. Just update your components YAML front matter and your component include and you're good to go.
+**This tool was published in the public domain on 12 September 2016 by [Matthew Elsom](http://matthewelsom.com) © 2016 & Beyond. Last Update {{ site.time | date: "%b %-d, %Y"  }}. [License](https://github.com/matthewelsom/Living_Styleguide/blob/gh-pages/LICENSE)**
 
-Display components in your templates using simple `{% for %}` loops.
+A few parts of this project are not in the public domain:
 
-Simple `{% for %}` loop to display all components (ordered using file names)
+- The files in `styleguide/fonts`, and `_scss/ionicons` are extracted from [Ionicons](http://ionicons.com/), copyright Ben Sperry.
+- The files in `_scss/vendor/bourbon` are extracted from [Bourbon](http://bourbon.io/), copyright [thoughtbot](https://thoughtbot.com/), inc.
+- The files in `_scss/vendor/fontawesome`, and `src/assets/fonts` are from [Font Awesome](http://fontawesome.io/), copyright Dave Gandy.
+- The files in `_scss/normalize` are from [Normalize.css](https://github.com/necolas/normalize.css), copyright Nicolas Gallagher and Jonathan Neal.
+- The file `js/jquery/jquery-2.1.4.min.js` is from [jQuery](https://jquery.com/), copyright The jQuery Foundation.
+- The files in `fonts/open-sans` are extracted from [Google Fonts](https://fonts.google.com/specimen/Open+Sans), copyright Steve Matteson.
+- The files in `fonts/roboto` are extracted from [Google Fonts](https://fonts.google.com/specimen/Roboto), copyright Christian Robertson.
 
-```liquid
-{% assign entries = site.components %}
-{% for entry in entries %}
-  {% include component.html %}
-{% endfor %}
-```
-
-`{% for %}` loop using `group_by` to display components grouped by type
-
-```liquid
-{% assign componentsByType = site.components | group_by:"type" %}
-{% for type in componentsByType %}
-  <h3 class="sg-h2">{{ type.name | capitalize }}</h3>
-  {% for entry in type.items %}
-    {% include component.html %}
-  {% endfor %}
-{% endfor %}
-```
-
-When creating a more detailed style guides using pages, it is useful to be able to display only a certain type of components in your pages using a `where` parameter in your `{% for %}` loop
-
-```liquid
-{% assign entries = site.components | where:"type","buttons" %}
-{% for entry in entries %}
-  {% include component.html %}
-{% endfor %}
-```
+**Please check with rights holders for license details.**

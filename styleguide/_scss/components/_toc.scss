@@ -21,7 +21,8 @@
   a {
     text-transform: capitalize;
     display: block;
-    color: $white;
+    
+    color: transparentize($white, 0.5);
     font-size: $h6-font-size;
     font-weight: bold;
     text-decoration:none;
@@ -31,10 +32,7 @@
     
     &:hover,
     &.active {
-      color: transparentize($white, 0.5);
-    }
-    &:hover {
-      margin-left: $small-spacing;
+      color: $white;
     }
   }
   
@@ -42,6 +40,7 @@
     @include display(flex);
     @include align-items(center);
     padding: $base-spacing $base-padding; 
+    color: $white;
     
     .toc-head_icon {
       @include size(48px);
@@ -77,6 +76,16 @@
         padding: $small-spacing/2 $base-padding;
         font-weight: normal;
         font-size: $base-font-size;
+        
+        &:before {
+          @extend .icon;
+          content: '\f3a6';
+          display: inline-block;
+          margin-right: $small-spacing;
+        }
+        &.active:before {
+          content: '\f3a7';
+        }
       }
     }
   }
