@@ -4,7 +4,7 @@
 
 This styleguide can be freely customized, extended, published, and shared with designers, developers or clients. It is built using [Jekyll](http://jekyll.rb), and the design principles are based on the [Draft US Design Standards](https://standards.usa.gov/).
 
-The [Getting Started]({{ site.baseurl }}/docs/00-get-started/design-principles.html) pages have all the information you need to start using this tool.
+The [Getting Started](http://livingstyleguide.cc/docs/00-get-started/design-principles.html) pages have all the information you need to start using this tool.
 
 ___
 
