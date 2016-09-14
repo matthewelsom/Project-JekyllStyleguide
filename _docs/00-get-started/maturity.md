@@ -55,4 +55,4 @@ ___
 <span class="sg-label depreciated">Depreciated</span>
 
 Pattern has been removed from the pattern library and design stencils.
-Pattern has been marked deprecated in release notes.
+Pattern has been marked depreciated in release notes.
