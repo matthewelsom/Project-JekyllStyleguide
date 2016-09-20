@@ -1,4 +1,5 @@
 .sg-pattern {
+  position: relative;
   padding: $base-padding;
   border: $base-border;
   margin: $base-padding;
@@ -7,4 +8,15 @@
   position: relative;
   width: 100%;
   background: $white;
+}
+#sg-viewport-size {
+  @include position(absolute, -.75rem null null 50%);
+  @include transform(translateX(-50%));
+  padding: $small-spacing/2 $small-spacing;
+  background: $light-background;
+  border: $base-border;
+  border-radius: $base-border-radius;
+  z-index: 1;
+  text-align: center;
+  font-size: $small-font-size;
 }
