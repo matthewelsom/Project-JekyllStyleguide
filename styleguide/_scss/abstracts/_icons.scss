@@ -1,0 +1,48 @@
+// Font Face
+@font-face {
+  font-family: $icon;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MaterialIcons/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       url(../fonts/MaterialIcons/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../fonts/MaterialIcons/MaterialIcons-Regular.woff) format('woff'),
+       url(../fonts/MaterialIcons/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+// Icons
+i.icon {
+  height: auto;
+  width: auto;
+  font-family: $icon;
+  margin-right: .5rem;
+  vertical-align: middle;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: inherit;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+// Sizes
+i.icon {
+  &.i12:before { font-size: 12px !important; }
+  &.i14:before { font-size: 14px !important; }
+  &.i18:before { font-size: 18px !important; }
+  &.i24:before { font-size: 24px !important; }
+  &.i36:before { font-size: 36px !important; }
+  &.i48:before { font-size: 48px !important; }
+}
+
+i.icon:before {
+   content: attr(data-icon);
+}

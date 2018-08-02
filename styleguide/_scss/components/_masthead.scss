@@ -1,8 +1,7 @@
 .sg-masthead {
   padding: $base-spacing $base-padding;
-  background: $action-color;
-  color: $white;
-  border-bottom: 1px solid $action-hover-color;
+  background: $smoke;
+  color: $heading-font-color;
   
   .sg-masthead_title {
     @include display(flex);
@@ -16,6 +15,7 @@
     }
     .sg-label {
       margin-left: $base-padding;
+      align-self: baseline;
     }
   }
   h3 {
@@ -25,8 +25,8 @@
   .sg-masthead_style {  
     margin-bottom: 0;
     code {
-      background: transparent;
-      color: $white;
+      background: transparentize($code-color, .9);
+      color: $heading-font-color;
     }
   }
 }

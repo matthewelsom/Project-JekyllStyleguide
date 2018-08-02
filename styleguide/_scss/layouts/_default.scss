@@ -1,14 +1,28 @@
+// Base Styles
 html#sg,
 body#sg {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+  min-height: 100%;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
   background: lighten($black, 4%);
 }
+
 body#sg {
-  font-family: $sans-serif;
-  font-size: $base-font-size;
+  position: relative;
+  color: $base-font-color;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1,"liga" 1,"frac" 1,"pnum" 1;
+  -moz-font-feature-settings: "kern" 1,"liga" 1,"frac" 1,"pnum" 1;
+  -ms-font-feature-settings: "kern" 1,"liga" 1,"frac" 1,"pnum" 1;
+  font-feature-settings: "kern" 1,"liga" 1,"frac" 1,"pnum" 1;
+  -webkit-font-smoothing: antialiased;
 }
 .sg-pusher {
   position: relative;
@@ -34,28 +48,32 @@ $toc-width: 320px;
 a.sg-maximize-btn {
   @include display(flex);
   @include align-items(center);
+  min-height: 40px;
+  line-height: 1;
   position: absolute;
   right: 0;
   top: 0;
-  background: $action-color;
+  background: $smoke;
+  color: $heading-font-color;
   padding: $base-padding/3 $base-padding;
-  font-weight: normal;
+  font-weight: 600;
   font-size: $base-font-size;
   text-decoration: none;
   @include transition(all $base-duration $base-timing);
   
   .icon {
-    font-size: $h3-font-size;
+    margin-right: 0;
+    line-height: 1;
   }
   span {
     display: none;
+    line-height: 1;
     text-transform: uppercase;
     margin: 0 $small-spacing/2;
   }
   &:hover,
   &:focus {
-    background: $action-color;
-    color: $white;
+    color: $action-color;
   }
 }
 a.sg-maximize-btn.fixed {
@@ -65,8 +83,8 @@ a.sg-maximize-btn.fixed {
   left: 0;
   right: auto;
   z-index: 9;
-  color: $action-color;
-  background: transparentize($white, 0.5);
+  color: $white;
+  background: transparentize($action-color, .3);
 }
 a.sg-maximize-btn:hover span,
 a.sg-maximize-btn:focus span {

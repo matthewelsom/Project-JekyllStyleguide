@@ -3,8 +3,8 @@ layout: default
 ---
 <section id="mastheadArea" class="sg-masthead">
   {% if page.title %}<div class="sg-masthead_title"><h1>{{ page.title }}</h1>{% if page.maturity %}<p class="sg-label {{ page.maturity }}">{{ page.maturity }}</p>{% endif %}{% endif %}</div>
-  {% if page.info %}<h3>{{ page.info }}</h3>{% endif %}
-  {% if page.scss %}<p class="sg-masthead_style">Style Location: <code>{{ page.scss }}</code></p>{% endif %}
+  {% if page.info %}<div class="header typo_crow">{{ page.info }}</div>{% endif %}
+  {% if page.scss %}<p class="sg-masthead_style">Style Location: <code class="highlighter-rouge">{{ page.scss }}</code></p>{% endif %}
 </section>
 
 <div id="patternArea" class="sg-pattern">  
@@ -14,7 +14,6 @@ layout: default
 </div>
 
 <section id="codeArea" class="sg-code">
-<h2>Code</h2>
 {% for pattern in site.pages %}
 {% if pattern.url contains pattern_url %}
 {% highlight html %}

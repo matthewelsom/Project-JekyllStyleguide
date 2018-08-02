@@ -1,22 +1,5 @@
 .sg-code {
+  max-width: 40rem;
   padding: $base-padding;
   overflow: hidden;
-  
-  h2:first-of-type {
-    margin-top: 0;
-  }
-  
-  .highlight {
-    padding: $base-padding;
-    display: block;
-    background: $light-background;
-    border: $base-border;
-    border-style: dashed;
-    margin-bottom: 0;
-  }
-  
-  pre {
-    white-space: pre-wrap;
-    margin: 0;
-  }
 }

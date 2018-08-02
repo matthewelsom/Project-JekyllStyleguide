@@ -17,14 +17,14 @@
   li {
     border-top: $base-border;
     border-color: transparentize($white, 0.8);
+    line-height: $heading-line-height;
   }
   a {
     text-transform: capitalize;
     display: block;
-    
     color: transparentize($white, 0.5);
-    font-size: $h6-font-size;
-    font-weight: bold;
+    font-size: $typo_sparrow;
+    font-weight: 700;
     text-decoration:none;
     padding: $small-spacing/3 0;
     padding: $base-padding;
@@ -43,10 +43,11 @@
     color: $white;
     
     .toc-head_icon {
-      @include size(48px);
+      height: 48px;
+      width: 48px;
       @include flex(0 0 auto);
       margin-right: $base-padding;
-      border-radius: $base-border-radius;
+//      border-radius: 8px;
       overflow: hidden;
       
       img {
@@ -54,7 +55,7 @@
       }
     }
     .toc-head_title {
-      font-size: $h3-font-size;
+      font-size: $typo_crow;
       margin-bottom: 0;
     }
   }
@@ -64,7 +65,8 @@
     padding-bottom: $base-padding;
   
     .toc-group_title {
-      font-weight: bold;
+      font-size: $typo_hummingbird;
+      font-weight: 700;
       padding: $base-padding;
       padding-bottom: $small-spacing;
       margin-bottom: 0;
@@ -74,17 +76,19 @@
       border-top: none;
       a {
         padding: $small-spacing/2 $base-padding;
-        font-weight: normal;
+        font-weight: 600;
         font-size: $base-font-size;
         
         &:before {
           @extend .icon;
-          content: '\f3a6';
+          content: 'remove';
           display: inline-block;
+          line-height: 1;
+          vertical-align: text-top;
           margin-right: $small-spacing;
         }
         &.active:before {
-          content: '\f3a7';
+          content: 'arrow_forward';
         }
       }
     }

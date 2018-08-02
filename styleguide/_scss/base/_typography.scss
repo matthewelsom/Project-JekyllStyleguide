@@ -1,6 +1,17 @@
-body {
-  font-size: $base-font-size;
+.header {
+  line-height: $heading-line-height;
+  margin-bottom: $small-spacing;
+  font-weight: 600;
 }
+
+//Heading Fonts
+.typo_ostrich {font-size: $typo_ostrich;}
+.typo_albatros {font-size: $typo_albatros;}
+.typo_eagle {font-size: $typo_eagle;}
+.typo_hawk {font-size: $typo_hawk;}
+.typo_crow {font-size: $typo_crow;}
+.typo_sparrow {font-size: $typo_sparrow;}
+.typo_hummingbird {font-size: $typo_hummingbird;}
 
 h1,h2,h3,h4,h5,h6,
 ul,ol,dd,
@@ -13,45 +24,42 @@ table,fieldset,hr
 }
 
 h1, h2, h3, h4, h5, h6 {
+  line-height: $heading-line-height;
+  margin-bottom: $small-spacing;
+
+//  &:first-of-type { 
+    margin-top: $base-spacing;
+//  }
 }
 
 h1 {
-  margin-bottom: $small-spacing;
-  font-size: $h1-font-size;
+  font-size: $typo_albatros;
 }
 
 h2 {
-  margin-bottom: $small-spacing;
-  font-size: $h2-font-size;
+  font-size: $typo_eagle;
 }
 
 h3 {
-  margin-bottom: $small-spacing;
-  font-size: $h3-font-size;
+  font-size: $typo_hawk;
 }
 
 h4 {
-  margin-bottom: $small-spacing;
-  font-size: $h4-font-size;
+  font-size: $typo_crow;
 }
 
 h5 {
-  margin-bottom: $small-spacing;
-  font-size: $h5-font-size;
+  font-size: $typo_sparrow;
 }
 
 h6 {
-  margin-bottom: $small-spacing;
-  font-size: $h6-font-size;
-  font-weight: normal;
+  font-size: $typo_hummingbird;
 }
 section {
   h2, h3, h4, h5, h6 {
-    margin: 1em 0;
-    max-width: 40rem;
+//    margin: 1em 0;
   }
   ul,ol,dd,p,figure,table,fieldset,hr {
-    max-width: 40rem;
-    margin-bottom: 1em;
+//    margin-bottom: 1em;
   }
 }

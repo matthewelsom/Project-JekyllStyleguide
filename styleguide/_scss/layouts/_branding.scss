@@ -1,5 +1,5 @@
 .sg-branding {
-  padding: $base-spacing $small-spacing; 
+//  padding: $base-spacing $small-spacing; 
   
   .color-set {
     @include display(flex);
@@ -9,24 +9,26 @@
     list-style: none;
     
     li {
-      margin-right: $small-spacing;
+      margin-right: $base-padding;
     }
     
     div {
-      @include size(140px);
+      width: 140px;
+      height: 80px;
       color: $white;
       cursor: pointer;
       border: $base-border;
+      margin-bottom: $base-padding;
     }
     p {
-      margin-bottom: 0;
-      font-size: $small-font-size;
+      margin-bottom: 0;;
     }
   }
   
   .icon-set {
     @include display(flex);
-    @include flex-wrap(wrap);
+    @include flex-wrap(no-wrap);
+    @include flex-direction(column);
     list-style: none;
     margin: 0;
     padding: 0;

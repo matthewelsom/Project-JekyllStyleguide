@@ -1,8 +1,9 @@
 .sg-doc {
+  max-width: 40rem;
   position: relative;
   padding: $base-padding;
 
-  h2:first-of-type {
+  > *:first-child {
     margin-top: 0;
   }
 }

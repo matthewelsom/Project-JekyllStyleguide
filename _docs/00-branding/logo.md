@@ -9,7 +9,7 @@ info: Logos used in this product.
       {% if image.path contains 'src/assets/branding' %}
       <li>
         <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-        <p><code>{{ image.path }}</code></p>
+        <p><code class="highlighter-rouge">{{ image.path }}</code></p>
       </li>
       {% endif %}
     {% endfor %}

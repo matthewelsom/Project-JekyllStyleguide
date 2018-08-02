@@ -1,15 +1,15 @@
 <aside class="sg-toc">
-  <a href="javascript(0);" class="sg-maximize-btn"><i class="icon ion-ios-arrow-back"></i> <span>Hide</span></a>  
+  <a href="javascript(0);" class="sg-maximize-btn"><i class="icon" data-icon="chevron_left"></i> <span>Hide</span></a>  
   <a href="{{ site.baseurl }}/index.html" class="toc-head">
     <div class="toc-head_icon"><img src="{{ site.baseurl }}/styleguide/branding/png/styleguide-64x64.png"></div>
-    <h1 class="toc-head_title">{{ site.sg_title }}</h1>
+    <div class="toc-head_title">{{ site.sg_title }}</div>
   </a>
   <ul>
     <li><a href="{{ site.baseurl }}/index.html"{% if page.url == '/' %} class="active"{% endif %}>Overview</a></li>
   </ul>
   {% assign get-started = site.docs | where: 'type', 'help' | sort: 'name' %}
   <div class="toc-group">
-    <h6 class="toc-group_title">Get Started</h6>
+    <div class="toc-group_title">Get Started</div>
     <ul>
     {% for doc in get-started %}
     <li>
@@ -20,7 +20,7 @@
   </div>
   {% assign branding = site.docs | where: 'type', 'branding' | sort: 'name' %}
   <div class="toc-group">
-    <h6 class="toc-group_title">Branding</h6>
+    <div class="toc-group_title">Branding</div>
     <ul>
     {% for doc in branding %}
     <li>
@@ -31,7 +31,7 @@
   </div>
   {% assign patterns = site.docs | where: 'layout', 'doc' | sort: 'name' %}
   <div class="toc-group">
-    <h6 class="toc-group_title">UI Components</h6>
+    <div class="toc-group_title">UI Components</div>
     <ul>
       {% for pattern in patterns %}
       <li> 
@@ -42,7 +42,7 @@
   </div>
   {% assign examples = site.docs | where: 'layout', 'example' | sort: 'name' %}
   <div class="toc-group">
-    <h6 class="toc-group_title">Example Pages</h6>
+    <div class="toc-group_title">Example Pages</div>
     <ul>
       {% for example in examples %}
       <li> 

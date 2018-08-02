@@ -1,5 +1,27 @@
 ///// Font Imports /////
-@include font-face("Open Sans", "../fonts/open-sans/OpenSans-Light", 300, $file-formats: ttf);
-@include font-face("Open Sans", "../fonts/open-sans/OpenSans-Regular", normal, $file-formats: ttf);
-@include font-face("Open Sans", "../fonts/open-sans/OpenSans-Semibold", 600, $file-formats: ttf);
-@include font-face("Open Sans", "../fonts/open-sans/OpenSans-Bold", bold, $file-formats: ttf);
+@font-face {
+  font-family: 'HKGrotesk';
+  src: url('../fonts/HKGrotesk/Bold/HKGrotesk-Bold.woff2') format('woff2'), 
+       url('../fonts/HKGrotesk/Bold/HKGrotesk-Bold.woff') format('woff'),
+       url('../fonts/HKGrotesk/Bold/HKGrotesk-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HKGrotesk';
+  src: url('../fonts/HKGrotesk/Regular/HKGrotesk-Regular.woff2') format('woff2'), 
+       url('../fonts/HKGrotesk/Regular/HKGrotesk-Regular.woff') format('woff'),
+       url('../fonts/HKGrotesk/Regular/HKGrotesk-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HKGrotesk';
+  src: url('../fonts/HKGrotesk/Semibold/HKGrotesk-Semibold.woff2') format('woff2'), 
+       url('../fonts/HKGrotesk/Semibold/HKGrotesk-Semibold.woff') format('woff'),
+       url('../fonts/HKGrotesk/Semibold/HKGrotesk-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}

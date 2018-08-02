@@ -28,7 +28,7 @@ colors:
     {% for item in group.items %}
       <li>
         <div style="background:#{{ item.hex }}"></div> 
-        <p><code>{{ item.name }}</code></p>
+        <p><code class="highlighter-rouge">{{ item.name }}</code></p>
         {% if item.hex %}<p>#{{ item.hex }}</p>{% endif %}
         {% if item.pretty %}<p>{{ item.pretty }}</p>{% endif %}
         {% if item.rgb %}<p>{{ item.rgb }}</p>{% endif %}

@@ -9,34 +9,33 @@ $mobile-screen: 480px;
 //Neat needs to be included
 
 //Type Systems
-$sans-serif: 'Open Sans', sans-serif;
-$icon: 'Ionicons';
-$code: monospace;
+$sans-serif: 'HKGrotesk', sans-serif;
+$base-font-family: 'HKGrotesk', sans-serif;
+$icon: 'Material Icons';
+$code: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
 
-//Base Fonts
-$base-font-size: 13px;
-$base-line-height: 1.5;
+//Font Sizing
+$base-font-size: 16px;
+$base-line-height: 1.6;
+$heading-line-height: 1.25;
 
-//Modular Scale
-$modular-scale-ratio: $major-third; 
-$modular-scale-base: 1rem;
-
-//Heading Fonts
-$heading-line-height: $modular-scale-ratio;
-$h1-font-size: modular-scale(3); 
-$h2-font-size: modular-scale(2);
-$h3-font-size: modular-scale(1); 
-$h4-font-size: modular-scale(0); 
-$h5-font-size: modular-scale(1); //1rem
-$h6-font-size: modular-scale(0);
+//Font Sizes
+$typo_ostrich: 3rem;
+$typo_albatros: 2.2rem;
+$typo_eagle: 1.8rem;
+$typo_hawk: 1.5rem;
+$typo_crow: 1.25rem;
+$typo_sparrow: 1rem;
+$typo_hummingbird: .875rem;
 
 //Special Fonts
-$micro-font-size: 80%;
-$small-font-size: 90%;
-$lead-font-size: 116%;
+$micro-font-size: 70%;
+$small-font-size: 80%;
+//$lead-font-size: 116%;
 
 //Brand Colors
 $white: #fff;
+$smoke: whitesmoke;
 $black: #000;
 $red: tomato;
 $blue: dodgerblue;
@@ -58,6 +57,11 @@ $base-timing: ease;
 $base-font-color: #515151;
 $heading-font-color: #313131;
 $subheading-font-color: lighten($base-font-color, 12%);
+$code-font-color: $subheading-font-color;
+
+//Code Color
+$code-color: #0a0a0a;
+$code-font-color: #ffffff;
 
 //Action-color
 $action-color: $blue;
@@ -77,6 +81,6 @@ $small-spacing: $base-spacing / 3; //0.5rem
 $base-padding: 1rem;
 
 //Borders
-$base-border-radius: 4px;
+$base-border-radius: 16px;
 $base-border-color: #e5e5e5;
 $base-border: 1px solid $base-border-color;
