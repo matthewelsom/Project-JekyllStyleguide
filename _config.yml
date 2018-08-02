@@ -52,6 +52,7 @@ defaults:
     values:
       layout: doc
       type: doc
+      resize: true #[adds the ifrmae resizing script to all docs]
       maturity: "Proposed"
       scss: "Not Assigned"
   - 
@@ -60,12 +61,14 @@ defaults:
     values:
       layout: index
       type: "branding"
+      resize: false #[removes the ifrmae resizing script]
   - 
     scope:
       path: "_docs/00-get-started"
     values:
       layout: index
       type: "help"
+      resize: false #[removes the ifrmae resizing script]
   - 
     scope:
       path: "_docs/02-examples"
