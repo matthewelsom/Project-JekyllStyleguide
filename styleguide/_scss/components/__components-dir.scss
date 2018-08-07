@@ -4,8 +4,9 @@ Files inside this folder should contain all styles relating
 to a reusable component.
 */
 //Import Component files
-@import 'pattern';
-@import 'toc';
 @import 'masthead';
+@import 'toc';
+@import 'pattern';
 @import 'code';
+@import 'viewport';
 @import 'documentation';

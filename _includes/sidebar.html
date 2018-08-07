@@ -1,5 +1,5 @@
-<aside class="sg-toc">
-  <a href="javascript(0);" class="sg-maximize-btn"><i class="icon" data-icon="chevron_left"></i> <span>Hide</span></a>  
+<div class="sg-toc">
+<!--  <a href="javascript(0);" class="sg-maximize-btn"><i class="icon" data-icon="chevron_left"></i> <span>Hide</span></a>  -->
   <a href="{{ site.baseurl }}/index.html" class="toc-head">
     <div class="toc-head_icon"><img src="{{ site.baseurl }}/styleguide/branding/png/styleguide-64x64.png"></div>
     <div class="toc-head_title">{{ site.sg_title }}</div>
@@ -29,9 +29,9 @@
     {% endfor %}
   </ul>
   </div>
-  {% assign patterns = site.docs | where: 'layout', 'doc' | sort: 'name' %}
+  {% assign patterns = site.docs | where: 'type', 'doc' | sort: 'name' %}
   <div class="toc-group">
-    <div class="toc-group_title">UI Components</div>
+    <div class="toc-group_title">Components</div>
     <ul>
       {% for pattern in patterns %}
       <li> 
@@ -40,7 +40,7 @@
       {% endfor %}
     </ul>
   </div>
-  {% assign examples = site.docs | where: 'layout', 'example' | sort: 'name' %}
+  {% assign examples = site.docs | where: 'type', 'example' | sort: 'name' %}
   <div class="toc-group">
     <div class="toc-group_title">Example Pages</div>
     <ul>
@@ -51,4 +51,4 @@
       {% endfor %}
     </ul>
   </div>
-</aside>
+</div>

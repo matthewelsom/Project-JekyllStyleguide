@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html {% if site.language %} lang="{{ site.language }}"{% endif %}>
+ <html {% if site.language %}lang="{{ site.language }}"{% endif %}>
   <head>
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
@@ -10,5 +10,7 @@
   </head>
   <body id="content">
     {{ content }}
+    <!--   iFrame Script required for Styleguide only -->
+    <script src="{{ site.baseurl }}/styleguide/js/libs/iframeResizer.contentWindow.min.js" defer></script>
   </body>
 </html>

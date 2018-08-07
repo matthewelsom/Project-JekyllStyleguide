@@ -1,6 +1,7 @@
 ---
 title: Color
 info: Colors used in this product.
+styles: exclude
 colors: 
   - name: base colors
     items:

@@ -1,22 +1,98 @@
-.sg-pattern {
-  position: relative;
-  padding: $base-padding;
-  border: $base-border;
-  margin: $base-padding;
+// Pattern Helper Controls
+.sg_pattern_control {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: $margin_huge;
+  transition: all $base-duration $base-timing;
+  
+  @media only screen and (max-width: $large_screen) {
+    margin-bottom: $m_margin_huge;
+  }
+  
+  &:before {
+    content: attr(data-styles);
+    font-size: $typo_hummingbird;
+    font-weight: 700;
+    margin: 0 $margin_small 0 0;
+    align-self: center;
+    margin-right: auto;
+    color: $smoke;
+    transition: all $base-duration $base-timing;
+  }
+  .button {
+    padding: 0 $margin_small;
+    color: $smoke;
+    transition: all $base-duration $base-timing;
+    
+    &:hover {
+      color: $blue !important;
+    }
+    
+    .icon {
+      margin-right: 0;
+    }
+  }
 }
-#sg-viewport {
+
+
+// Pattern display
+.sg_pattern {
   position: relative;
-  width: 100%;
-  background: $white;
-}
-#sg-viewport-size {
-  @include position(absolute, -.75rem null null 50%);
-  @include transform(translateX(-50%));
-  padding: $small-spacing/2 $small-spacing;
-  background: $light-background;
-  border: $base-border;
-  border-radius: $base-border-radius;
-  z-index: 1;
-  text-align: center;
-  font-size: $small-font-size;
+  margin-bottom: $margin_huge;
+  margin-top: $margin_huge * 2;
+  padding-top: $margin_huge * 2;
+  border-top: 1px solid $smoke;
+  
+  @media only screen and (max-width: $large_screen) {
+    margin-bottom: $m_margin_huge;
+    margin-top: $m_margin_huge * 2;
+    padding-top: $m_margin_huge * 2;
+  }
+  
+  // Pattern title
+  .title {
+    display: flex;
+    align-items: center;
+    
+    a.permalink {
+      margin-left: -$margin * 2;
+      opacity: 0;
+      color: $subheading-font-color;
+      transition: all $base-duration $base-timing;
+      
+      @media only screen and (max-width: $large_screen) {
+        display: none;
+      }
+      
+      &:hover {
+        color: $blue;
+      }
+    }
+    .header {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    .sg-label {
+      margin-left: $margin;
+    }
+  }  
+  // Active/Hover State
+  &:hover,
+  &.active {
+    a.permalink {
+      opacity: 1;
+    }
+    .sg_pattern_control {
+      &:before,
+      .button {
+        color: $subheading-font-color;
+      }
+    }
+  }
+  
+  // Spacing for next patterns
+  &:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
 }

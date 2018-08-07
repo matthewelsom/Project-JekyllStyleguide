@@ -1,0 +1,25 @@
+{% for pattern in site.pages %}
+{% if pattern.url contains pattern_url %}
+<section class="sg_pattern" id="{{ pattern.title | slugify }}" >
+  <div class="title">
+    <a class="permalink" href="{{ pattern.title | slugify | prepend: '#' }}"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">{{ pattern.title }}</div> 
+    {% if pattern.maturity %}<div class="sg-label {{ pattern.maturity }}">{{ pattern.maturity }}</div>{% endif %}
+  </div>
+  <div class="sg_pattern_control" data-styles="{{ pattern.styles }}">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="javascript:void(0)" title="Open in new window" class="sg_helper_open button" href="{{ site.baseurl }}{{ pattern_url }}" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe width="100%" frameborder="0" scrolling="no" src="{{ site.baseurl }}{{ pattern_url }}" allowfullscreen></iframe>
+  </div>
+  <div class="sg_code" data-styles="{{ pattern.styles }}">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+{% highlight html %}
+{{ pattern.content }}
+{% endhighlight %}
+  </div>
+</section>
+{% endif %}
+{% endfor %}
+
+

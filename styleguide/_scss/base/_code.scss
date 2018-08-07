@@ -1,28 +1,32 @@
+////////////////////////////////////////
+////////////////////////////////////////
+////////////////////////////////////////
+//FORMAT
+
 //Code
 code,
 pre {
   font-family: $code;
   color: $code-font-color;
-  font-size: $base-font-size - 1px;
+  font-size: $typo_hummingbird;
   background: $code-color;
   white-space: pre-wrap;
   word-wrap: break-word
 }
 pre {
+  margin: 0;
   padding: $base-padding;
 }
 figure {
   max-width: 100%
 }
 .highlighter-rouge {
-  font-size: $base-font-size - 2px;
-  padding: $small-spacing / 2 $small-spacing;
+  padding: .1rem .2rem;
   background: transparentize($code-color, .9);
   color: $heading-font-color;
 }
 .highlight {
-  margin: 0;
-  margin: $base-padding 0;
+  margin: $margin_huge 0;
     
   code:before {
     content: attr(data-lang);

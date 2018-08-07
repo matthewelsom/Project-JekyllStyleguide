@@ -1,10 +1,4 @@
-.header {
-  line-height: $heading-line-height;
-  margin-bottom: $small-spacing;
-  font-weight: 600;
-}
-
-//Heading Fonts
+// Typography Settings
 .typo_ostrich {font-size: $typo_ostrich;}
 .typo_albatros {font-size: $typo_albatros;}
 .typo_eagle {font-size: $typo_eagle;}
@@ -13,53 +7,42 @@
 .typo_sparrow {font-size: $typo_sparrow;}
 .typo_hummingbird {font-size: $typo_hummingbird;}
 
-h1,h2,h3,h4,h5,h6,
 ul,ol,dd,
 p,figure,
 table,fieldset,hr
 {
-  font-family: $sans-serif;
   margin:0;
   margin-bottom:1rem;
 }
 
+.header, 
 h1, h2, h3, h4, h5, h6 {
   line-height: $heading-line-height;
-  margin-bottom: $small-spacing;
-
-//  &:first-of-type { 
-    margin-top: $base-spacing;
-//  }
+  margin-bottom: $margin;
+  color: $heading-font-color;
+  font-weight: 600;
+  margin-top: $base-spacing;
 }
 
 h1 {
-  font-size: $typo_albatros;
+  font-size: $typo_ostrich;
+}
+h2,h3,h4,h5,h6 {
+  font-size: $typo_eagle;  
 }
 
-h2 {
-  font-size: $typo_eagle;
-}
-
-h3 {
-  font-size: $typo_hawk;
-}
-
-h4 {
-  font-size: $typo_crow;
-}
-
-h5 {
-  font-size: $typo_sparrow;
-}
-
-h6 {
-  font-size: $typo_hummingbird;
-}
-section {
-  h2, h3, h4, h5, h6 {
-//    margin: 1em 0;
+// Mobile sizes
+@media only screen and (max-width: $large_screen) {
+  
+  .typo_ostrich {font-size: $m_typo_ostrich;}
+  .typo_albatros {font-size: $m_typo_albatros;}
+  .typo_eagle {font-size: $m_typo_eagle;}
+  .typo_hawk {font-size: $m_typo_hawk;}
+  
+  h1 {
+  font-size: $m_typo_ostrich;
   }
-  ul,ol,dd,p,figure,table,fieldset,hr {
-//    margin-bottom: 1em;
+  h2,h3,h4,h5,h6 {
+    font-size: $m_typo_eagle;  
   }
 }

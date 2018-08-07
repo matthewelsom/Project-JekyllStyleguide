@@ -46,3 +46,9 @@ i.icon {
 i.icon:before {
    content: attr(data-icon);
 }
+
+//.icon Font Awesome Extend
+.icon {
+  font-family: $icon;
+  text-transform: none;
+}

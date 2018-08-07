@@ -8,16 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}{{ site.sg_favicon }}">
     <link rel="stylesheet" href="{{ site.baseurl }}{{ site.sg_styles }}" media="screen">
+    <script src="{{ site.baseurl }}/styleguide/js/libs/jquery-2.1.4.min.js"></script>
   </head>
   <body id="sg">
     <div class="sg-pusher">
-      <a href="javascript(0);" class="sg-maximize-btn fixed"><span>Menu</span> <i class="icon" data-icon="chevron_right"></i></a> 
       {% include sidebar.html %}
-      <div class="sg-main">
-        <div class="sg_container"> 
-          {{ content }}
-        </div>
-      </div>
+      <main class="sg-main">
+        {{ content }}
+      </main>
     </div>
     {% include footer.html %}
   </body>

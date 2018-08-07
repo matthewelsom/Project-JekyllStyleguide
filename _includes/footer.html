@@ -1,21 +1,14 @@
-<script type="text/javascript">
-function iframeLoaded() {
- var iFrameID = document.getElementById('sg-viewport');
-   // here you can make the height
-   iFrameID.height = "";
-   iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
-}
-</script>
-<script src="{{ site.baseurl }}/styleguide/js/jquery/jquery-2.1.4.min.js"></script>
 <script src="{{ site.baseurl }}/styleguide/js/main.js"></script>
-{% if page.resize == true %}<script src="{{ site.baseurl }}/styleguide/js/resize.js"></script>{% endif %}
+{% if page.resize == true %}
+<script src="{{ site.baseurl }}/styleguide/js/libs/iframeResizer.min.js"></script>
+<script src="{{ site.baseurl }}/styleguide/js/resize.js"></script>
+{% endif %}
 {% if site.sg_ga %}
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', '{{ site.sg_ga }}', 'auto');
   ga('send', 'pageview');
 </script>

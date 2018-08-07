@@ -1,16 +1,21 @@
+////////////////////////////////////////
+////////////////////////////////////////
+////////////////////////////////////////
+//FORMAT
 .sg-label {
-  font-size: $micro-font-size;
+  display: inline;
+  font-size: $typo_hummingbird;
   margin: 0;
   font-weight: bold;
   border-radius: $base-border-radius;
-  padding: $small-spacing/3 $base-spacing/2;
+  padding: .2rem .6rem;
+  line-height: $heading-line-height;
   color: $subheading-font-color;
   text-transform: uppercase;
   background: $light-background;
 
-  &.proposed {background: $grey; color: $white;}
-  &.alpha {background: $gold; color: $white;}
-  &.beta {background: $red; color: $white;}
-  &.recommended {background: $emerald; color: $white;}
-  &.depreciated {}
+  &.planned {background: $red; color: $white;}
+  &.draft {background: $amber; color: $white;}
+  &.ready {background: $green; color: $white;}
+  &.retired {background: $grey; color: $white;}
 }

@@ -1,32 +1,97 @@
-.sg-masthead {
-  padding: $base-spacing $base-padding;
-  background: $smoke;
+// The Masthead
+.sg_masthead {
+  padding: $margin_massive 0;
+  margin-bottom: $margin_massive;
+  border-bottom: 1px solid $smoke;
   color: $heading-font-color;
   
-  .sg-masthead_title {
-    @include display(flex);
-    @include align-items(center);
-    margin-bottom: $small-spacing;
+  @media only screen and (max-width: $large_screen) {
+    padding: $m_margin_massive 0;
+    margin-bottom: $m_margin_massive;
+  }
+  
+  .sg_contain {
+    display: flex;
+    flex-direction: row;
     
-    h1 {      
-      margin: 0;
-      text-transform: capitalize;
-      font-size: 2rem;
+    @media only screen and (max-width: $extended_screen) {
+      flex-direction: column;
     }
-    .sg-label {
+  }
+  .head {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+  }
+  // Title
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: $margin;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+    // Maturity Count
+    .count {
+      display: flex;
+      flex: 0 0 auto;
+      font-size: $typo_hummingbird;
       margin-left: $base-padding;
-      align-self: baseline;
+      height: $typo_crow;
+      width: 6rem;
+      border-radius: $base-border-radius;
+      overflow: hidden;
+      background: $smoke;
+
+      span {
+        height: $typo_crow;
+      }
+      .planned {
+        background: $red;
+      }
+      .draft {
+        background: $amber;
+      }
+      .ready {
+        background: $green;
+      }
+      .retired {
+        background: $grey;
+      }
     }
   }
-  h3 {
-    margin: $small-spacing 0;
-    font-weight: normal;
+  // Subtitle
+  .sub_title {
+    margin-bottom: $margin;
   }
-  .sg-masthead_style {  
-    margin-bottom: 0;
-    code {
-      background: transparentize($code-color, .9);
-      color: $heading-font-color;
+  
+  // Page Navigation
+  #nav {
+    flex: 1 0 auto;
+    width: calc(#{$right_rail} - #{$margin_huge});
+    padding-left: $margin_huge;
+    
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    li a {
+      padding: $margin_small /2 0;
+      
+      &:before {
+        content: 'remove';
+        font-family: $icon;
+        display: inline-block;
+        line-height: 1;
+        vertical-align: text-top;
+        margin-right: $margin_small;
+      }
+    }
+    
+    @media only screen and (max-width: $extended_screen) {
+      width: auto;
+      padding-left: 0;
     }
   }
 }

@@ -1,29 +1,20 @@
 ---
 layout: default
 ---
-<section id="mastheadArea" class="sg-masthead">
-  {% if page.title %}<div class="sg-masthead_title"><h1>{{ page.title }}</h1>{% if page.maturity %}<p class="sg-label {{ page.maturity }}">{{ page.maturity }}</p>{% endif %}{% endif %}</div>
-  {% if page.info %}<div class="header typo_crow">{{ page.info }}</div>{% endif %}
-  {% if page.scss %}<p class="sg-masthead_style">Style Location: <code class="highlighter-rouge">{{ page.scss }}</code></p>{% endif %}
-</section>
-
-<div id="patternArea" class="sg-pattern">  
-<div id="sg-viewport-size"></div>  
-{% assign pattern_url = page.url | replace_first: 'docs', 'src/html' %} 
-  <iframe id="sg-viewport" name="sg-viewport" frameborder="0" src="{{ site.baseurl }}{{ pattern_url }}" onload="iframeLoaded()"></iframe>
-</div>
-
-<section id="codeArea" class="sg-code">
-{% for pattern in site.pages %}
-{% if pattern.url contains pattern_url %}
-{% highlight html %}
-{{ pattern.content }}
-{% endhighlight %}
-{% endif %}
-{% endfor %}
-</section>
-
-<section id="documentationArea" class="sg-doc">
-  <h2>Documentation</h2> 
-  {{ page.content }}
-</section>
+<header id="mastheadArea" class="sg_masthead">
+  <div class="sg_contain">
+    <div class="head">
+      <div class="title header typo_ostrich">{{ page.title }}</div>   
+      {% if page.info %}<div class="sub_title typo_crow">{{ page.info }}</div>{% endif %}
+    </div>
+    {% if page.nav == true %}<aside id="nav">
+      <div class="header typo_hummingbird">Contents</div>
+      <ul></ul>
+    </aside>{% endif %}
+  </div>
+</header>
+<article id="documentationArea" class="sg_doc">
+  <div class="sg_contain">
+    {{ content }}
+  </div>
+</article>

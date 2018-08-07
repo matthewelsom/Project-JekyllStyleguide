@@ -11,9 +11,9 @@ sg_language: en
 sg_styles: /styleguide/css/styleguide.css
 sg_favicon: /styleguide/branding/favicon.ico
 # Enable sass to edit Styleguide Template Styles
-#sass:
-#  sass_dir: styleguide/_scss #[generate Styleguide styles]
-#  style: :compressed
+sass:
+  sass_dir: styleguide/_scss #[generate Styleguide styles]
+  style: :compressed
 
 # Preprocessor settings
 #highlighter: rouge
@@ -33,9 +33,9 @@ description: DESCRIPTION
 language: en
 baseurl:
 destination: _site
-sass:
-  sass_dir: src/assets/_scss #[generate Product styles]
-  style: :compressed
+#sass:
+#  sass_dir: src/assets/_scss #[generate Product styles]
+#  style: :compressed
 
 # Permalink
 #permalink: /:categories/:title/
@@ -44,6 +44,8 @@ sass:
 collections:
   docs: 
     output: true
+  patterns: 
+    output: true  
     
 defaults:
   - 
@@ -52,31 +54,31 @@ defaults:
     values:
       layout: doc
       type: doc
-      resize: true #[adds the ifrmae resizing script to all docs]
-      maturity: "Proposed"
-      scss: "Not Assigned"
+      resize: true #[adds the iframe resizing script to all docs]
   - 
     scope:
       path: "_docs/00-branding"
     values:
-      layout: index
-      type: "branding"
-      resize: false #[removes the ifrmae resizing script]
+      layout: doc
+      type: branding
   - 
     scope:
       path: "_docs/00-get-started"
     values:
-      layout: index
-      type: "help"
-      resize: false #[removes the ifrmae resizing script]
+      layout: doc
+      type: help
   - 
     scope:
       path: "_docs/02-examples"
     values:
-      layout: example    
+      layout: example
+      type: example
   - 
     scope:
-      path: "src/html"
+      path: "src/patterns"
     values:
       layout: pattern
       type: pattern
+      maturity: planned
+      title: Not Assigned
+      styles: Not Assigned

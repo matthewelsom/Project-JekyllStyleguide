@@ -1,3 +1,8 @@
+////////////////////////////////////////
+////////////////////////////////////////
+////////////////////////////////////////
+//FORMAT
+
 .sg-toc {
   color: $white;
   background: lighten($black, 4%);
@@ -76,7 +81,6 @@
       a {
         padding: $small-spacing/2 $base-padding;
         font-weight: 600;
-        font-size: $base-font-size;
         
         &:before {
           @extend .icon;

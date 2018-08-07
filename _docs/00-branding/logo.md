@@ -1,6 +1,7 @@
 ---
 title: Logo
 info: Logos used in this product.
+styles: exclude
 ---
 
 <section class="sg-branding">

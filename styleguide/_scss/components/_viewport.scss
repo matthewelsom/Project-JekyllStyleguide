@@ -1,0 +1,13 @@
+// Viewport Area
+.sg_viewport {
+  position: relative;
+  background-image: url(../images/loader.svg);
+  background-position: center center;
+  background-size: 40px;
+  background-repeat: no-repeat;
+
+  iframe {
+    height: 100px;
+    opacity: 0;
+  }
+}

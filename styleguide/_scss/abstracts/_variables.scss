@@ -1,25 +1,25 @@
-$max-width: 1080px;
+// Devices
+$extended_screen: 1400px;
+$large_screen: 1200px;
+$medium_screen: 800px;
+$small_screen: 480px;
 
-//Devices
-$medium-screen: 1080px;
-$tablet-screen: 768px;
-$mobile-screen: 480px;
+// Navigation Rails
+$left_rail: 300px;
+$right_rail: 300px;
 
-//Breakpoints
-//Neat needs to be included
-
-//Type Systems
+// Type Systems
 $sans-serif: 'HKGrotesk', sans-serif;
 $base-font-family: 'HKGrotesk', sans-serif;
 $icon: 'Material Icons';
 $code: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
 
-//Font Sizing
+// Font Sizing
 $base-font-size: 16px;
 $base-line-height: 1.6;
 $heading-line-height: 1.25;
 
-//Font Sizes
+// Font Sizes
 $typo_ostrich: 3rem;
 $typo_albatros: 2.2rem;
 $typo_eagle: 1.8rem;
@@ -28,59 +28,77 @@ $typo_crow: 1.25rem;
 $typo_sparrow: 1rem;
 $typo_hummingbird: .875rem;
 
-//Special Fonts
+// Mobile Font Sizes
+$m_typo_ostrich: 2rem;
+$m_typo_albatros: 1.8rem;
+$m_typo_eagle: 1.4rem;
+$m_typo_hawk: 1.25rem;
+
+
+// Special Fonts
 $micro-font-size: 70%;
 $small-font-size: 80%;
-//$lead-font-size: 116%;
 
-//Brand Colors
+// Brand Colors
 $white: #fff;
 $smoke: whitesmoke;
 $black: #000;
-$red: tomato;
+$red: orangered;
 $blue: dodgerblue;
-$sky: #22a1cc;
-$emerald: #16b491;
-$green: #2f8a54;
-$gold: #efb543;
-$orange: #e26d32;
-$pink: #e270b4;
-$purple: #492e53;
-$grey: #a7a7a7;
-$pearl: #f1f1f1;
+$green: #16b491;
+$amber: orange;
+$grey: lightgrey;
 
-//Animations
+// Animations
 $base-duration: .2s;
 $base-timing: ease;
 
-//Base Colors
+// Base Colors
 $base-font-color: #515151;
-$heading-font-color: #313131;
-$subheading-font-color: lighten($base-font-color, 12%);
-$code-font-color: $subheading-font-color;
+$heading-font-color: #0a0a0a;
+$subheading-font-color: $grey;
 
-//Code Color
+// Code Color
 $code-color: #0a0a0a;
 $code-font-color: #ffffff;
 
-//Action-color
+// Margins
+$margin: 1rem;
+$margin_small: .5rem;
+$margin_large: 1.5rem;
+$margin_huge: 3rem;
+$margin_massive: 4.5rem;
+
+
+// Mobile Margins
+$m_margin_huge: 1.5rem;
+$m_margin_massive: 3rem;
+
+
+
+
+
+/// REMOVE >>> 
+
+
+// Action-color
 $action-color: $blue;
 $action-hover-color: darken($action-color, 12%);
 
-//Primary Color
+// Primary Color
 $primary-color: $red;
-$primary-hover-color: darken($primary-color, 12%);
 
-//Backgrounds
-$base-background-color: #ffffff;
+// Backgrounds
 $light-background: #f9f9f9;
 
-//Spacing
+
+
+// Spacing
 $base-spacing: 1.5rem;
 $small-spacing: $base-spacing / 3; //0.5rem
 $base-padding: 1rem;
 
-//Borders
+// Borders
 $base-border-radius: 16px;
 $base-border-color: #e5e5e5;
 $base-border: 1px solid $base-border-color;

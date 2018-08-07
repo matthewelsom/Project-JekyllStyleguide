@@ -1,9 +1,53 @@
-.sg-doc {
-  max-width: 40rem;
+// The Documentation Area
+.sg_doc {
   position: relative;
-  padding: $base-padding;
-
-  > *:first-child {
-    margin-top: 0;
+  
+  .sg_contain {
+    // H1 Headers can be collapsed
+    h1 {
+      display: flex;
+      align-items: flex-start;
+      cursor: pointer;
+      margin-bottom: $margin_massive;
+      transition: margin-bottom $base_timing $base_duration;
+    }
+    h1:after {
+      content: 'arrow_back';
+      font-family: $icon;
+      margin-left: auto;
+      transform: rotate(-90deg);
+      transition: all $base-duration $base-timing;
+      transform-origin: center center;
+      line-height: 1;
+      font-size: inherit;
+    }
+    h1.collapsed {
+      
+      &:after {
+        transform: rotate(0deg);
+      }
+    }
+    
+    // H1 Headers have spacing
+    h1 + .sg_pattern {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+    h1:not(:first-child) {
+      margin-top: $margin_massive;
+      border-top: 1px solid $smoke;
+      padding-top: $margin_massive;
+    }
+    
+    @media only screen and (max-width: $large_screen) {
+      h1 {
+        margin-bottom: $m_margin_massive;
+      }
+      h1:not(:first-child) {
+        margin-top: $m_margin_massive;
+        padding-top: $m_margin_massive;
+      }
+    }
   }
 }
