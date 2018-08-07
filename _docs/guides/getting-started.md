@@ -1,8 +1,12 @@
 ---
-title: For Designers & Developers
-info: This tool is designed to generate UI patterns and documentation for your digital product. It is built using Jekyll.  
+title: Getting Started
+info: How to setup and configure this tool to generate UI patterns and documentation for your digital product. It is built using Jekyll.  
 nav: true
 ---
+
+listed based on the folder in which the are added. To add a pattern add the corrresonding file to the folder. 
+
+Remember to add a corresponding file into the _docs folder - or this will break.
 
  
 

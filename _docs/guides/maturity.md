@@ -1,6 +1,6 @@
 ---
 title: Maturity Scale
-info: The maturity scale is a way to indicate the level of robustness of any pattern in the styleguide. New patterns should be released into the styleguide following these principles, assess each pattern independently.
+info: The maturity scale is a way to indicate the level of robustness of any pattern in the style guide. New patterns should be released into the style guide following these principles, assess each pattern independently.
 ---
 
 <span class="sg_label planned">Planned</span>

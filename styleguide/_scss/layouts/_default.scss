@@ -45,12 +45,12 @@ body#sg {
     left: 0;
   }
 //  a.sg-maximize-btn.fixed {
-//    @include display(flex);
+//    display: flex;
 //  }
 }
 //a.sg-maximize-btn {
-//  @include display(flex);
-//  @include align-items(center);
+//  display: flex;
+//  align-items: center;
 //  min-height: 40px;
 //  line-height: 1;
 //  position: absolute;
@@ -61,7 +61,7 @@ body#sg {
 //  font-weight: 600;
 //  font-size: $base-font-size;
 //  text-decoration: none;
-//  @include transition(all $base-duration $base-timing);
+//  transition: all $base-timing $base-duration;
 //  
 //  .icon {
 //    margin-right: 0;
@@ -106,7 +106,7 @@ body#sg {
   min-height: 100%;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  @include transition(all $base-duration $base-timing);
+  transition: all $base-timing $base-duration;
   
   @media only screen and (max-width: $large_screen) {
     display: none;  
@@ -117,7 +117,7 @@ body#sg {
   width: 100%;
   height: auto;
   min-height: 100%;
-  @include transition(all $base-duration $base-timing);
+  transition: all $base-timing $base-duration;
 }
 .sg_contain {
   max-width: 50rem;

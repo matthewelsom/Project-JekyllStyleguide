@@ -32,7 +32,7 @@
     text-decoration:none;
     padding: $margin_small/3 0;
     padding: $margin;
-    @include transition(all, $base-timing, $base-duration);
+    transition: all $base-timing $base-duration;
     
     &:hover,
     &.active {
@@ -41,20 +41,21 @@
   }
   
   .toc-head {
-    @include display(flex);
-    @include align-items(center);
+    display: flex;
+    align-items: center;
     padding: $margin_large $margin; 
     color: $white;
     
     .toc-head_icon {
       height: 48px;
       width: 48px;
-      @include flex(0 0 auto);
+      flex: 0 0 auto;
       margin-right: $margin;
       overflow: hidden;
       
       img {
-        @include size(48px);
+        width: 48px;
+        height: 48px;
       }
     }
     .toc-head_title {

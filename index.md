@@ -1,29 +1,42 @@
 ---
-title: Overview
+title: Getting Started
 layout: doc
 info: Organise design styles, create code standards, and maintain a consistent user interface design across your digital product with this boilerplate living styleguide. Made with the power of Jekyll.
+nav: true
 ---
 
-![Styleguide]({{ site.baseurl }}/styleguide/images/cover.png)
+How to setup and configure this tool to generate UI patterns and documentation for your digital product. It is built using Jekyll.  
 
-This styleguide can be freely customized, extended, published, and shared with designers, developers or clients. It is built using [Jekyll](http://jekyll.rb), and the design principles are based on the [Draft US Design Standards](https://standards.usa.gov/).
+# License 
 
-The [Getting Started]({{ site.baseurl }}/docs/00-get-started/design-principles.html) pages have all the information you need to start using this tool.
+This tool can be freely customized, extended, published, and shared.
 
-___
+It was built using [Jekyll](https://jekyll.rb), it's [design principle]({{ site.baseurl }}/docs/guides/design/principle.html) is based on the [US Design Standards](https://designsystem.digital.gov/design-principles/), and the css architecture is based on the [Simple SCSS Playbook](https://matthewelsom.com/blog/simple-scss-playbook.html).
 
-#### License 
 
-**This tool was published in the public domain on 12 September 2016 by [Matthew Elsom](http://matthewelsom.com) © 2016 & Beyond. Last Update {{ site.time | date: "%b %-d, %Y"  }}. [License](https://github.com/matthewelsom/Living_Styleguide/blob/gh-pages/LICENSE)**
+--- 
 
 A few parts of this project are not in the public domain:
 
-- The files in `styleguide/fonts`, and `_scss/ionicons` are extracted from [Ionicons](http://ionicons.com/), copyright Ben Sperry.
-- The files in `_scss/vendor/bourbon` are extracted from [Bourbon](http://bourbon.io/), copyright [thoughtbot](https://thoughtbot.com/), inc.
-- The files in `_scss/vendor/fontawesome`, and `src/assets/fonts` are from [Font Awesome](http://fontawesome.io/), copyright Dave Gandy.
-- The files in `_scss/normalize` are from [Normalize.css](https://github.com/necolas/normalize.css), copyright Nicolas Gallagher and Jonathan Neal.
-- The file `js/jquery/jquery-2.1.4.min.js` is from [jQuery](https://jquery.com/), copyright The jQuery Foundation.
-- The files in `fonts/open-sans` are extracted from [Google Fonts](https://fonts.google.com/specimen/Open+Sans), copyright Steve Matteson.
-- The files in `fonts/roboto` are extracted from [Google Fonts](https://fonts.google.com/specimen/Roboto), copyright Christian Robertson.
+- Material Icons font files included in the `styleguide/fonts` directory were extracted from XXX, copyright XXX.
+- HK Grotesk font files included in the `styleguide/fonts` directory were extracted from XXX, copyright XXX.
+- [Font Awesome](http://fontawesome.io/) font files in the `_scss/vendor/fontawesome` directory were extracted from XXX, copyright Dave Gandy.
+- jQuery `[jquery-2.1.4.min.js]` was extracted from [jQuery](https://jquery.com/), copyright The jQuery Foundation.
+- Roboto font files in `fonts/roboto` were extracted from [Google Fonts](https://fonts.google.com/), copyright Christian Robertson.
+- Normalize `[_normalize.scss]` was extrcted from [Normalize.css](https://github.com/necolas/normalize.css), copyright Nicolas Gallagher and Jonathan Neal.
 
-**Please check with rights holders for license details.**
+
+<!--- The files in `_scss/vendor/bourbon` are extracted from [Bourbon](http://bourbon.io/), copyright [thoughtbot](https://thoughtbot.com/), inc.-->
+
+**Please check with the respective rights holders for license details.**
+
+___
+
+
+**This tool was originally published in the public domain on 12 September 2016 by [{{ site.sg_author }}](https://matthewelsom.com)**
+
+It was last updated on {{ site.time | date: "%b %-d, %Y"  }} by {{ site.sg_author }}. 
+
+Copyright © 2016 - 2018 & Beyond. All Rights Reserved. 
+
+[View License File](https://github.com/matthewelsom/Living_Styleguide/blob/gh-pages/LICENSE)

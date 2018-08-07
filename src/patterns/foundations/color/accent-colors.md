@@ -1,7 +1,7 @@
 ---
 title: Accent Colors
 styles: base/variables.scss
-maturity: planned
+maturity: draft
 control: exclude
 colors: 
   - name: $blue
@@ -14,7 +14,7 @@ colors:
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1rem;
-  margin-top:  1.5rem;
+  margin-top: 0;
   padding: 0;
   list-style: none;
 }

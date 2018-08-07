@@ -1,8 +1,10 @@
 ---
 title: Roadmap
-info: Patterns are listed based on the folde rin which the are added. To add a pattern add the corrresonding file to the folder. The rodmap can be sorted alphabetically, or by pattern maturity. Remember to add a corresponding file into the _docs folder - or this will break.
+info: The roadmap lista all UI patterns in the styleguide, it can be sorted or searched. Patterns are automatically listed in the Roadmap when they are added to the style guide. 
 nav: exclude
 ---
+<i class="icon" data-icon="info"></i>Learn how to [Add a Pattern]({{ site.baseurl }}/docs/guides/getting-started.html#add-a-pattern) to the style guide. 
+
 <div id="sg_roadmap">
   <input type="text" class="fluid roadmap_search fuzzy-search" placeholder="Search the Roadmap"/>
   <div class="table">

@@ -62,7 +62,7 @@ defaults:
       type: foundations
   - 
     scope:
-      path: "_docs/get-started"
+      path: "_docs/guides"
     values:
       layout: doc
       type: help
