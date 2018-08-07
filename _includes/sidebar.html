@@ -5,7 +5,7 @@
     <div class="toc-head_title">{{ site.sg_title }}</div>
   </a>
   <ul>
-    <li><a href="{{ site.baseurl }}/index.html"{% if page.url == '/' %} class="active"{% endif %}>Overview</a></li>
+    <li><a href="{{ site.baseurl }}/index.html"{% if page.url == '/' %} class="active"{% endif %}>Getting Started</a></li>
   </ul>
   {% assign get-started = site.docs | where: 'type', 'help' | sort: 'name' %}
   <div class="toc-group">

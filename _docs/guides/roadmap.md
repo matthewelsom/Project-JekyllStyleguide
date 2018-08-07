@@ -1,6 +1,6 @@
 ---
 title: Roadmap
-info: The roadmap lista all UI patterns in the styleguide, it can be sorted or searched. Patterns are automatically listed in the Roadmap when they are added to the style guide. 
+info: The roadmap lists all UI patterns in the style guide. Patterns are automatically listed in the Roadmap when they are added to the style guide. 
 nav: exclude
 ---
 <i class="icon" data-icon="info"></i>Learn how to [Add a Pattern]({{ site.baseurl }}/docs/guides/getting-started.html#add-a-pattern) to the style guide. 
