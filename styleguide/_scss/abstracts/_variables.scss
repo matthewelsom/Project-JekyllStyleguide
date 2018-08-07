@@ -34,7 +34,6 @@ $m_typo_albatros: 1.8rem;
 $m_typo_eagle: 1.4rem;
 $m_typo_hawk: 1.25rem;
 
-
 // Special Fonts
 $micro-font-size: 70%;
 $small-font-size: 80%;
@@ -62,6 +61,10 @@ $subheading-font-color: $grey;
 $code-color: #0a0a0a;
 $code-font-color: #ffffff;
 
+// Borders
+$base-border-radius: 1rem;
+$base-border: 1px solid $smoke;
+
 // Margins
 $margin: 1rem;
 $margin_small: .5rem;
@@ -73,32 +76,3 @@ $margin_massive: 4.5rem;
 // Mobile Margins
 $m_margin_huge: 1.5rem;
 $m_margin_massive: 3rem;
-
-
-
-
-
-/// REMOVE >>> 
-
-
-// Action-color
-$action-color: $blue;
-$action-hover-color: darken($action-color, 12%);
-
-// Primary Color
-$primary-color: $red;
-
-// Backgrounds
-$light-background: #f9f9f9;
-
-
-
-// Spacing
-$base-spacing: 1.5rem;
-$small-spacing: $base-spacing / 3; //0.5rem
-$base-padding: 1rem;
-
-// Borders
-$base-border-radius: 16px;
-$base-border-color: #e5e5e5;
-$base-border: 1px solid $base-border-color;

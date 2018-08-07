@@ -1,13 +1,9 @@
-////////////////////////////////////////
-////////////////////////////////////////
-////////////////////////////////////////
-//FORMAT
-
+// Links
 a {
-  color: $action-color;
+  color: $blue;
   
   &:hover,
   &:focus {
-    color: $action-hover-color;
+    color: darken($blue, 12%);
   }
 }

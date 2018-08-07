@@ -55,10 +55,10 @@ function collapseH() {
 
 // Maturity Count
 function maturityCount() {
-  var p = $('.sg-label.planned').length
-  var d = $('.sg-label.draft').length
-  var r = $('.sg-label.ready').length
-  var rt = $('.sg-label.retired').length
+  var p = $('.sg_label.planned').length
+  var d = $('.sg_label.draft').length
+  var r = $('.sg_label.ready').length
+  var rt = $('.sg_label.retired').length
   var total = parseInt(p) + parseInt(d) + parseInt(r) + parseInt(rt);
   var pp = 100 / total * p;
   var pd = 100 / total * d;

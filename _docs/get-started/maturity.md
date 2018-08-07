@@ -1,10 +1,9 @@
 ---
-title: Pattern Maturity Scale
-info: The pattern maturity scale is a way to indicate the level of robustness of any pattern in the styleguide. New patterns should be released into the styleguide following these principles, assess each pattern independently.
-resize: exclude
+title: Maturity Scale
+info: The maturity scale is a way to indicate the level of robustness of any pattern in the styleguide. New patterns should be released into the styleguide following these principles, assess each pattern independently.
 ---
 
-<span class="sg-label planned">Planned</span>
+<span class="sg_label planned">Planned</span>
 
 - The user need has been identified, but the approach to solving the problem has not yet been decided.
 - The team has decided to tackle this UI pattern.
@@ -12,7 +11,7 @@ resize: exclude
 
 ____
 
-<span class="sg-label draft">Draft</span>
+<span class="sg_label draft">Draft</span>
 
 Includes everything from the Planned phase, as well as:
 
@@ -23,7 +22,7 @@ Includes everything from the Planned phase, as well as:
 
 ___
 
-<span class="sg-label ready">Ready</span>
+<span class="sg_label ready">Ready</span>
 
 Includes everything in the Planned and Draft phases, as well as:
 
@@ -36,7 +35,7 @@ Includes everything in the Planned and Draft phases, as well as:
 
 ___
 
-<span class="sg-label retired">Retired</span>
+<span class="sg_label retired">Retired</span>
 
 - Pattern is no longer fit for purpose, it should not be used in production.
 - Pattern will be removed from the Style Guide in due course.

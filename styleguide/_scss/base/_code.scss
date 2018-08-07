@@ -1,9 +1,4 @@
-////////////////////////////////////////
-////////////////////////////////////////
-////////////////////////////////////////
-//FORMAT
-
-//Code
+// Code
 code,
 pre {
   font-family: $code;
@@ -15,7 +10,7 @@ pre {
 }
 pre {
   margin: 0;
-  padding: $base-padding;
+  padding: $margin;
 }
 figure {
   max-width: 100%
@@ -27,6 +22,10 @@ figure {
 }
 .highlight {
   margin: $margin_huge 0;
+  
+  @media only screen and (max-width: $large_screen) {
+    margin: $m_margin_huge 0;
+  }
     
   code:before {
     content: attr(data-lang);
@@ -34,11 +33,11 @@ figure {
     background: $blue;
     color: $white;
     font-weight: bold;
-    margin-top: -$base-padding;
-    margin-left: -$base-padding;
-    margin-right: -$base-padding;
-    margin-bottom: $base-padding;
-    padding: $small-spacing $base-padding;
+    margin-top: -$margin;
+    margin-left: -$margin;
+    margin-right: -$margin;
+    margin-bottom: $margin;
+    padding: $margin_small $margin;
     font-family: $base-font-family;
     text-transform: uppercase;
     font-size: $base-font-size - 2px;

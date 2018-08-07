@@ -1,8 +1,5 @@
-////////////////////////////////////////
-////////////////////////////////////////
-////////////////////////////////////////
-//FORMAT
-.sg-label {
+// Maturity Label
+.sg_label {
   display: inline;
   font-size: $typo_hummingbird;
   margin: 0;
@@ -12,7 +9,7 @@
   line-height: $heading-line-height;
   color: $subheading-font-color;
   text-transform: uppercase;
-  background: $light-background;
+  background: $smoke;
 
   &.planned {background: $red; color: $white;}
   &.draft {background: $amber; color: $white;}

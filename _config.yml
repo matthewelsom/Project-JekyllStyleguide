@@ -54,22 +54,21 @@ defaults:
     values:
       layout: doc
       type: doc
-      resize: true #[adds the iframe resizing script to all docs]
   - 
     scope:
-      path: "_docs/00-branding"
+      path: "_docs/foundations"
     values:
       layout: doc
-      type: branding
+      type: foundations
   - 
     scope:
-      path: "_docs/00-get-started"
+      path: "_docs/get-started"
     values:
       layout: doc
       type: help
   - 
     scope:
-      path: "_docs/02-examples"
+      path: "_docs/examples"
     values:
       layout: example
       type: example

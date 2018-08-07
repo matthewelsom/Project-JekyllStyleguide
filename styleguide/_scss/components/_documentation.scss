@@ -36,8 +36,12 @@
     }
     h1:not(:first-child) {
       margin-top: $margin_massive;
-      border-top: 1px solid $smoke;
+      border-top: $base-border;
       padding-top: $margin_massive;
+    }
+    
+    > *:last-child {
+      margin-bottom: $margin_massive;
     }
     
     @media only screen and (max-width: $large_screen) {
@@ -47,6 +51,9 @@
       h1:not(:first-child) {
         margin-top: $m_margin_massive;
         padding-top: $m_margin_massive;
+      }
+      > *:last-child {
+        margin-bottom: $margin_massive;
       }
     }
   }

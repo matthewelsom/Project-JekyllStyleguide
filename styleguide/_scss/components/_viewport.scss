@@ -5,6 +5,11 @@
   background-position: center center;
   background-size: 40px;
   background-repeat: no-repeat;
+  margin-top: $margin_huge;
+  
+  @media only screen and (max-width: $large_screen) {
+    margin-top: $m_margin_huge;
+  }
 
   iframe {
     height: 100px;

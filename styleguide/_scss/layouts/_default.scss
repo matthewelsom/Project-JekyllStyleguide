@@ -38,7 +38,7 @@ body#sg {
 }
 
 .sg-pusher.hide-toc {
-  .sg-toc {
+  .sg_sidebar {
   }
   .sg-main {
     width: 100%;
@@ -58,7 +58,6 @@ body#sg {
 //  top: 0;
 //  background: $smoke;
 //  color: $heading-font-color;
-//  padding: $base-padding/3 $base-padding;
 //  font-weight: 600;
 //  font-size: $base-font-size;
 //  text-decoration: none;
@@ -72,7 +71,7 @@ body#sg {
 //    display: none;
 //    line-height: 1;
 //    text-transform: uppercase;
-//    margin: 0 $small-spacing/2;
+//    margin: 0 $margin_small/2;
 //  }
 //  &:hover,
 //  &:focus {
@@ -97,7 +96,7 @@ body#sg {
 //  opacity: 1;
 //  visibility: visible;
 //}
-.sg-toc {
+.sg_sidebar {
   position: fixed;
   top: 0;
   left: 0;

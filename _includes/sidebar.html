@@ -1,4 +1,4 @@
-<div class="sg-toc">
+<div class="sg_sidebar">
 <!--  <a href="javascript(0);" class="sg-maximize-btn"><i class="icon" data-icon="chevron_left"></i> <span>Hide</span></a>  -->
   <a href="{{ site.baseurl }}/index.html" class="toc-head">
     <div class="toc-head_icon"><img src="{{ site.baseurl }}/styleguide/branding/png/styleguide-64x64.png"></div>
@@ -9,7 +9,7 @@
   </ul>
   {% assign get-started = site.docs | where: 'type', 'help' | sort: 'name' %}
   <div class="toc-group">
-    <div class="toc-group_title">Get Started</div>
+    <div class="toc-group_title">Guides</div>
     <ul>
     {% for doc in get-started %}
     <li>
@@ -18,11 +18,11 @@
     {% endfor %}
   </ul>
   </div>
-  {% assign branding = site.docs | where: 'type', 'branding' | sort: 'name' %}
+  {% assign foundations = site.docs | where: 'type', 'foundations' | sort: 'name' %}
   <div class="toc-group">
-    <div class="toc-group_title">Branding</div>
+    <div class="toc-group_title">Foundations</div>
     <ul>
-    {% for doc in branding %}
+    {% for doc in foundations %}
     <li>
       <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
     </li>
@@ -42,7 +42,7 @@
   </div>
   {% assign examples = site.docs | where: 'type', 'example' | sort: 'name' %}
   <div class="toc-group">
-    <div class="toc-group_title">Example Pages</div>
+    <div class="toc-group_title">Templates</div>
     <ul>
       {% for example in examples %}
       <li> 

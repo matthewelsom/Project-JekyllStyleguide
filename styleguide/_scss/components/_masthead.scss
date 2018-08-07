@@ -2,7 +2,7 @@
 .sg_masthead {
   padding: $margin_massive 0;
   margin-bottom: $margin_massive;
-  border-bottom: 1px solid $smoke;
+  border-bottom: $base-border;
   color: $heading-font-color;
   
   @media only screen and (max-width: $large_screen) {
@@ -36,7 +36,7 @@
       display: flex;
       flex: 0 0 auto;
       font-size: $typo_hummingbird;
-      margin-left: $base-padding;
+      margin-left: $margin;
       height: $typo_crow;
       width: 6rem;
       border-radius: $base-border-radius;

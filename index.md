@@ -2,7 +2,6 @@
 title: Overview
 layout: doc
 info: Organise design styles, create code standards, and maintain a consistent user interface design across your digital product with this boilerplate living styleguide. Made with the power of Jekyll.
-resize: exclude
 ---
 
 ![Styleguide]({{ site.baseurl }}/styleguide/images/cover.png)

@@ -1,7 +1,6 @@
 ---
 title: Design Principles
 info: This living styleguide has been designed to help you create better and informed experiences for all digital savvy users.
-resize: exclude
 ---
 
 ![HTML First]({{ site.baseurl }}/styleguide/images/html.png)

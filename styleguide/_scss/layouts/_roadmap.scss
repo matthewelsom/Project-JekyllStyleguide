@@ -1,9 +1,15 @@
 // Roadmap Layout
 #sg_roadmap {
-  display: table;
-  width: 100%;
-  text-align: left;
- 
+  
+  input {
+    margin-bottom: $margin_large;
+  }
+  .table {
+    display: table;
+    width: 100%;
+    text-align: left;
+    table-layout: fixed;
+  } 
   .list {
     display: table-row-group;
   }
@@ -15,79 +21,107 @@
     vertical-align: middle;
     box-shadow: 0 1px 0 0 $smoke;
   }
-}
-.sg_roadmap_header {
-  display: table-row-group;
-  
-  a.sort {
-    font-weight: 600;
+
+  .sg_roadmap_header {
+    display: table-row-group;
+
+    .tableCell:nth-child(1) {
+      width: 75px;
+    }
+    .tableCell:nth-child(5) {
+      width: 50px;
+    }
+
+    a.sort {
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+      margin: 0 $margin_small $margin_small 0;
+      color: $subheading-font-color;
+      font-size: $typo_hummingbird;
+      transition: all $base-duration $base-timing;
+
+      &:after {
+        font-family: $icon;
+        content: 'arrow_drop_up';
+        margin-left: $margin_small;
+        line-height: 1;
+        vertical-align: middle;
+        opacity: 0;
+      }
+      &:hover,
+      &.asc,
+      &.desc {
+        color: $blue;
+      }
+      &.asc:after {
+        content: 'arrow_drop_up';
+        opacity: 1;
+      }
+      &.desc:after {
+        content: 'arrow_drop_down';
+        opacity: 1;
+      }
+    }
+  }
+  a.sg_roadmap_pattern {
     text-decoration: none;
-    display: block;
-    margin: 0 $margin_small $margin_small 0;
-    color: $subheading-font-color;
-    font-size: $typo_hummingbird;
     transition: all $base-duration $base-timing;
-    
-    &:after {
-      font-family: $icon;
-      content: 'arrow_drop_up';
-      margin-left: $margin_small;
-      line-height: 1;
-      vertical-align: middle;
-      opacity: 0;
+
+    .tableCell {
+      padding: $margin_large 0;
+
+      > * {
+        margin: 0 $margin_small 0 0;
+      }
     }
-    &:hover,
-    &.asc,
-    &.desc {
-      color: $blue;
+
+    &:hover {
+      background: transparentize($smoke, .8);
+
+      .header,
+      .icon {
+        color: $blue;
+      }
     }
-    &.asc:after {
-      content: 'arrow_drop_up';
-      opacity: 1;
+
+    .header {
+      text-transform: capitalize;
+      transition: all $base-duration $base-timing;
     }
-    &.desc:after {
-      content: 'arrow_drop_down';
-      opacity: 1;
+    .styles,
+    .group {
+      color: $subheading-font-color;
+    }
+    .sg_label {
+      display: block;
+      height: $margin_small;
+      width: $margin_large;
+      padding: 0;
+    }
+    .arrow {
+      text-align: right;
+    }
+    .icon {
+      color: $subheading-font-color;
+      transition: all $base-duration $base-timing;
     }
   }
 }
-a.sg_roadmap_pattern {
-  text-decoration: none;
-  transition: all $base-duration $base-timing;
+
+@media only screen and (max-width: $medium_screen) {
   
-  .tableCell {
-    padding: $margin_large 0;
-    
-    > * {
-      margin: 0 $margin_small 0 0;
-    }
+  #sg_roadmap .table {
+    table-layout: auto;
   }
   
-  &:hover {
-    background: transparentize($smoke, .8);
-    
-    .header,
-    .icon {
-      color: $blue;
-    }
+  #sg_roadmap .sg_roadmap_header .tableCell:nth-child(4),
+  #sg_roadmap .sg_roadmap_header .tableCell:nth-child(5) {
+    display: none;
   }
   
-  .header {
-    text-transform: capitalize;
-    transition: all $base-duration $base-timing;
-  }
-  .styles,
-  .group {
-    color: $subheading-font-color;
-  }
-  .sg-label {
-    display: block;
-    height: $margin_small;
-    width: $margin_large;
-    padding: 0;
-  }
-  .icon {
-    color: $subheading-font-color;
-    transition: all $base-duration $base-timing;
+  #sg_roadmap .sg_roadmap_pattern .tableCell:nth-child(4),
+  #sg_roadmap .sg_roadmap_pattern .tableCell:nth-child(5) {
+    display: none;
   }
 }

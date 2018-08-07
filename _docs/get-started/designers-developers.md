@@ -1,7 +1,6 @@
 ---
 title: For Designers & Developers
 info: This tool is designed to generate UI patterns and documentation for your digital product. It is built using Jekyll.  
-resize: exclude
 nav: true
 ---
 

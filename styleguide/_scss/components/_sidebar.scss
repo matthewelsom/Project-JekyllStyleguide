@@ -3,7 +3,7 @@
 ////////////////////////////////////////
 //FORMAT
 
-.sg-toc {
+.sg_sidebar {
   color: $white;
   background: lighten($black, 4%);
   overflow-y: scroll;
@@ -20,8 +20,7 @@
     list-style: none;
   }
   li {
-    border-top: $base-border;
-    border-color: transparentize($white, 0.8);
+    border-top: 1px solid transparentize($white, 0.8);
     line-height: $heading-line-height;
   }
   a {
@@ -31,8 +30,8 @@
     font-size: $typo_sparrow;
     font-weight: 700;
     text-decoration:none;
-    padding: $small-spacing/3 0;
-    padding: $base-padding;
+    padding: $margin_small/3 0;
+    padding: $margin;
     @include transition(all, $base-timing, $base-duration);
     
     &:hover,
@@ -44,14 +43,14 @@
   .toc-head {
     @include display(flex);
     @include align-items(center);
-    padding: $base-spacing $base-padding; 
+    padding: $margin_large $margin; 
     color: $white;
     
     .toc-head_icon {
       height: 48px;
       width: 48px;
       @include flex(0 0 auto);
-      margin-right: $base-padding;
+      margin-right: $margin;
       overflow: hidden;
       
       img {
@@ -64,22 +63,21 @@
     }
   }
   .toc-group {
-    border-top: $base-border;
-    border-color: transparentize($white, 0.8);
-    padding-bottom: $base-padding;
+    border-top: 1px solid transparentize($white, 0.8);
+    padding-bottom: $margin;
   
     .toc-group_title {
       font-size: $typo_hummingbird;
       font-weight: 700;
-      padding: $base-padding;
-      padding-bottom: $small-spacing;
+      padding: $margin;
+      padding-bottom: $margin_small;
       margin-bottom: 0;
     }
     ul {}
     li {
       border-top: none;
       a {
-        padding: $small-spacing/2 $base-padding;
+        padding: $margin_small/2 $margin;
         font-weight: 600;
         
         &:before {
@@ -88,7 +86,7 @@
           display: inline-block;
           line-height: 1;
           vertical-align: text-top;
-          margin-right: $small-spacing;
+          margin-right: $margin_small;
         }
         &.active:before {
           content: 'arrow_forward';

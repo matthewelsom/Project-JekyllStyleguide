@@ -1,6 +1,6 @@
 hr {
   border-top: 0;
-  border-bottom: 1px solid $smoke;
+  border-bottom: $base-border;
   margin: $margin_massive 0;
   
   @media only screen and (max-width: $large_screen) {

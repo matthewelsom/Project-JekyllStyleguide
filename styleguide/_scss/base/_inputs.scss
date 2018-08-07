@@ -1,0 +1,11 @@
+// Text Inputs
+input {
+  padding: $margin_small;  
+  font-size: $base-font-size;
+  outline: 0;
+  border: $base-border;
+  border-color: $subheading-font-color;
+}
+input.fluid {
+  width: calc(100% - #{$margin_small * 2});
+}
