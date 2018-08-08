@@ -12,7 +12,18 @@ p,figure,
 table,fieldset,hr
 {
   margin:0;
-  margin-bottom:1rem;
+  margin-bottom: $margin;
+}
+
+blockquote {
+  margin: $margin_large 0;
+  padding-left: 2rem;
+  
+  .icon:first-child {
+    font-size: $margin_large;
+    line-height: 1;
+    margin-left: -2rem;
+  }
 }
 
 .header, 

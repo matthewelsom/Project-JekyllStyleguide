@@ -1,29 +1,35 @@
 ---
 title: Getting Started
 layout: doc
-info: Setup and configure this tool to generate and maintain user interface (UI) patterns and documentation in a 'Living Style Guide' for a digital product or system.
+info: Setup and configure this Jekyll-based boilerplate to generate and document product/system user interface (UI) patterns in a 'Living Style Guide'.
 nav: true
 ---
 
+🗂
 
-Organise design styles, create code standards, and maintain a consistent user interface design across your digital product with this boilerplate living styleguide. Made with the power of Jekyll.
+👋
 
-
-listed based on the folder in which the are added. To add a pattern add the corrresonding file to the folder. 
-
-Remember to add a corresponding file into the _docs folder - or this will break.
-
- 
+Organise design styles, create code standards, and maintain a consistent user interface design across your digital product with this boilerplate living style guide.
 
 # Installation
 
-To use this style guide in your project, you’ll need to download and install [Jekyll](http://jekyllrb.com/) (version 3.1 or higher).
+To start you’ll need to download and install [Jekyll](http://jekyllrb.com/) (3.1 or higher) and the boilerplate source code from [Github](https://github.com/matthewelsom/Living_Styleguide). // NEED TO UPDATE WITH CLEAN VERSION
 
-Download all the files from [Github](https://github.com/matthewelsom/Living_Styleguide).
 
-Serve the files locally using `jekyll s`.
 
-If you want to publish your style guide to [Github Pages](https://pages.github.com/) you will need to remove/replace the `CNAME` file.
+To serve the files locally run the following code in terminal: 
+
+{% highlight terminal %}
+$ cd /path/to/local/folder/
+jekyll serve
+{% endhighlight%}
+
+Once your style guide is complete you can publish it directly to [Github Pages](https://pages.github.com/).
+
+---
+
+><i class="icon red" data-icon="info"></i>This site contains UI patterns and documentation that demonstrate how a generated Style Guide could look. You can find the source code for this example [here](https://github.com/matthewelsom/Living_Styleguide)
+
 
 
 # Configuration
@@ -192,3 +198,20 @@ It was last updated on {{ site.time | date: "%b %-d, %Y"  }} by {{ site.sg_autho
 Copyright © 2016 - 2018 & Beyond. All Rights Reserved. 
 
 [View License File](https://github.com/matthewelsom/Living_Styleguide/blob/gh-pages/LICENSE)
+
+
+
+//// OLD
+This tool generates a 'Living Style Guide' for your digital product or system that tracks and documents all of the user interface (UI) patterns.  
+
+This tool creates a 'Living Style Guide' for your digital product or system that tracks and documents all of the user interface (UI) patterns.  
+
+You use it to generate all of the systems user interface (UI) patterns. The patterns are tracked and documented in a simple Living Style Guide.
+
+
+Organise design styles, create code standards, and maintain a consistent user interface design across your digital product with this boilerplate living styleguide. Made with the power of Jekyll.
+
+
+listed based on the folder in which the are added. To add a pattern add the corrresonding file to the folder. 
+
+Remember to add a corresponding file into the _docs folder - or this will break.

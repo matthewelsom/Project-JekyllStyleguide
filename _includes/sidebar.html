@@ -7,11 +7,11 @@
   <ul>
     <li><a href="{{ site.baseurl }}/index.html"{% if page.url == '/' %} class="active"{% endif %}>Getting Started</a></li>
   </ul>
-  {% assign get-started = site.docs | where: 'type', 'help' | sort: 'name' %}
+  {% assign about = site.docs | where: 'type', 'about' | sort: 'name' %}
   <div class="toc-group">
-    <div class="toc-group_title">Guides</div>
+    <div class="toc-group_title">About</div>
     <ul>
-    {% for doc in get-started %}
+    {% for doc in about %}
     <li>
       <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
     </li>

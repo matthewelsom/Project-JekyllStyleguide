@@ -65,7 +65,7 @@ function maturityCount() {
   var pr = 100 / total * r;
   var prt = 100 / total * rt;  
   if (total > 0) { 
-    $('.title').append('<div class="count"><span class="planned" style="width:' + pp + '%"></span><span class="draft" style="width:' + pd + '%"></span><span class="ready" style="width:' + pr + '%"></span><span class="retired" style="width:' + prt + '%"></span></div>');
+    $('.title').append('<div class="count" title="Current Maturity"><span class="planned" style="width:' + pp + '%"></span><span class="draft" style="width:' + pd + '%"></span><span class="ready" style="width:' + pr + '%"></span><span class="retired" style="width:' + prt + '%"></span></div>');
   }
 }
 

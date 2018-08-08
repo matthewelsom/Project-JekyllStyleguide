@@ -7,7 +7,7 @@ info: The maturity scale is a way to indicate the level of robustness of any pat
 
 - The user need has been identified, but the approach to solving the problem has not yet been decided.
 - The team has decided to tackle this UI pattern.
-- Pattern has been listed in the [Roadmap]({{ site.baseurl }}/docs/00-get-started/roadmap.html).
+- Pattern has been listed in the [Roadmap]({{ site.baseurl }}/docs/about/roadmap.html).
 
 ____
 

@@ -62,10 +62,10 @@ defaults:
       type: foundations
   - 
     scope:
-      path: "_docs/guides"
+      path: "_docs/about"
     values:
       layout: doc
-      type: help
+      type: about
   - 
     scope:
       path: "_docs/examples"
