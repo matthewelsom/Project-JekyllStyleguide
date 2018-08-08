@@ -1,168 +1,52 @@
 ---
-title: Getting Started
+title: Overview 
 layout: doc
-info: Setup and configure this Jekyll-based boilerplate to generate and document product/system user interface (UI) patterns in a 'Living Style Guide'.
-nav: true
+info: Welcome to the Living Style Guide.
+nav: false
 ---
 
-🗂
+<h1>👋 Hi! </h1>
 
-👋
+My name's [Matthew](https://matthewelsom.com), and I built this Jekyll-based tool that you can use to generate and document product or system user interface (UI) patterns in a simple [Living Style Guide](https://livingstyleguide.cc).
 
-Organise design styles, create code standards, and maintain a consistent user interface design across your digital product with this boilerplate living style guide.
+## Why?
 
-# Installation
+There are a lot of really great styleguide methods, tools and [examples](http://styleguides.io) out there... but, I struggled to find one that was:
 
-To start you’ll need to download and install [Jekyll](http://jekyllrb.com/) (3.1 or higher) and the boilerplate source code from [Github](https://github.com/matthewelsom/Living_Styleguide). // NEED TO UPDATE WITH CLEAN VERSION
+- easy and quick to use,
+- simple to maintain,
+- a match for my current workflow,
+- flexible enough to use on a wide variety of projects.
 
+## Requirements
 
+I decided that the following requirements would meet my needs: 
 
-To serve the files locally run the following code in terminal: 
-
-{% highlight terminal %}
-$ cd /path/to/local/folder/
-jekyll serve
-{% endhighlight%}
-
-Once your style guide is complete you can publish it directly to [Github Pages](https://pages.github.com/).
-
----
-
-><i class="icon red" data-icon="info"></i>This site contains UI patterns and documentation that demonstrate how a generated Style Guide could look. You can find the source code for this example [here](https://github.com/matthewelsom/Living_Styleguide)
-
+- Use only [Jekyll](https://jekyll.rb) as a pre-requisit
+- Use HMTL/CSS/JS to build a web component, template, etc. (I called these 'patterns')
+- Track the 'maturity' of a pattern - i.e. is it ready to use, or not?
+- Automatically add all patterns into a 'Roadmap'
+- Simple documentation for developers, designers product owners to use
+- Build a style guide container or shell that is unobtrusive and easy to visually customize
 
 
-# Configuration
+## Help
 
-{% highlight directory %}
-
-Living_Styleguide/
-├── _config.yml
-├── index.md
-├── README.md
-│
-{% endhighlight %}
-
-The style guide settings can be found in `_config.yml`.
-
-# Adding Patterns
-
-## src/
-
-{% highlight directory %}
-│   
-└── src/ 
-    ├── assets/
-    │   ├── _scss
-    │   ├── css
-    │   ├── fonts
-    │   └── ...
-    │
-    └── patterns/
-        ├── 01-components/
-        │   ├── ...
-        └── 02-examples/
-            └── ...
-{% endhighlight %}
+- Read the [design principles]({{ site.baseurl }}/docs/about/02-design-principles.html)
+- Setup and [installation]({{ site.baseurl }}/docs/about/01-getting-started.html) info
+- Learn how to [add patterns]({{ site.baseurl }}/docs/about/01-getting-started.html#adding-patterns), and [documentation]({{ site.baseurl }}/docs/about/01-getting-started.html#adding-documentation)
+- Understand the pattern [maturity]({{ site.baseurl }}/docs/about/03-maturity.html) scale
+- View all patterns in the [Roadmap]({{ site.baseurl }}/docs/about/04-roadmap.html)
 
 
-
-Install Jekyll, build UI components in HTML with styles and assets attached, add documentation.
-
-
-- Create your UI components (patterns), or example pages with HTML and store in `src/patterns`.
-- Add your pattern/page assets to `src/assets` - CSS architecture follows [this SCSS Playbook](http://matthewelsom.com/blog/simple-scss-playbook.html), but it can be changed to suit your needs.
-- Make sure your assets are referenced in the `HEAD` section of the `_layouts/pattern.html` file. 
+___
 
 
-Patterns and Pages are always loaded in an iframe so Styleguide styles will not interfere with your added assets.
+**This tool was originally published in the public domain on 12 September 2016 by [{{ site.sg_author }}](https://matthewelsom.com)**
 
-### Design Files
+It was last updated on {{ site.time | date: "%b %-d, %Y"  }} by {{ site.sg_author }}. 
 
-- **src/html/** is used to store your HTML components and example pages. Each `pattern.html` file must start with Front Matter, this applies the `_layouts/pattern.html` template to the file, and rederes it correctly.
-- **src/assets/** is used to store any JS, SCSS, CSS, Fonts, etc... that are needed to correctly render your patterns.
-- **_docs/** is used to store all pattern documentation is it is important to make sure that every pattern added to the `src/html/` folder has a corresponding file with the same name inside this documentation file.
-- **_layouts/pattern.html** is used to generated each pattern and page, ensure your assets are included in the usual HTML way.
-
-
-# Adding Pages
-
-4. To appear in the sidebar, each pattern/page must have a corresponding `markdown` Documentation file in the `_docs/` folder.
-5. The Documentation file should contain the location of the pattern styles, the maturity of the pattern, as well as any further usability information or rules for use.
-- All of the style guide pages are kept in the `_docs/` folder. 
-
-{% highlight directory %}
-│
-├── _docs/
-│   ├── 00-branding/
-│   │   ├── color.md
-│   │   ├── logo.md
-│   ├── 00-get-started/
-│   │   ├── ...
-│   ├── 01-components/
-│   │   ├── ...
-│   └── 02-examples/
-│       └── ...
-│
-{% endhighlight %}
-
-
-
-# Editing the Styleguide
-
-## Includes
-
-- Includes are snippets of code used to help generate the style guide pages. 
-- They are stored in the `_includes/` folder.
-- You do not need to change these files unless you are changing the function of the style guide shell
-
-& **_layouts/** associated with the styleguide are stored here - they do not need to be edited unless you are changing the function of the styleguide shell.
-
-{% highlight directory %}
-│
-├── _includes/
-│   └── ...
-│
-{% endhighlight %}
-
----
-
-## _layouts/
-
-- All patterns are generated using the `pattern.html` file. 
-- Update this file if you wish to add additonal scripts to your patterns, e.g. If your pattern requires jQuery to run you should add it here. 
-- This file contains the `iframeResizer.contentWindow.min.js` script, it is required to make the pattern load correctly in the iFrame. Removing this script will break the style guide.
-
-{% highlight directory %}
-│
-├── _layouts/
-│   ├── pattern.html
-│   └── ...
-{% endhighlight %}
-
----
-
-## styleguide/
-
-- Contains all of the stylesheets and scripts required to make the styleguide work corretcly. 
-- Updating these files will change the appearance and function of the style guide shell.
-
-{% highlight directory %}
-│
-├── styleguide/
-|   ├── _scss
-│   ├── branding
-│   ├── css
-│   └── fonts
-│  
-{% endhighlight %}
-
-
----
-
-
-
-
+Copyright © 2016 - 2018 & Beyond. All Rights Reserved. 
 
 
 # License 
@@ -171,6 +55,7 @@ This tool can be freely customized, extended, published, and shared.
 
 It was built using [Jekyll](https://jekyll.rb), it's [design principle]({{ site.baseurl }}/docs/guides/design/principle.html) is based on the [US Design Standards](https://designsystem.digital.gov/design-principles/), and the css architecture is based on the [Simple SCSS Playbook](https://matthewelsom.com/blog/simple-scss-playbook.html).
 
+[View License File](https://github.com/matthewelsom/Living_Styleguide/blob/gh-pages/LICENSE)
 
 --- 
 
@@ -187,31 +72,3 @@ A few parts of this project are not in the public domain:
 <!--- The files in `_scss/vendor/bourbon` are extracted from [Bourbon](http://bourbon.io/), copyright [thoughtbot](https://thoughtbot.com/), inc.-->
 
 **Please check with the respective rights holders for license details.**
-
-___
-
-
-**This tool was originally published in the public domain on 12 September 2016 by [{{ site.sg_author }}](https://matthewelsom.com)**
-
-It was last updated on {{ site.time | date: "%b %-d, %Y"  }} by {{ site.sg_author }}. 
-
-Copyright © 2016 - 2018 & Beyond. All Rights Reserved. 
-
-[View License File](https://github.com/matthewelsom/Living_Styleguide/blob/gh-pages/LICENSE)
-
-
-
-//// OLD
-This tool generates a 'Living Style Guide' for your digital product or system that tracks and documents all of the user interface (UI) patterns.  
-
-This tool creates a 'Living Style Guide' for your digital product or system that tracks and documents all of the user interface (UI) patterns.  
-
-You use it to generate all of the systems user interface (UI) patterns. The patterns are tracked and documented in a simple Living Style Guide.
-
-
-Organise design styles, create code standards, and maintain a consistent user interface design across your digital product with this boilerplate living styleguide. Made with the power of Jekyll.
-
-
-listed based on the folder in which the are added. To add a pattern add the corrresonding file to the folder. 
-
-Remember to add a corresponding file into the _docs folder - or this will break.

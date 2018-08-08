@@ -5,9 +5,9 @@
     <div class="toc-head_title">{{ site.sg_title }}</div>
   </a>
   <ul>
-    <li><a href="{{ site.baseurl }}/index.html"{% if page.url == '/' %} class="active"{% endif %}>Getting Started</a></li>
+    <li><a href="{{ site.baseurl }}/index.html"{% if page.url == '/' %} class="active"{% endif %}>Overview</a></li>
   </ul>
-  {% assign about = site.docs | where: 'type', 'about' | sort: 'name' %}
+  {% assign about = site.docs | where: 'type', 'about' | sort: 'url' %}
   <div class="toc-group">
     <div class="toc-group_title">About</div>
     <ul>
@@ -18,7 +18,7 @@
     {% endfor %}
   </ul>
   </div>
-  {% assign foundations = site.docs | where: 'type', 'foundations' | sort: 'name' %}
+  {% assign foundations = site.docs | where: 'type', 'foundations' | sort: 'url' %}
   <div class="toc-group">
     <div class="toc-group_title">Foundations</div>
     <ul>
@@ -29,7 +29,7 @@
     {% endfor %}
   </ul>
   </div>
-  {% assign patterns = site.docs | where: 'type', 'doc' | sort: 'name' %}
+  {% assign patterns = site.docs | where: 'type', 'doc' | sort: 'url' %}
   <div class="toc-group">
     <div class="toc-group_title">Components</div>
     <ul>
@@ -40,7 +40,7 @@
       {% endfor %}
     </ul>
   </div>
-  {% assign examples = site.docs | where: 'type', 'example' | sort: 'name' %}
+  {% assign examples = site.docs | where: 'type', 'example' | sort: 'url' %}
   <div class="toc-group">
     <div class="toc-group_title">Templates</div>
     <ul>
