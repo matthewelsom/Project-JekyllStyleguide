@@ -55,20 +55,17 @@ This tool can be freely customized, extended, published, and shared.
 
 It was built using [Jekyll](https://jekyll.rb), it's [design principle]({{ site.baseurl }}/docs/guides/design/principle.html) is based on the [US Design Standards](https://designsystem.digital.gov/design-principles/), and the css architecture is based on the [Simple SCSS Playbook](https://matthewelsom.com/blog/simple-scss-playbook.html).
 
-[View License File](https://github.com/matthewelsom/Living_Styleguide/blob/gh-pages/LICENSE)
+[View License File](https://github.com/matthewelsom/LivingStyleGuide/blob/master/LICENSE)
 
 --- 
 
 A few parts of this project are not in the public domain:
 
-- Material Icons font files included in the `styleguide/fonts` directory were extracted from XXX, copyright XXX.
-- HK Grotesk font files included in the `styleguide/fonts` directory were extracted from XXX, copyright XXX.
-- [Font Awesome](http://fontawesome.io/) font files in the `_scss/vendor/fontawesome` directory were extracted from XXX, copyright Dave Gandy.
+- [Material Icons](https://material.io/tools/icons/) font files included in the `styleguide/fonts` directory were extracted from [Github](https://github.com/google/material-design-icons).
+- [HK Grotesk](https://hanken.co/product/hk-grotesk/) font files included in the `styleguide/fonts` directory were extracted from [Hanken](https://hanken.co/product/hk-grotesk/), copyright Alfredo Marco Pradil and Stefan Peev.
+- [Font Awesome](http://fontawesome.io/) font files in the `_scss/vendor/fontawesome` directory were extracted from [Font Awesome](https://fontawesome.com/), copyright Dave Gandy.
 - jQuery `[jquery-2.1.4.min.js]` was extracted from [jQuery](https://jquery.com/), copyright The jQuery Foundation.
 - Roboto font files in `fonts/roboto` were extracted from [Google Fonts](https://fonts.google.com/), copyright Christian Robertson.
 - Normalize `[_normalize.scss]` was extrcted from [Normalize.css](https://github.com/necolas/normalize.css), copyright Nicolas Gallagher and Jonathan Neal.
-
-
-<!--- The files in `_scss/vendor/bourbon` are extracted from [Bourbon](http://bourbon.io/), copyright [thoughtbot](https://thoughtbot.com/), inc.-->
 
 **Please check with the respective rights holders for license details.**

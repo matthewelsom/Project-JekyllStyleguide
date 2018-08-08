@@ -1,25 +1,63 @@
-# Living Styleguide
+<h1>👋 Hi! </h1>
 
-![Styleguide](https://livingstyleguide.cc/styleguide/images/cover.png)
+My name's [Matthew](https://matthewelsom.com), and I built this Jekyll-based tool that you can use to generate and document product or system user interface (UI) patterns in a simple [Living Style Guide](https://livingstyleguide.cc).
 
-This styleguide can be freely customized, extended, published, and shared with designers, developers or clients. It is built using [Jekyll](http://jekyll.rb), and the design principles are based on the [Draft US Design Standards](https://standards.usa.gov/).
+## Why?
 
-The [Getting Started](https://livingstyleguide.cc/docs/00-get-started/design-principles.html) pages have all the information you need to start using this tool.
+There are a lot of really great styleguide methods, tools and [examples](http://styleguides.io) out there... but, I struggled to find one that was:
+
+- easy and quick to use,
+- simple to maintain,
+- a match for my current workflow,
+- flexible enough to use on a wide variety of projects.
+
+## Requirements
+
+I decided that the following requirements would meet my needs: 
+
+- Use only [Jekyll](https://jekyll.rb) as a pre-requisit
+- Use HMTL/CSS/JS to build a web component, template, etc. (I called these 'patterns')
+- Track the 'maturity' of a pattern - i.e. is it ready to use, or not?
+- Automatically add all patterns into a 'Roadmap'
+- Simple documentation for developers, designers product owners to use
+- Build a style guide container or shell that is unobtrusive and easy to visually customize
+
+
+## Help
+
+- Read the [design principles](https://livingstyleguide.cc/docs/about/02-design-principles.html)
+- Setup and [installation](https://livingstyleguide.cc/docs/about/01-getting-started.html) info
+- Learn how to [add patterns](https://livingstyleguide.cc/docs/about/01-getting-started.html#adding-patterns), and [documentation](https://livingstyleguide.cc/docs/about/01-getting-started.html#adding-documentation)
+- Understand the pattern [maturity](https://livingstyleguide.cc/docs/about/03-maturity.html) scale
+- View all patterns in the [Roadmap](https://livingstyleguide.cc/docs/about/04-roadmap.html)
 
 ___
 
-#### License 
 
-**This tool was published in the public domain on 12 September 2016 by [Matthew Elsom](http://matthewelsom.com) © 2016 & Beyond. [License](https://github.com/matthewelsom/Living_Styleguide/blob/gh-pages/LICENSE)**
+**This tool was originally published in the public domain on 12 September 2016 by [Matthew Elsom](https://matthewelsom.com)**
+
+It was last updated in 2018 by Matthew Elsom. 
+
+Copyright © 2016 - 2018 & Beyond. All Rights Reserved. 
+
+
+# License 
+
+This tool can be freely customized, extended, published, and shared.
+
+It was built using [Jekyll](https://jekyll.rb), it's [design principle](https://livingstyleguide.cc/docs/guides/design/principle.html) is based on the [US Design Standards](https://designsystem.digital.gov/design-principles/), and the css architecture is based on the [Simple SCSS Playbook](https://matthewelsom.com/blog/simple-scss-playbook.html).
+
+[View License File](https://github.com/matthewelsom/LivingStyleGuide/blob/master/LICENSE)
+
+--- 
 
 A few parts of this project are not in the public domain:
 
-- The files in `styleguide/fonts`, and `_scss/ionicons` are extracted from [Ionicons](http://ionicons.com/), copyright Ben Sperry.
-- The files in `_scss/vendor/bourbon` are extracted from [Bourbon](http://bourbon.io/), copyright [thoughtbot](https://thoughtbot.com/), inc.
-- The files in `_scss/vendor/fontawesome`, and `src/assets/fonts` are from [Font Awesome](http://fontawesome.io/), copyright Dave Gandy.
-- The files in `_scss/normalize` are from [Normalize.css](https://github.com/necolas/normalize.css), copyright Nicolas Gallagher and Jonathan Neal.
-- The file `js/jquery/jquery-2.1.4.min.js` is from [jQuery](https://jquery.com/), copyright The jQuery Foundation.
-- The files in `fonts/open-sans` are extracted from [Google Fonts](https://fonts.google.com/specimen/Open+Sans), copyright Steve Matteson.
-- The files in `fonts/roboto` are extracted from [Google Fonts](https://fonts.google.com/specimen/Roboto), copyright Christian Robertson.
+- [Material Icons](https://material.io/tools/icons/) font files included in the `styleguide/fonts` directory were extracted from [Github](https://github.com/google/material-design-icons).
+- [HK Grotesk](https://hanken.co/product/hk-grotesk/) font files included in the `styleguide/fonts` directory were extracted from [Hanken](https://hanken.co/product/hk-grotesk/), copyright Alfredo Marco Pradil and Stefan Peev.
+- [Font Awesome](http://fontawesome.io/) font files in the `_scss/vendor/fontawesome` directory were extracted from [Font Awesome](https://fontawesome.com/), copyright Dave Gandy.
+- jQuery `[jquery-2.1.4.min.js]` was extracted from [jQuery](https://jquery.com/), copyright The jQuery Foundation.
+- Roboto font files in `fonts/roboto` were extracted from [Google Fonts](https://fonts.google.com/), copyright Christian Robertson.
+- Normalize `[_normalize.scss]` was extrcted from [Normalize.css](https://github.com/necolas/normalize.css), copyright Nicolas Gallagher and Jonathan Neal.
 
-**Please check with rights holders for license details.**
+**Please check with the respective rights holders for license details.**
