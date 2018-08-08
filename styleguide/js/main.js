@@ -48,16 +48,15 @@ function TargetExt() {
 }
 
 
-//TOC Button
-//function tocButton() {
-//  var $TocButton = $('.sg-maximize-btn');
-//
-//  $TocButton.click(function(e) {
-//    e.preventDefault();
-//    $(this).toggleClass('component-header__code_expanded');
-//    $(this).closest('.sg-pusher').toggleClass('hide-toc');
-//  });
-//}
+// Sidebar Button
+function sidebarButton() {
+  var $button = $('.sg_sidebar_button');
+
+  $button.click(function(e) {
+    e.preventDefault();
+    $(this).parents('.sg-pusher').toggleClass('show_sidebar');
+  });
+}
 
 // Maturity Count
 function maturityCount() {
@@ -82,6 +81,7 @@ $(document).ready(function() {
   maturityCount();
   collapseH();
   TargetExt();
+  sidebarButton();
 });
 
 

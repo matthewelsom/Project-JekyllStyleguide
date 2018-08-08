@@ -49,6 +49,8 @@ It was last updated on {{ site.time | date: "%b %-d, %Y"  }} by {{ site.sg_autho
 
 Copyright © 2016 - 2018 & Beyond. All Rights Reserved. 
 
+><i class="icon red" data-icon="warning"></i>This tool has been tested on Google Chrome only. Use with Caution.
+
 
 # License 
 

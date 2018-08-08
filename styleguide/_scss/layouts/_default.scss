@@ -26,9 +26,6 @@ body#sg {
 }
 .sg-pusher {
   position: relative;
-//  -webkit-backface-visibility: hidden;
-//  backface-visibility: hidden;
-//  overflow: hidden;
   min-height: 100%;
   margin: 0 $margin_large;
   
@@ -37,65 +34,70 @@ body#sg {
   }
 }
 
-.sg-pusher.hide-toc {
-  .sg_sidebar {
-  }
-  .sg-main {
-    width: 100%;
+// Sidebar Button Styles
+.sg_sidebar_button {
+  display: none;
+  
+  @media only screen and (max-width: $large_screen) {
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    line-height: 1;
+    margin: $margin 0;
     left: 0;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    color: $heading-font-color;
+
+    .icon {
+      font-size: inherit;
+      margin-right: 0;
+    }
   }
-//  a.sg-maximize-btn.fixed {
-//    display: flex;
-//  }
 }
-//a.sg-maximize-btn {
-//  display: flex;
-//  align-items: center;
-//  min-height: 40px;
-//  line-height: 1;
-//  position: absolute;
-//  right: 0;
-//  top: 0;
-//  background: $smoke;
-//  color: $heading-font-color;
-//  font-weight: 600;
-//  font-size: $base-font-size;
-//  text-decoration: none;
-//  transition: all $base-timing $base-duration;
-//  
-//  .icon {
-//    margin-right: 0;
-//    line-height: 1;
-//  }
-//  span {
-//    display: none;
-//    line-height: 1;
-//    text-transform: uppercase;
-//    margin: 0 $margin_small/2;
-//  }
-//  &:hover,
-//  &:focus {
-//    color: $action-color;
-//  }
-//}
-//a.sg-maximize-btn.fixed {
-//  display: none;
-//  position: fixed;
-//  top: 0;
-//  left: 0;
-//  right: auto;
-//  z-index: 9;
-//  color: $white;
-//  background: transparentize($action-color, .3);
-//}
-//a.sg-maximize-btn:hover span,
-//a.sg-maximize-btn:focus span {
-//  position: relative;
-//  width: auto;
-//  display: inline-block;
-//  opacity: 1;
-//  visibility: visible;
-//}
+@media only screen and (max-width: $large_screen) {
+  .sg-pusher.show_sidebar {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+
+    .sg_sidebar_button {
+      left: $left_rail + 20;
+      color: $blue;
+    }
+    .sg_sidebar {
+      width: $left_rail;
+      left: 0;
+    }
+    .sg-main {
+      position: absolute;
+      left: $left_rail + 20;
+      opacity: .2;
+    }
+  }
+}
+@media only screen and (max-width: $small_screen) {
+  .sg-pusher.show_sidebar {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+
+    .sg_sidebar_button {
+      left: $left_rail - 30;
+    }
+    .sg_sidebar {
+      width: $left_rail - 50;
+      left: 0;
+    }
+    .sg-main {
+      position: absolute;
+      left: $left_rail - 30;
+      opacity: .2;
+    }
+  }
+}
+// Sidebar Position
 .sg_sidebar {
   position: fixed;
   top: 0;
@@ -106,10 +108,9 @@ body#sg {
   min-height: 100%;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  transition: all $base-timing $base-duration;
   
   @media only screen and (max-width: $large_screen) {
-    display: none;  
+    left: -$left_rail;  
   }
 }
 .sg-main {
@@ -117,7 +118,6 @@ body#sg {
   width: 100%;
   height: auto;
   min-height: 100%;
-  transition: all $base-timing $base-duration;
 }
 .sg_contain {
   max-width: 50rem;

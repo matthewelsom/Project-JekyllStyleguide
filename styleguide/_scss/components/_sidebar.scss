@@ -1,8 +1,3 @@
-////////////////////////////////////////
-////////////////////////////////////////
-////////////////////////////////////////
-//FORMAT
-
 .sg_sidebar {
   color: $white;
   background: lighten($black, 4%);
@@ -23,7 +18,7 @@
     border-top: 1px solid transparentize($white, 0.8);
     line-height: $heading-line-height;
   }
-  a {
+  a:not(.logo) {
     text-transform: capitalize;
     display: block;
     color: transparentize($white, 0.5);
@@ -33,6 +28,20 @@
     padding: $margin_small/3 0;
     padding: $margin;
     transition: all $base-timing $base-duration;
+    margin-left: $margin_large;
+        
+    &:before {
+      @extend .icon;
+      content: 'remove';
+      display: inline-block;
+      line-height: 1;
+      vertical-align: text-top;
+      margin-right: $margin_small;
+      margin-left: - $margin_large;
+    }
+    &.active:before {
+      content: 'arrow_forward';
+    }
     
     &:hover,
     &.active {
@@ -40,58 +49,50 @@
     }
   }
   
-  .toc-head {
+  .logo {
     display: flex;
     align-items: center;
     padding: $margin_large $margin; 
     color: $white;
+    text-transform: capitalize;
+    font-size: $typo_sparrow;
+    font-weight: 700;
+    text-decoration:none;
     
-    .toc-head_icon {
-      height: 48px;
-      width: 48px;
+    .icon {
+      height: 3rem;
+      width: 3rem;
       flex: 0 0 auto;
       margin-right: $margin;
       overflow: hidden;
       
       img {
-        width: 48px;
-        height: 48px;
+        width: 3rem;
+        height: 3rem;
       }
     }
-    .toc-head_title {
+    .title {
       font-size: $typo_crow;
       margin-bottom: 0;
     }
   }
-  .toc-group {
+  .group {
     border-top: 1px solid transparentize($white, 0.8);
     padding-bottom: $margin;
   
-    .toc-group_title {
+    .group_title {
       font-size: $typo_hummingbird;
       font-weight: 700;
       padding: $margin;
       padding-bottom: $margin_small;
       margin-bottom: 0;
     }
-    ul {}
     li {
       border-top: none;
+      
       a {
         padding: $margin_small/2 $margin;
         font-weight: 600;
-        
-        &:before {
-          @extend .icon;
-          content: 'remove';
-          display: inline-block;
-          line-height: 1;
-          vertical-align: text-top;
-          margin-right: $margin_small;
-        }
-        &.active:before {
-          content: 'arrow_forward';
-        }
       }
     }
   }
