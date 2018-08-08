@@ -42,6 +42,12 @@ function collapseH() {
   });
 }
 
+// Target External Links
+function TargetExt() {
+  $(".sg_doc a[href^='http']").attr("target","_blank").addClass("ext");
+}
+
+
 //TOC Button
 //function tocButton() {
 //  var $TocButton = $('.sg-maximize-btn');
@@ -75,6 +81,7 @@ $(document).ready(function() {
   smoothScroll();
   maturityCount();
   collapseH();
+  TargetExt();
 });
 
 

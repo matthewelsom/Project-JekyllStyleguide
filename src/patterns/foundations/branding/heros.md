@@ -4,7 +4,7 @@ maturity: planned
 control: exclude
 items: 
   - name: Banner A
-    path: src/assets/branding/hero.png 
+    path: src/assets/images/hero.png 
 ---
 <style>
 .set {

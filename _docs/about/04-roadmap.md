@@ -3,7 +3,7 @@ title: Roadmap
 info: The roadmap lists all UI patterns in the style guide. Patterns are automatically listed in the Roadmap when they are added to the style guide. 
 nav: exclude
 ---
-><i class="icon red" data-icon="info"></i>Learn how to [Add a Pattern]({{ site.baseurl }}/index.html#adding-patterns) to the style guide. 
+><i class="icon red" data-icon="info"></i>Learn how to [Add a Pattern]({{ site.baseurl }}/docs/about/01-getting-started.html#adding-patterns) to the style guide. 
 
 <div id="sg_roadmap">
   <input type="text" class="fluid roadmap_search fuzzy-search" placeholder="Search the Roadmap"/>

@@ -3,8 +3,12 @@ layout: default
 ---
 <div id="patternArea" class="sg-pattern_full">  
 <div class="sg_contain">
+{{ content }}
+
+<!--
 {% assign pattern_url = page.url | replace_first: 'docs', 'src/patterns' %} 
   <iframe class="sg_viewport" width="100%" frameborder="0" scrolling="no" src="{{ site.baseurl }}{{ pattern_url }}" allowfullscreen></iframe> 
+-->
 <!--  <iframe id="sg-viewport" name="sg-viewport" frameborder="0" src="{{ site.baseurl }}{{ pattern_url }}" onload="iframeLoaded()"></iframe>-->
 </div>
 </div>

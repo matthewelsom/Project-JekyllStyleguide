@@ -1,52 +1,53 @@
-#Analytics Tracking
-sg_ga: UA-19247091-8
+###################################
+## General Settings
 
-# Styleguide settings
+## These settings are standard Jekyll Settings, check the Jekyll docs for help
+
+## Preprocessor settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+
+## Jekyll Serve
+port: 4000
+
+## Output
+siteurl:                    ## Optional 
+baseurl:                    ## Optional 
+destination: _site          ## Output folder
+
+
+###################################
+## Style Guide Shell Settings
+
+## These settings are used in when generating the style guide shell
 sg_title: Living Style Guide
-sg_version: 1.0
+sg_version: 2.0
 sg_keywords: style guide, playbook, design, code 
 sg_author: Matthew Elsom
 sg_description: This Living Style Guide maintains design and code standards and documentation for a digital user interface.
 sg_language: en
 sg_styles: /styleguide/css/styleguide.css
 sg_favicon: /styleguide/branding/favicon.ico
-# Enable sass to edit Styleguide Template Styles
-sass:
-  sass_dir: styleguide/_scss #[generate Styleguide styles]
+sg_ga: UA-19247091-8      ## Analytics Tracking
+
+## Generates Style Guide Shell Styles
+## Enable to change the style guide shell stylesheet.
+sass: 
+  sass_dir: styleguide/_scss
   style: :compressed
 
-# Preprocessor settings
-#highlighter: rouge
-markdown: kramdown
-kramdown:
-  input: GFM
 
-# Jekyll Serve
-port: 4000
+###################################
+## Collection Settings
 
-# Output settings
-title: STYLEGUIDE NAME
-version: VERSION
-keywords: KEYWORDS
-author: AUTHOR NAME
-description: DESCRIPTION
-language: en
-baseurl:
-destination: _site
-#sass:
-#  sass_dir: src/assets/_scss #[generate Product styles]
-#  style: :compressed
-
-# Permalink
-#permalink: /:categories/:title/
-
-# Collections
+## Outputs the _docs collection !Required
 collections:
   docs: 
     output: true
-  patterns: 
-    output: true  
-    
+
+## Sets the default attributes for the Documentation and Pattern Files !Required
 defaults:
   - 
     scope:
@@ -56,22 +57,28 @@ defaults:
       type: doc
   - 
     scope:
-      path: "_docs/foundations"
-    values:
-      layout: doc
-      type: foundations
-  - 
-    scope:
       path: "_docs/about"
     values:
       layout: doc
-      type: about
+      type: about    
   - 
     scope:
-      path: "_docs/examples"
+      path: "_docs/foundations"
     values:
-      layout: example
-      type: example
+      layout: doc
+      type: foundation
+  - 
+    scope:
+      path: "_docs/components"
+    values:
+      layout: doc
+      type: component    
+  - 
+    scope:
+      path: "_docs/templates"
+    values:
+      layout: template
+      type: template
   - 
     scope:
       path: "src/patterns"
@@ -81,3 +88,24 @@ defaults:
       maturity: planned
       title: Not Assigned
       styles: Not Assigned
+      
+
+###################################
+## Pattern Settings
+## These attributes are applied to all patterns via the pattern.html layout.
+
+pattern_author: AUTHOR NAME             ## used in <head> tag
+pattern_description: DESCRIPTION        ## used in <head> tag
+pattern_language: en                    ## used in <html> tag
+pattern_favicon: /src/assets/images/icon.ico
+pattern_styles:                 ## add style locations here
+  - /src/assets/css/style.css
+pattern_scripts:                ## add script locations here
+  - /styleguide/js/libs/jquery-2.1.4.min.js  
+
+
+## Generates Pattern Styles
+## Disable to prevent pattern styles from being generated.
+#sass:
+#  sass_dir: src/assets/_scss 
+#  style: :compressed      

@@ -1,15 +1,21 @@
 <!DOCTYPE html>
- <html {% if site.language %}lang="{{ site.language }}"{% endif %}>
+ <html {% if site.language %}lang="{{ site.pattern_language }}"{% endif %}>
   <head>
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.pattern_description }}{% endif %}">
+    <meta name="author" content="{{ site.pattern_author }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/src/assets/branding/favicon.ico">
-    <link rel="stylesheet" href="{{ site.baseurl }}/src/assets/css/style.css" media="screen">
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}{{ site.pattern_favicon }}">
+    {% if site.pattern_styles %}{% for item in site.pattern_styles %}
+      <link rel="stylesheet" href="{{ site.baseurl }}{{ item }}" media="screen">
+    {% endfor %}{% endif %}
   </head>
   <body id="content">
     {{ content }}
+    {% if site.pattern_scripts %}{% for item in site.pattern_scripts %}
+      <script src="{{ site.baseurl }}{{ item }}"></script>
+    {% endfor %}{% endif %}
     <!--   iFrame Script required for Styleguide only -->
     <script src="{{ site.baseurl }}/styleguide/js/libs/iframeResizer.contentWindow.min.js" defer></script>
   </body>
