@@ -130,6 +130,20 @@ A 'Pattern' is any part of the user interface, they are divided into 3 types:
 ## Uploading Patterns
 
 - Write your pattern in HTML in a Markdown file.
+- The pattern must start with [Front Matter](https://jekyllrb.com/docs/frontmatter/).
+- Set the `title`, `maturity`, and the location of the corresponding `styles`.
+- Turn off the Pattern Controls by using `control: exclude` - this is particulary useful for foundation patterns.
+
+{% highlight pattern.md %}
+---
+title: Default Button
+styles: base/button.scss
+maturity: ready
+control: exclude
+---
+<a href="javascript:void(0)" class="button">Click Me!</a>
+{% endhighlight %}
+
 - Upload your pattern to the corresponding folder in `src/patterns`.
 - You need to make sure your pattern is 4 folder levels deep to ensure the are linked correctly, so group you patterns in sub folders
 
@@ -158,7 +172,6 @@ Coming soon
 
 
 <!--
-Install Jekyll, build UI components in HTML with styles and assets attached, add documentation.
 
 
 
@@ -168,33 +181,31 @@ Patterns and Pages are always loaded in an iframe so Styleguide styles will not 
 
 ### Design Files
 
-- **src/html/** is used to store your HTML components and example pages. Each `pattern.html` file must start with Front Matter, this applies the `_layouts/pattern.html` template to the file, and rederes it correctly.
-- **src/assets/** is used to store any JS, SCSS, CSS, Fonts, etc... that are needed to correctly render your patterns.
 - **_docs/** is used to store all pattern documentation is it is important to make sure that every pattern added to the `src/html/` folder has a corresponding file with the same name inside this documentation file.
-- **_layouts/pattern.html** is used to generated each pattern and page, ensure your assets are included in the usual HTML way.
-
 
 4. To appear in the sidebar, each pattern/page must have a corresponding `markdown` Documentation file in the `_docs/` folder.
 5. The Documentation file should contain the location of the pattern styles, the maturity of the pattern, as well as any further usability information or rules for use.
 - All of the style guide pages are kept in the `_docs/` folder. 
 -->
 
-<!--
 {% highlight directory %}
 │
 ├── _docs/
-│   ├── 00-branding/
+│   ├── about/
+│   │   └── ...   
+│   │
+│   ├── components/
+│   │   └── ...
+│   │
+│   ├── foundations/
 │   │   ├── color.md
-│   │   ├── logo.md
-│   ├── 00-get-started/
-│   │   ├── ...
-│   ├── 01-components/
-│   │   ├── ...
-│   └── 02-examples/
+│   │   ├── typography.md   
+│   │   └── ...
+│   │
+│   └── templates/
 │       └── ...
 │
 {% endhighlight %}
--->
 
 
 
