@@ -5,9 +5,7 @@ info: Welcome to the Living Style Guide.
 nav: false
 ---
 
-<h1>👋 Hi! </h1>
-
-My name's [Matthew](https://matthewelsom.com), and I built this Jekyll-based tool that you can use to generate and document product or system user interface (UI) patterns in a simple [Living Style Guide](https://livingstyleguide.cc).
+👋 Hi! My name's [Matthew](https://matthewelsom.com), and I built this Jekyll-based tool that you can use to generate and document product or system user interface (UI) patterns in a simple [Living Style Guide](https://livingstyleguide.cc).
 
 ## Why?
 
