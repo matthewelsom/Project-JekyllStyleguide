@@ -1,6 +1,6 @@
-# Living Style Guide 
+# Jekyll Style Guide 
 
-👋 Hi! My name's [Matthew](https://matthewelsom.com), and I built this Jekyll-based tool that you can use to generate and document product or system user interface (UI) patterns in a simple [Living Style Guide](https://livingstyleguide.cc).
+👋 Hi! My name's [Matthew](https://matthewelsom.com), and I built this Jekyll-based tool that you can use to generate and document product or system user interface (UI) patterns in a simple [Style Guide](https://jekyllstyleguide.com).
 
 ## Why?
 
@@ -25,18 +25,18 @@ I decided that the following requirements would meet my needs:
 
 ## Help
 
-- Read the [design principles](https://livingstyleguide.cc/docs/about/02-design-principle.html)
-- Setup and [installation](https://livingstyleguide.cc/docs/about/01-getting-started.html) info
-- Learn how to [add patterns](https://livingstyleguide.cc/docs/about/01-getting-started.html#adding-patterns), and [documentation](https://livingstyleguide.cc/docs/about/01-getting-started.html#adding-documentation)
-- Understand the pattern [maturity](https://livingstyleguide.cc/docs/about/03-maturity.html) scale
-- View all patterns in the [Roadmap](https://livingstyleguide.cc/docs/about/04-roadmap.html)
+- Read the [design principles](https://jekyllstyleguide.com/docs/about/02-design-principle.html)
+- Setup and [installation](https://jekyllstyleguide.com/docs/about/01-getting-started.html) info
+- Learn how to [add patterns](https://jekyllstyleguide.com/docs/about/01-getting-started.html#adding-patterns), and [documentation](https://jekyllstyleguide.com/docs/about/01-getting-started.html#adding-documentation)
+- Understand the pattern [maturity](https://jekyllstyleguide.com/docs/about/03-maturity.html) scale
+- View all patterns in the [Roadmap](https://jekyllstyleguide.com/docs/about/04-roadmap.html)
 
 ___
 
 
-**This tool was originally published in the public domain on 12 September 2016 by [Matthew Elsom](https://matthewelsom.com)**
+**This tool was originally published in the public domain as 'Living StyleGuide' on 12 September 2016 by [Matthew Elsom](https://matthewelsom.com)**
 
-It was last updated in 2018 by Matthew Elsom. 
+It was updated to 'Jekyll Style Guide' in 2018 by Matthew Elsom. 
 
 Copyright © 2016 - 2018 & Beyond. All Rights Reserved. 
 
@@ -45,7 +45,7 @@ Copyright © 2016 - 2018 & Beyond. All Rights Reserved.
 
 This tool can be freely customized, extended, published, and shared.
 
-It was built using [Jekyll](https://jekyll.rb), it's [design principle](https://livingstyleguide.cc/docs/about/02-design-principle.html) is based on the [US Design Standards](https://designsystem.digital.gov/design-principles/), and the css architecture is based on the [Simple SCSS Playbook](https://matthewelsom.com/blog/simple-scss-playbook.html).
+It was built using [Jekyll](https://jekyll.rb), it's [design principle](https://jekyllstyleguide.com/docs/about/02-design-principle.html) is based on the [US Design Standards](https://designsystem.digital.gov/design-principles/), and the css architecture is based on the [Simple SCSS Playbook](https://matthewelsom.com/blog/simple-scss-playbook.html).
 
 [View License File](https://github.com/matthewelsom/LivingStyleGuide/blob/master/LICENSE)
 

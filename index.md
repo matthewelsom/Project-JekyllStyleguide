@@ -1,13 +1,13 @@
 ---
 title: Overview 
 layout: doc
-info: Welcome to the Living Style Guide.
+info: Welcome to the Jekyll Style Guide.
 nav: false
 ---
 
 <h1>👋 Hi! </h1>
 
-My name's [Matthew](https://matthewelsom.com), and I built this Jekyll-based tool that you can use to generate and document product or system user interface (UI) patterns in a simple [Living Style Guide](https://livingstyleguide.cc).
+My name's [Matthew](https://matthewelsom.com), and I built this Jekyll-based tool that you can use to generate and document product or system user interface (UI) patterns in a simple [Style Guide](https://jekyllstyleguide.com).
 
 
 ## Why?
@@ -43,9 +43,9 @@ I decided that the following requirements would meet my needs:
 ___
 
 
-**This tool was originally published in the public domain on 12 September 2016 by [{{ site.sg_author }}](https://matthewelsom.com)**
+**This tool was originally published in the public domain as 'Living Styleguide' on 12 September 2016 by [{{ site.sg_author }}](https://matthewelsom.com)**
 
-It was last updated on {{ site.time | date: "%b %-d, %Y"  }} by {{ site.sg_author }}. 
+It was changed to 'Jekyll Style Guide' in 2018, and last updated on {{ site.time | date: "%b %-d, %Y"  }} by {{ site.sg_author }}. 
 
 Copyright © 2016 - 2018 & Beyond. All Rights Reserved. 
 

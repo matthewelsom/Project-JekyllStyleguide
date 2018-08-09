@@ -22,11 +22,11 @@ destination: _site          ## Output folder
 ## Style Guide Shell Settings
 
 ## These settings are used in when generating the style guide shell
-sg_title: Living Style Guide
+sg_title: Jekyll Style Guide
 sg_version: 2.0
-sg_keywords: style guide, playbook, design, code 
+sg_keywords: jekyll, style guide, playbook, design, code 
 sg_author: Matthew Elsom
-sg_description: This Living Style Guide maintains design and code standards and documentation for a digital user interface.
+sg_description: This Jekyll Style Guide maintains design and code standards and documentation for a digital user interface.
 sg_language: en
 sg_styles: /styleguide/css/styleguide.css
 sg_favicon: /styleguide/branding/favicon.ico
