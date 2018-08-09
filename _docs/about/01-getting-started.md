@@ -10,7 +10,7 @@ nav: true
 To start you’ll need to download and install [Jekyll](http://jekyllrb.com/) (3.1 or higher) and the source code from [Github](https://github.com/matthewelsom/jekyll-style-guide). 
 
 
-><i class="icon red" data-icon="info"></i>This site contains sample UI patterns and documentation to indicate what a finished Style Guide could look like. You should remove these files or download the 'blank-canvas' version with no contents [here](https://github.com/matthewelsom/jekyll-style-guide/tree/boilerplate).
+><i class="icon red" data-icon="info"></i>Sample UI patterns and documentation have been included in this tool to indicate what a finished Style Guide could look like. You can remove the files from `src/` and the `CNAME` file to start from scratch.
 
 
 To serve the files locally run the following code in terminal: 
@@ -20,7 +20,7 @@ $ cd /path/to/local/folder/
 jekyll serve
 {% endhighlight%}
 
-Once your style guide is complete you can publish it directly to [Github Pages](https://pages.github.com/).
+Once your style guide is complete you can publish it to [Github Pages](https://pages.github.com/) like any other Jekyll website.
 
 
 # Configuration
@@ -34,13 +34,13 @@ jekyll-style-guide/
 │
 {% endhighlight %}
 
-All settings are contained in the `_config.yml` file.
+All settings are contained in the `_config.yml` file. To use this tool out of the box, you only need to adjust the `pattern settings`.
 
 --- 
 
 ## General Settings
 
-Standard Jekyll configuration settings, check the [documentation](https://jekyllrb.com/docs/configuration/) for information on how to use this. 
+These are standard Jekyll configuration settings, check the [documentation](https://jekyllrb.com/docs/configuration/) for information on how to use this. 
 
 ---
 
@@ -58,7 +58,7 @@ These settings control how documentation and pattern files are generated, and wh
 
 ## Pattern Settings
 
-These settings are used in all patterns and can be freely changed. 
+These settings are used in all patterns and should be updated based on your needs. 
 
 {% highlight yml %}
 
@@ -69,10 +69,10 @@ pattern_description: DESCRIPTION        ## sets the description in the <head></h
 pattern_language: en                    ## sets the language in the <html></html> tag
 pattern_favicon: /src/assets/images/icon.ico
 
-pattern_styles:                         ## add style locations here
+pattern_styles:                         ## (list) add style locations here
   - /src/assets/css/style.css
   
-pattern_scripts:                        ## add script locations here
+pattern_scripts:                        ## (list) add script locations here
   - /styleguide/js/libs/jquery-2.1.4.min.js  
 
 sass:
@@ -87,9 +87,9 @@ sass:
 
 # Adding Patterns
 
-## Defining Patterns
+## What is a Pattern?
 
-A 'Pattern' is any part of the user interface, they are divided into 3 types:
+A 'Pattern' is any part of the user interface, by default there are 3 types:
 
 - **Foundations**
   - Foundations are global constraints that define the basic parameters of parts of the UI.
@@ -103,7 +103,6 @@ A 'Pattern' is any part of the user interface, they are divided into 3 types:
 - **Templates**
   - Templates are pre-determined page layouts.
   - They can include components and foundations, or can be constructed uniquely. 
-  - Most templates contain a 'Content Area' that can contain components.
   - Examples, Full-Width Content Page, Sidebar Page, Two Column Page 
   
   
