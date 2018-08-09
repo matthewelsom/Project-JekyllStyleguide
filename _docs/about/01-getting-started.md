@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 layout: doc
-info: How to setup and configure this Jekyll-based boilerplate.
+info: How to setup and configure this Jekyll-based style guide boilerplate.
 nav: true
 ---
 
