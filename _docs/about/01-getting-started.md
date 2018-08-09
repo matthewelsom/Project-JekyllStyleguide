@@ -7,10 +7,10 @@ nav: true
 
 # Installation
 
-To start you’ll need to download and install [Jekyll](http://jekyllrb.com/) (3.1 or higher) and the source code from [Github](https://github.com/matthewelsom/LivingStyleGuide). 
+To start you’ll need to download and install [Jekyll](http://jekyllrb.com/) (3.1 or higher) and the source code from [Github](https://github.com/matthewelsom/jekyll-style-guide). 
 
 
-><i class="icon red" data-icon="info"></i>This site contains sample UI patterns and documentation to indicate what a finished Style Guide could look like. You should remove these files or download the 'blank-canvas' version with no contents [here](https://github.com/matthewelsom/LivingStyleGuide/tree/boilerplate).
+><i class="icon red" data-icon="info"></i>This site contains sample UI patterns and documentation to indicate what a finished Style Guide could look like. You should remove these files or download the 'blank-canvas' version with no contents [here](https://github.com/matthewelsom/jekyll-style-guide/tree/boilerplate).
 
 
 To serve the files locally run the following code in terminal: 
@@ -27,7 +27,7 @@ Once your style guide is complete you can publish it directly to [Github Pages](
 
 {% highlight directory %}
 
-LivingStyleGuide/
+jekyll-style-guide/
 ├── _config.yml
 ├── index.md
 ├── README.md

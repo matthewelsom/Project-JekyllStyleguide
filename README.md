@@ -19,11 +19,13 @@ I decided that the following requirements would meet my needs:
 - Use HMTL/CSS/JS to build a web component, template, etc. (I called these 'patterns')
 - Track the 'maturity' of a pattern - i.e. is it ready to use, or not?
 - Automatically add all patterns into a 'Roadmap'
-- Simple documentation for developers, designers product owners to use
-- Build a style guide container or shell that is unobtrusive and easy to visually customize
+- Enable simple documentation for developers, designers and product owners to use
+- Provide a style guide container or 'shell' that is unobtrusive and easy to visually customize
 
 
 ## Help
+
+To get started using this tool check out these useful pages: 
 
 - Read the [design principles](https://jekyllstyleguide.com/docs/about/02-design-principle.html)
 - Setup and [installation](https://jekyllstyleguide.com/docs/about/01-getting-started.html) info
@@ -36,18 +38,25 @@ ___
 
 **This tool was originally published in the public domain as 'Living StyleGuide' on 12 September 2016 by [Matthew Elsom](https://matthewelsom.com)**
 
-It was updated to 'Jekyll Style Guide' in 2018 by Matthew Elsom. 
+It's name was changed to 'Jekyll Style Guide' in 2018, and it's license was updated.
+
+It was last updated in 2018 by Matthew Elsom. 
 
 Copyright © 2016 - 2018 & Beyond. All Rights Reserved. 
+
+**This tool has been tested for Google Chrome (Mac) v67+ and iOS Safari. Use with Caution.**
+
 
 
 # License 
 
-This tool can be freely customized, extended, published, and shared.
+This tool is free for everyone to use, and modify, but don't try and sell it.
+Available under [Apache license version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
+
 
 It was built using [Jekyll](https://jekyll.rb), it's [design principle](https://jekyllstyleguide.com/docs/about/02-design-principle.html) is based on the [US Design Standards](https://designsystem.digital.gov/design-principles/), and the css architecture is based on the [Simple SCSS Playbook](https://matthewelsom.com/blog/simple-scss-playbook.html).
 
-[View License File](https://github.com/matthewelsom/LivingStyleGuide/blob/master/LICENSE)
+[View License File](https://github.com/matthewelsom/jekyll-style-guide/blob/master/LICENSE)
 
 --- 
 
