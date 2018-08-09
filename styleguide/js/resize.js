@@ -5,8 +5,8 @@ iFrameResize({
   inPageLinks             : true, // Enable links in Frame
   bodyMargin              : 0, // Remove body margin
   bodyPadding             : 0, // remove body padding
-  maxWidth: screen.width,
-  minWidth: screen.width,
+//  maxWidth: screen.width,
+//  minWidth: screen.width,
   sizeWidth: 'true'
 });
 
