@@ -29,7 +29,7 @@ function sourceCode() {
 // iFrame Loader
 function iframeLoader() {
   $('iframe').load(function () {
-    $(this).parent().css('background', 'none');
+//    $(this).parent().css('background', 'none');
     $(this).css('opacity','1');
   });
 }
