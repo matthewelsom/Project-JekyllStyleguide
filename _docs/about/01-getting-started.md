@@ -128,10 +128,10 @@ A 'Pattern' is any part of the user interface, by default there are 3 types:
 
 ## Uploading Patterns
 
-- Write your pattern in HTML in a Markdown file.
+- Write your HTML pattern in a Markdown file.
 - The pattern must start with [Front Matter](https://jekyllrb.com/docs/frontmatter/).
 - Set the `title`, `maturity`, and the location of the corresponding `styles`.
-- Turn off the Pattern Controls by using `control: exclude` - this is particulary useful for foundation patterns.
+- Optional: Turn off the Pattern Controls by using `control: exclude` - this is particulary useful for foundation patterns.
 
 {% highlight pattern.md %}
 ---
@@ -144,13 +144,13 @@ control: exclude
 {% endhighlight %}
 
 - Upload your pattern to the corresponding folder in `src/patterns`.
-- You need to make sure your pattern is 4 folder levels deep to ensure the are linked correctly, so group you patterns in sub folders
+- You need to make sure your pattern is 4 folder levels deep to ensure they get linked correctly from the navigation and roadmap, so group you patterns in sub folders
 
 {% highlight location %}
-Example 1: Primary Colors stored in a /color sub folder.
+#Example 1: Primary Colors stored in a /color sub folder.
 /src/patterns/foundations/color/primary-colors.md
 
-Example 2: Disabled Card stored in a /cards sub folder.
+#Example 2: Disabled Card stored in a /cards sub folder.
 /src/patterns/components/cards/disabled-card.md
 {% endhighlight %}
 
@@ -161,7 +161,7 @@ Example 2: Disabled Card stored in a /cards sub folder.
 - Pattern assets are stored in the `src/assets` folder.
 - You can add additonal styles/scripts to a pattern via the [Pattern Settings](#pattern-settings) in the `_config.yml` file - styles will automatically be included in the `<head>`, scripts will automatically be included before the `</body>` tag in all patterns.
 
-><i class="icon red" data-icon="info"></i>Try this simple [SCSS playbook](https://matthewelsom.com/blog/simple-scss-playbook.html) to keep your styles organised.
+><i class="icon red" data-icon="info"></i>Keep your styles organised. Try this simple [SCSS playbook](https://matthewelsom.com/blog/simple-scss-playbook.html).
 
 
 # Adding Documentation

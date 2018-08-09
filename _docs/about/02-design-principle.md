@@ -3,24 +3,24 @@ title: Design Principle
 info: This style guide has been created to help designers, developers and product owners create and maintain user interface documentation in a 'Style Guide'. Documenting the user interface (UI) of a digital product or system reduces hand-over time and helps to ensure new UI additions deliver a consistent experience to users.
 ---
 
-This style guide follows four fundemental prinicples. 
+# Four Guiding Principles
 
-### Simple Build.
+### 1. Simple Build.
 
-This styleguide has been created ready for expansion and customisation, it provides a simple interface to browse patterns, and only requires Jekyll.
-
-### HTML First.
-
-The components created in this styleguide are build 'HTML first' - this process encourages developers to build progressively, enhancing core design experience across the most versatile front-end development language.
+This style guide has been created ready for expansion and customisation, it provides a simple interface to browse patterns, and only requires Jekyll.
 
 ![HTML First]({{ site.baseurl }}/styleguide/images/html.png)
 
-### Design for Flexibility.
+### 2. HTML First.
 
-Using a living styleguide ensures patterns adapt correctly to meet user needs, offering variation, and yet, providing design consistency and familiarity. It also allows us to build components that work well in multiple digital channels. 
+The components created in this styleguide are built with HTML first - this process encourages developers to build progressively with the most versatile front-end development language.
 
-### Reuseable Best Practices
+### 3. Design for Flexibility.
 
-This styleguide enables you to design, develop, test, review, and repurpose patterns, code, and design. That results in a comprehensive collection of tried-and-tested assets that reflect industry best practices.
+Using a style guide ensures patterns adapt correctly to meet user needs, offering variation, and yet, providing design consistency and familiarity. It also allows us to build components that work well in multiple digital channels. 
 
 ![Flexible]({{ site.baseurl }}/styleguide/images/flexible.png)
+
+### 4. Reuseable Best Practices
+
+Design, develop, test, review, and repurpose patterns, code, and design. That results in a comprehensive collection of tried-and-tested assets that reflect industry best practices.

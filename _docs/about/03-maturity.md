@@ -1,6 +1,6 @@
 ---
 title: Maturity Scale
-info: The maturity scale is a way to indicate the level of robustness of any pattern in this style guide. New patterns should be released into the style guide following these principles, assess each pattern independently.
+info: The maturity scale is a way to indicate the level of robustness of any pattern in this style guide. New patterns should be released into the style guide following these rules, assess each pattern independently.
 ---
 
 <span class="sg_label planned">Planned</span>
@@ -18,7 +18,7 @@ Includes everything from the Planned phase, as well as:
 - Pattern is actively being defined. Use at risk, and with caution.
 - Pattern may be generally usable for people with relatively "normal" digital literacy.
 - Pattern is not approved for for use in production. 
-- Documentation is incomplete. 
+- Documentation may/may not be complete. 
 
 ___
 
@@ -36,6 +36,6 @@ Includes everything in the Planned and Draft phases, as well as:
 ___
 
 <span class="sg_label retired">Retired</span>
-
-- Pattern is no longer fit for purpose, it should not be used in production.
-- Pattern will be removed from the Style Guide in due course.
+.
+- Pattern is no longer fit for purpose
+- It should be removed from production, and will be removed from the Style Guide in due course.
