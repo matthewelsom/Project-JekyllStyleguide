@@ -7,7 +7,7 @@ iFrameResize({
   bodyPadding             : 0, // remove body padding
 //  maxWidth: screen.width,
 //  minWidth: screen.width,
-  sizeWidth: 'true'
+//  sizeWidth: 'true'
 });
 
 
