@@ -1,13 +1,12 @@
 // Resize iFrames
 iFrameResize({
+  autoResize              : true,
   heightCalculationMethod : 'lowestElement', // Resize to the lowest element in page
+  widthCalculationMethod  : '',
   log                     : false, // Enable console logging
   inPageLinks             : true, // Enable links in Frame
   bodyMargin              : 0, // Remove body margin
   bodyPadding             : 0, // remove body padding
-//  maxWidth: screen.width,
-//  minWidth: screen.width,
-//  sizeWidth: 'true'
 });
 
 

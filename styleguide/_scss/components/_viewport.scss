@@ -14,6 +14,8 @@
   }
 
   iframe {
+    width: 1px;
+    min-width: 100%;
     min-height: 100px;
     opacity: 0;
   }
