@@ -5,9 +5,9 @@ maturity: draft
 control: exclude
 colors: 
   - name: $blue
-    hex: '#1e90ff'  
-  - name: $red
-    hex: '#ff6347'  
+    hex: 'lightskyblue'  
+  - name: $green
+    hex: 'lightseagreen'  
 ---
 <style>
 .set {

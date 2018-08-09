@@ -1,54 +1,39 @@
-//Devices
+// Devices
 $medium-screen: 1080px;
 $tablet-screen: 768px;
 $mobile-screen: 480px;
 
-//Breakpoints
-//Neat needs to be included
+// Type Systems
+$roboto: 'Roboto', sans-serif;
+$robotoslab: 'Roboto Slab', serif;
 
-//Type Systems
-$roboto: "Roboto", sans-serif;
-$robotoslab: "Roboto Slab", serif;
-$fa: 'FontAwesome';
 
-//Base Fonts
-$base-font-size: 14px;
-$base-line-height: 1.5;
+// Font Size
+$typo_lion: 2.6rem;
+$typo_panther: 1.8rem;
+$typo_leopard: 1.3rem; 
+$typo_cat: 1rem; 
+$typo_kitten: .8rem;
 
-//Heading Fonts
-$h1-font-size: 2.6rem; 
-$h2-font-size: 2rem;
-$h3-font-size: 1.5rem; 
-$h4-font-size: 1.1rem; 
-$h5-font-size: 1rem;
-$h6-font-size: 0.9rem;
+// Primary Colors
+$white: #ffffff;
+$black: #222222;
+$pink: hotpink;
 
-//Primary Colors
-$white: #efefef;
-$black: #000000;
-$light-grey: #cccccc;
+// Accent Colors
+$blue: lightskyblue;
+$green: lightseagreen;
 
-//Secondary Colors
-$blue: dodgerblue;
-$dark-blue: darken($blue, 12%);
-$darkest-blue: darken($blue, 20%);
-$red: tomato;
-$dark-red: darken($red, 12%);
-$darkest-red: darken($red, 20%);
-
-//Animations
-$base-duration: .2s;
-$base-timing: ease;
-
-//Base Colors
+// Base Fonts
+$base-font-size: 18px;
+$base-line-height: 1.6;
 $base-font-color: $black;
 
-//Spacing
+// Headline Fonts
+$headline-line-height: 1.3;
+$headline-font-color: darken($base-font-color, 10%);
+
+// Padding
 $large-pad: 1.5rem;
 $base-pad: 1rem;
 $small-pad: $large-pad / 2; //0.75rem
-
-//Borders
-$base-rad: 4px;
-$base-border-color: #e5e5e5;
-$base-border: 1px solid $base-border-color;

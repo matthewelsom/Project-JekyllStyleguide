@@ -1,0 +1,63 @@
+
+.button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 $small-pad/2 0 0;
+  padding: $base-pad;
+  border: 4px solid $pink;
+  background: $white;
+  cursor: pointer;
+  color: $pink;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  min-width: 100px;
+  transition: all .2s ease;
+
+  &:hover,
+  &:focus {
+    background: $pink;
+    color: $white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  }
+}
+.button_animated {
+  overflow: hidden;
+  padding-right: 0;
+  
+  .visible-content,
+  .hidden-content {
+    transition: right .2s ease;
+  }
+  .visible-content {
+    position: relative;
+    left: auto;
+    right: 0;
+    margin-right: $base-pad;
+  }
+  .hidden-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: auto;
+    right: -100%;
+    margin-top: -$base-font-size/2;
+  }
+  &:hover {
+    .visible-content {
+      right: 100%;
+    }
+    
+    .hidden-content {
+      right: 0;
+    }
+  }
+}
+.button_disabled {
+  pointer-events: none;
+  opacity: .5;
+}
+.button_block {
+  display: block;
+}

@@ -1,9 +1,3 @@
-body {
-  font-family: $roboto;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-}
-
 h1,h2,h3,h4,h5,h6,
 ul,ol,dd,
 p,figure,
@@ -11,66 +5,33 @@ table,fieldset,hr {
   margin-bottom: $base-pad;
 }
 
+.headline,
 h1, h2, h3, h4, h5, h6 {
-  line-height: $base-line-height;
-  color: $base-font-color;
+  line-height: $headline-line-height;
+  color: $headline-font-color;
   font-family: $robotoslab;
+  margin-top: 0;
 }
 
 h1 {
-  font-size: $h1-font-size;
-  margin-top: 0;
-  margin-bottom: $small-pad;
-  font-weight: normal;
+  font-size: $typo_lion;
+  margin-bottom: $base-pad;
 }
 
 h2 {
-  font-size: $h2-font-size;
-  margin-top: 0;
-  margin-bottom: $small-pad;
-  font-weight: normal;
+  font-size: $typo_panther;
+  margin-bottom: $base-pad;
 }
 
 h3 {
-  font-size: $h3-font-size;
-  margin-top: 0;
-  margin-bottom: $small-pad;
-  font-weight: normal;
+  font-size: $typo_leopard;
+  margin-bottom: $base-pad;
 }
 
 h4 {
-  display: inline-block;
-  font-size: $h4-font-size;
-  margin-top: 0;
-  margin-bottom: $base-pad;
-  padding-bottom: 2px;
-  border-bottom: 2px solid;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-
-h5 {
-  font-size: $h5-font-size;
   font-family: $roboto;
-  margin-top: $base-pad;
+  font-size: $typo_cat;
   margin-bottom: $base-pad;
-}
-
-h6 {
-  font-size: $h6-font-size;
-  font-family: $roboto;
-  margin-top: $base-pad;
-  margin-bottom: $base-pad;
-}
-ul, ol {
-  margin-top: 0;
-  margin-bottom: $base-pad;
-  padding-left: 2rem;
-}
-.uppercase {
   text-transform: uppercase;
-}
-hr {
-  border-bottom: 0;
-  border-top: $base-border;
+  color: $pink;
 }

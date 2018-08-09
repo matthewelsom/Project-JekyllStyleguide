@@ -1,0 +1,21 @@
+blockquote {
+  margin-bottom: $base-pad;
+  margin-left: $base-pad;
+  padding: $base-pad;
+  border-left: 4px solid transparentize($black, .8);
+  background: $white;
+  color: $black;
+  font-size: $typo_leopard;
+  line-height: $headline-line-height;
+  
+  &.blue {
+    background: transparentize($blue, .8);
+    border-color: $blue;
+    color: $black;
+  }
+  &.green {
+    background: transparentize($green, .8);
+    border-color: $green;
+    color: $black;
+  }
+}

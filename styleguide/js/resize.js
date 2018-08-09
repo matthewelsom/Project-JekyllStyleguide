@@ -4,8 +4,8 @@ iFrameResize({
   heightCalculationMethod : 'lowestElement', // Resize to the lowest element in page
   log                     : false, // Enable console logging
   inPageLinks             : true, // Enable links in Frame
-  bodyMargin              : 0, // Remove body margin
-  bodyPadding             : 0, // remove body padding
+//  bodyMargin              : 0, // Remove body margin
+//  bodyPadding             : 0, // remove body padding
 });
 
 

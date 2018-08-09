@@ -5,12 +5,13 @@ maturity: ready
 control: exclude
 colors: 
   - name: $white
-    hex: '#efefef'
+    hex: '#ffffff'
+    rgb: rgb(255,255,255)
   - name: $black
-    hex: '#000000'
+    hex: '#222222'
     rgb: rgb(0,0,0)
-  - name: $light-grey
-    hex: '#cccccc' 
+  - name: $pink
+    hex: 'hotpink' 
 ---
 <style>
 .set {
