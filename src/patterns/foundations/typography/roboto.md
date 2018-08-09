@@ -7,7 +7,7 @@ control: exclude
 <style>
   * {
     font-family: 'Roboto' !important;
-    word-wrap: break-all;
+    word-wrap: break-word;
   }
   p {
     margin-top: 0;
