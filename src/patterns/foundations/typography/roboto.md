@@ -5,9 +5,9 @@ maturity: ready
 control: exclude
 ---
 <style>
-  body * {
+  * {
     font-family: 'Roboto' !important;
-    word-wrap: break-word;
+    word-wrap: break-all;
   }
   p {
     margin-top: 0;

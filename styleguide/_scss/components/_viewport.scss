@@ -1,6 +1,8 @@
 // Viewport Area
 .sg_viewport {
   position: relative;
+  display: block;
+  width: 100%;
   background-image: url(../images/loader.svg);
   background-position: center center;
   background-size: 40px;
@@ -13,6 +15,6 @@
 
   iframe {
     min-height: 100px;
-//    opacity: 0;
+    opacity: 0;
   }
 }

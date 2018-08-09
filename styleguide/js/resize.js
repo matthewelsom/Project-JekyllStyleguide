@@ -37,5 +37,5 @@ function iframeLoader() {
 //Functions that run when all HTML is loaded
 $(document).ready(function() {
   sourceCode();
-//  iframeLoader();
+  iframeLoader();
 });
