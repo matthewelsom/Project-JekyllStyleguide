@@ -5,7 +5,7 @@ maturity: ready
 control: exclude
 ---
 <style>
-  body * {
+  * {
     font-family: 'Roboto Slab' !important;
     word-wrap: break-word;
   }
