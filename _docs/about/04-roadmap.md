@@ -45,7 +45,7 @@ nav: exclude
   </div>
 </div>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="{{ site.baseurl }}/styleguide/js/libs/list.min.js"></script>
 <script>
   // Create the List
   var options = {

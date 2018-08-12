@@ -72,13 +72,19 @@ defaults:
       path: "_docs/components"
     values:
       layout: doc
-      type: component    
+      type: component 
   - 
     scope:
       path: "_docs/templates"
     values:
-      layout: template
-      type: template
+      layout: doc
+      type: template    
+  - 
+    scope:
+      path: "_docs/sample-pages"
+    values:
+      layout: doc
+      type: sample    
   - 
     scope:
       path: "src/patterns"
@@ -88,7 +94,12 @@ defaults:
       maturity: planned
       title: Not Assigned
       styles: Not Assigned
-      
+  - 
+    scope:
+      path: "src/patterns/sample-pages"
+    values:
+      type: sample
+      title: Not Assigned        
 
 ###################################
 ## Pattern Settings
@@ -101,7 +112,7 @@ pattern_favicon: /src/assets/images/icon.ico
 pattern_styles:                 ## add style locations here
   - /src/assets/css/style.css
 pattern_scripts:                ## add script locations here
-  - /styleguide/js/libs/jquery-2.1.4.min.js  
+  - /src/assets/js/libs/jquery-2.1.4.min.js  
 
 
 ## Generates Pattern Styles
