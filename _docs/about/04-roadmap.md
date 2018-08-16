@@ -1,7 +1,6 @@
 ---
 title: Roadmap
 info: The roadmap lists all UI patterns in the style guide. Patterns are automatically listed in the Roadmap when they are added to the style guide. 
-nav: exclude
 ---
 ><i class="icon red" data-icon="info"></i>Learn how to [Add a Pattern]({{ site.baseurl }}/docs/about/01-getting-started.html#adding-patterns) to the style guide. 
 
@@ -23,7 +22,7 @@ nav: exclude
     {% assign anchor = pattern.title | slugify | prepend: '#' %}
     {% assign group = pattern.url  | split: '/'  | slice: -2, 1 %}
     {% assign folder = pattern.url | split: '/' | slice: 3, 2 | join: '/' | prepend: '/docs/' | prepend: site.baseurl | append: '.html' | append: anchor %}
-      <a href="{{ site.baseurl }}{{ folder }}" class="sg_roadmap_pattern tableRow">
+      <a href="{{ folder }}" class="sg_roadmap_pattern tableRow">
         <div class="tableCell">
           <div class="sg_label maturity {{ pattern.maturity }}" data-maturity="{{ pattern.maturity }}"></div>
         </div>
