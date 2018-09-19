@@ -165,26 +165,13 @@ control: exclude
 
 # Adding Documentation
 
+## What is Documentaion? 
 
-Coming soon
+'Documentation' is used to store information relating to a pattern (or group of patterns), as well as information about the style guide itself - this page is an example of a document.
 
+By default, documentation is stored in the `_docs` folder and grouped in directories that correspond to the pattern directories. An additonal `/about` directory is also provided, this can contain general/non-pattern specific contents (like this page).
 
-<!--
-
-
-
-
-
-Patterns and Pages are always loaded in an iframe so Styleguide styles will not interfere with your added assets.
-
-### Design Files
-
-- **_docs/** is used to store all pattern documentation is it is important to make sure that every pattern added to the `src/html/` folder has a corresponding file with the same name inside this documentation file.
-
-4. To appear in the sidebar, each pattern/page must have a corresponding `markdown` Documentation file in the `_docs/` folder.
-5. The Documentation file should contain the location of the pattern styles, the maturity of the pattern, as well as any further usability information or rules for use.
-- All of the style guide pages are kept in the `_docs/` folder. 
--->
+Patterns are always loaded into a document via an iframe, so any style guide related styles will not interfere with your pattern.
 
 {% highlight directory %}
 │
@@ -200,16 +187,137 @@ Patterns and Pages are always loaded in an iframe so Styleguide styles will not 
 │   │   ├── typography.md   
 │   │   └── ...
 │   │
-│   └── templates/
+│   ├── templates/
+│   │   └── ...
+│   │
+│   └── sample-pages/
 │       └── ...
 │
 {% endhighlight %}
+
+><i class="icon red" data-icon="info"></i>Adding any document into these folders will automatically make it appear in the style guide navigation, with the exception of `sample-pages`.
+
+
+## Documentation Settings
+
+These settings are defined in the `config.yml` file and ensure that each document outputs with the correct Jekyll layout and meta data.
+
+{% highlight yml %}
+
+## Collection Settings
+
+## Outputs the _docs collection !Required
+collections:
+  docs: 
+    output: true
+
+## Sets the default attributes for the Documentation and Pattern Files !Required
+defaults:
+  - 
+    scope:
+      path: "_docs"
+    values:
+      layout: doc
+      type: doc
+  - 
+    scope:
+      path: "_docs/about"
+    values:
+      layout: doc
+      type: about    
+  - 
+    scope:
+      path: "_docs/foundations"
+    values:
+      layout: doc
+      type: foundation
+  - 
+    scope:
+      path: "_docs/components"
+    values:
+      layout: doc
+      type: component 
+  - 
+    scope:
+      path: "_docs/templates"
+    values:
+      layout: doc
+      type: template    
+  - 
+    scope:
+      path: "_docs/sample-pages"
+    values:
+      layout: doc
+      type: sample    
+
+{% endhighlight %}
+
+
+
+
+
+## Adding Documentaion
+
+- Create your document file in Markdown format.
+- Your filename can match the pattern URL, but it does not have too.
+
+{% highlight location %}
+#Pattern Location.
+/src/patterns/foundations/color/primary-colors.md
+
+#Corresponding document file option 1:
+/_docs/fondations/color.md
+
+#Corresponding document file option 2:
+/_docs/fondations/palette.md
+
+{% endhighlight %}
+
+- The document must start with Front Matter.
+- Set the title.
+- Optional: add info which will be displayed at the top of the document page.
+- Optional: add `nav: true` into the Front Matter if you would like to display a mini contents menu at the top of the page (like this page).
+- You can use any markdown in the page content area. 
+- To include a pattern in the document page you must first `assign` the `pattern_url` then include the pattern block - you can reapeat this process to include multiple patterns on the page. See the sample below taken from the `button.md` file.
+- Note that the [pattern controls](#uploading-patterns) and maturity are set in the pattern file.
+
+><i class="icon red" data-icon="info"></i>The contents menu will automatically generate a clickable table of contents based on any `h1` items on the page.
+
+{% highlight button.md %}{% raw %}
+
+---
+title: Button
+info: Use buttons to signal actions.
+nav: true
+---
+
+# Basic Buttons
+
+A button can contain text. Although any tag can be used for a button, it will only be keyboard focusable if you use a `button` tag or you add the property `tabindex="0"`.
+
+{% assign pattern_url = '/src/patterns/components/button/default_button.html' %}
+{% include pattern_block.html %}
+
+{% assign pattern_url = '/src/patterns/components/button/disabled_button.html' %}
+{% include pattern_block.html %}
+
+{% endraw %}{% endhighlight %}
+
+
+
+# Sample Pages
+
+Coming Soon
 
 
 
 # Editing the Styleguide
 
 Coming Soon
+
+
+
+
 
 <!--
 ## Includes
@@ -262,22 +370,3 @@ Coming Soon
 
 ---
 -->
-
-
-<!--Organise design styles, create code standards, and maintain a consistent user interface design across your digital product with this boilerplate living style guide.-->
-
-
-<!--
-This tool generates a 'Living Style Guide' for your digital product or system that tracks and documents all of the user interface (UI) patterns.  
-
-This tool creates a 'Living Style Guide' for your digital product or system that tracks and documents all of the user interface (UI) patterns.  
-
-You use it to generate all of the systems user interface (UI) patterns. The patterns are tracked and documented in a simple Living Style Guide.
-
-
-Organise design styles, create code standards, and maintain a consistent user interface design across your digital product with this boilerplate living styleguide. Made with the power of Jekyll.
-
-
-listed based on the folder in which the are added. To add a pattern add the corrresonding file to the folder. 
-
-Remember to add a corresponding file into the _docs folder - or this will break.-->
