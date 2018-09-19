@@ -187,11 +187,9 @@ Patterns are always loaded into a document via an iframe, so any style guide rel
 │   │   ├── typography.md   
 │   │   └── ...
 │   │
-│   ├── templates/
-│   │   └── ...
-│   │
-│   └── sample-pages/
+│   └── templates/
 │       └── ...
+│   
 │
 {% endhighlight %}
 
