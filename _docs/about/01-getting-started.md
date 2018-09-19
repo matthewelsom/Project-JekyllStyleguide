@@ -242,13 +242,7 @@ defaults:
       path: "_docs/templates"
     values:
       layout: doc
-      type: template    
-  - 
-    scope:
-      path: "_docs/sample-pages"
-    values:
-      layout: doc
-      type: sample    
+      type: template       
 
 {% endhighlight %}
 
