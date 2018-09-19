@@ -130,7 +130,7 @@ A 'Pattern' is any part of the user interface, by default there are 3 types:
 - Write your HTML pattern in a Markdown file.
 - The pattern must start with [Front Matter](https://jekyllrb.com/docs/frontmatter/).
 - Set the `title`, `maturity`, and the location of the corresponding `styles`.
-- Optional: Turn off the Pattern Controls by using `control: exclude` - this is particulary useful for foundation patterns.
+- Optional: Turn off the Pattern Controls by using `control: exclude` - this is particularly useful for foundation patterns.
 
 {% highlight pattern.md %}
 ---
@@ -158,20 +158,20 @@ control: exclude
 ## Editing Pattern Assets
 
 - Pattern assets are stored in the `src/assets` folder.
-- You can add additonal styles/scripts to a pattern via the [Pattern Settings](#pattern-settings) in the `_config.yml` file - styles will automatically be included in the `<head>`, scripts will automatically be included before the `</body>` tag in all patterns.
+- You can add additional styles/scripts to a pattern via the [Pattern Settings](#pattern-settings) in the `_config.yml` file - styles will automatically be included in the `<head>`, scripts will automatically be included before the `</body>` tag in all patterns.
 
 ><i class="icon red" data-icon="info"></i>Keep your styles organised. Try this simple [SCSS playbook](https://matthewelsom.com/blog/simple-scss-playbook.html).
 
 
 # Adding Documentation
 
-## What is Documentaion? 
+## What is Documentation? 
 
 'Documentation' is used to store information relating to a pattern (or group of patterns), as well as information about the style guide itself - this page is an example of a document.
 
-By default, documentation is stored in the `_docs` folder and grouped in directories that correspond to the pattern directories. An additonal `/about` directory is also provided, this can contain general/non-pattern specific contents (like this page).
+By default, documentation is stored in the `_docs` folder and grouped in directories that correspond to the pattern directories. An additional `/about` directory is also provided, this can contain general/non-pattern specific contents (like this page).
 
-Patterns are always loaded into a document via an iframe, so any style guide related styles will not interfere with your pattern.
+Patterns are always loaded into a document via an iFrame, so any style guide related styles will not interfere with your pattern.
 
 {% highlight directory %}
 │
@@ -190,10 +190,9 @@ Patterns are always loaded into a document via an iframe, so any style guide rel
 │   └── templates/
 │       └── ...
 │   
-│
 {% endhighlight %}
 
-><i class="icon red" data-icon="info"></i>Adding any document into these folders will automatically make it appear in the style guide navigation, with the exception of `sample-pages`.
+><i class="icon red" data-icon="info"></i>Adding any document into these folders will automatically make it appear in the style guide navigation.
 
 
 ## Documentation Settings
@@ -248,7 +247,7 @@ defaults:
 
 
 
-## Adding Documentaion
+## Adding Documentation
 
 - Create your document file in Markdown format.
 - Your filename can match the pattern URL, but it does not have too.
@@ -269,11 +268,11 @@ defaults:
 - Set the title.
 - Optional: add info which will be displayed at the top of the document page.
 - Optional: add `nav: true` into the Front Matter if you would like to display a mini contents menu at the top of the page (like this page).
-- You can use any markdown in the page content area. 
-- To include a pattern in the document page you must first `assign` the `pattern_url` then include the pattern block - you can reapeat this process to include multiple patterns on the page. See the sample below taken from the `button.md` file.
+- You can use any Markdown in the page content area. 
+- To include a pattern in the document page you must first `assign` the `pattern_url` then include the pattern block - you can repeat this process to include multiple patterns on the page. See the sample below taken from the `button.md` file.
 - Note that the [pattern controls](#uploading-patterns) and maturity are set in the pattern file.
 
-><i class="icon red" data-icon="info"></i>The contents menu will automatically generate a clickable table of contents based on any `h1` items on the page.
+><i class="icon red" data-icon="info"></i>The contents menu will automatically generate a table of contents based on any `h1` items on the page.
 
 {% highlight button.md %}{% raw %}
 
@@ -303,7 +302,7 @@ Coming Soon
 
 
 
-# Editing the Styleguide
+# Editing the Style Guide
 
 Coming Soon
 
@@ -318,7 +317,7 @@ Coming Soon
 - They are stored in the `_includes/` folder.
 - You do not need to change these files unless you are changing the function of the style guide shell
 
-& **_layouts/** associated with the styleguide are stored here - they do not need to be edited unless you are changing the function of the styleguide shell.
+& **_layouts/** associated with the style guide are stored here - they do not need to be edited unless you are changing the function of the style guide shell.
 
 {% highlight directory %}
 │
@@ -332,7 +331,7 @@ Coming Soon
 ## _layouts/
 
 - All patterns are generated using the `pattern.html` file. 
-- Update this file if you wish to add additonal scripts to your patterns, e.g. If your pattern requires jQuery to run you should add it here. 
+- Update this file if you wish to add additional scripts to your patterns, e.g. If your pattern requires jQuery to run you should add it here. 
 - This file contains the `iframeResizer.contentWindow.min.js` script, it is required to make the pattern load correctly in the iFrame. Removing this script will break the style guide.
 
 {% highlight directory %}
@@ -346,7 +345,7 @@ Coming Soon
 
 ## styleguide/
 
-- Contains all of the stylesheets and scripts required to make the styleguide work corretcly. 
+- Contains all of the stylesheets and scripts required to make the style guide work corretcly. 
 - Updating these files will change the appearance and function of the style guide shell.
 
 {% highlight directory %}
