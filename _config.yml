@@ -23,7 +23,7 @@ destination: _site          ## Output folder
 
 ## These settings are used in when generating the style guide shell
 sg_title: Jekyll Style Guide
-sg_version: 2.0
+sg_version: 3.0
 sg_keywords: jekyll, style guide, playbook, design, code 
 sg_author: Matthew Elsom
 sg_description: This Jekyll Style Guide maintains design and code standards and documentation for a digital user interface.

@@ -1,5 +1,5 @@
 {% for pattern in site.pages %}
-{% if pattern.url contains pattern_url %}
+{% if pattern.url contains include.url %}
 <section class="sg_pattern" id="{{ pattern.title | slugify }}" >
   <div class="title">
     <a class="permalink" href="{{ pattern.title | slugify | prepend: '#' }}"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">{{ pattern.title }}</div> 
@@ -10,7 +10,7 @@
     <a href="javascript:void(0)" title="Open in new window" class="sg_helper_open button" href="{{ site.baseurl }}{{ pattern_url }}" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
   </div>{% endif %}
   <div class="sg_viewport">
-    <iframe frameborder="0" scrolling="no" src="{{ site.baseurl }}{{ pattern_url }}" allowfullscreen></iframe>
+    <iframe frameborder="0" scrolling="no" src="{{ site.baseurl }}{{ include.url }}" allowfullscreen></iframe>
   </div>
   <div class="sg_code" data-styles="{{ pattern.styles }}">
 <!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
@@ -21,5 +21,3 @@
 </section>
 {% endif %}
 {% endfor %}
-
-

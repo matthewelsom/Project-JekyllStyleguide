@@ -269,7 +269,7 @@ defaults:
 - Optional: add info which will be displayed at the top of the document page.
 - Optional: add `nav: true` into the Front Matter if you would like to display a mini contents menu at the top of the page (like this page).
 - You can use any Markdown in the page content area. 
-- To include a pattern in the document page you must first `assign` the `pattern_url` then include the pattern block - you can repeat this process to include multiple patterns on the page. See the sample below taken from the `button.md` file.
+- To include a pattern in the document page you must include the pattern block and specify a `url` variable in the include. By repeating this process you can include multiple patterns on the page. See the sample below taken from the `button.md` file.
 - Note that the [pattern controls](#uploading-patterns) and maturity are set in the pattern file.
 
 ><i class="icon red" data-icon="info"></i>The contents menu will automatically generate a table of contents based on any `h1` items on the page.
@@ -286,11 +286,9 @@ nav: true
 
 A button can contain text. Although any tag can be used for a button, it will only be keyboard focusable if you use a `button` tag or you add the property `tabindex="0"`.
 
-{% assign pattern_url = '/src/patterns/components/button/default_button.html' %}
-{% include pattern_block.html %}
+{% include pattern_block.html url='/src/patterns/components/button/default_button.html' %}
 
-{% assign pattern_url = '/src/patterns/components/button/disabled_button.html' %}
-{% include pattern_block.html %}
+{% include pattern_block.html url='/src/patterns/components/button/disabled_button.html' %}
 
 {% endraw %}{% endhighlight %}
 
